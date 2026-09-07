@@ -1,12 +1,22 @@
-# Gl Cores e Fundos - Galeria de Assets Visuais, Paletas de Cores & Design Instrucional
+# Gl Cores Fontes e Fundos - Fundos Visuais, Paletas de Cores & Pares Tipográficos
 
-Aplicação web moderna, responsiva e dinâmica composta pela **Galeria de Fundos Visuais em Alta Resolução** (674 fundos: JPG, PNG e SVG) e pelo **Gerador de Paletas de Cores** com temas históricos, cinema, vintage, pop e design institucional.
+Aplicação web moderna, responsiva e dinâmica composta pela tríade essencial para criação de interfaces, apresentações e *vibe coding*:
+1. **🖼️ Galeria de Fundos Visuais em Alta Resolução** (674 fundos: JPG, PNG e SVG)
+2. **🎨 Gerador de Paletas de Cores** (52 paletas selecionadas com cópia em 1 clique)
+3. **🔤 Catálogo de Tipografia & Pares do Google Fonts** (40 pares com demonstrações visuais reais de títulos, subtítulos e textos)
 
 ---
 
 ## 🌟 Principais Recursos
 
-1. **🎨 Gerador de Paletas de Cores (`paletas.html` - 52 Paletas Selecionadas):**
+1. **🔤 Catálogo de 40 Pares Tipográficos (`fontes.html`):**
+   - **40 Combinações Harmoniosas:** Títulos e corpo calibrados cobrindo Tech & SaaS, Fintech & Apps, Editorial & Luxo, Criativo & Agência, Clássico & Acadêmico e Cyberpunk & Web3.
+   - **Visualização Real com Fontes Nativas do Google Fonts:** Demonstração visual ao vivo de cada par com **Título**, **Subtítulo** e **Texto normal** aplicados com as fontes e pesos respectivos.
+   - **📋 1-Clique para Vibe Coding (Prompt IA):** Gera e copia prompt contextualizado para que o assistente de IA aplique a combinação exata de fontes, pesos e estilos no seu código.
+   - **💻 Cópia Direta de CSS:** Fornece o snippet de variáveis CSS (`--font-title`, `--font-body`) pronto para o seu arquivo de estilo.
+   - **Filtros por Categoria e Busca em Tempo Real:** Localize rapidamente combinações por estilo ou nome de fonte (Outfit, Inter, Plus Jakarta Sans, Syne, Playfair Display, etc.).
+
+2. **🎨 Gerador de Paletas de Cores (`paletas.html` - 52 Paletas Selecionadas):**
    - **Tendências UI & Web 2024-2026:** Neo Glassmorphism, Minimalista Dark Mode, Aurora Boreal B2B, Fintech Futurista, Editorial Luxo e Computação Quântica/IA.
    - **Botânica & Natureza Viva:** Matcha & Bambu, Terracota & Eucalipto, Floresta Bioluminescente, Deserto Atacama, Orquídea Selvagem e Oceano Glacial.
    - **Moda, Lifestyle & Cafeteria:** Café Especial & Torra, Lavanda & Pêssego, Linho Cru Wabi-Sabi, Veludo Borgonha & Ouro, Cerejeira de Kyoto e Boutique Nude.
@@ -57,7 +67,8 @@ Aplicação web moderna, responsiva e dinâmica composta pela **Galeria de Fundo
 ```text
 fundos/
 ├── index.html         # Aplicação principal - Galeria de Fundos (HTML5, CSS3 Glassmorphism, JS)
-├── paletas.html       # Aplicação complementar - Gerador de Paletas de Cores (TailwindCSS, JS)
+├── paletas.html       # Gerador de Paletas de Cores (TailwindCSS, JS)
+├── fontes.html        # Catálogo de 40 Pares Tipográficos Google Fonts (TailwindCSS, JS)
 ├── catalog.json       # Manifesto de assets e metadados
 ├── README.md          # Documentação do projeto
 ├── abstrato/          # Fundos abstratos, 3D, mesh gradients e geométricos

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gl Cores e Fundos - Galeria de Assets Visuais & Paletas de Cores</title>
-    <meta name="description" content="Galeria moderna de fundos visuais em alta resolução e gerador de paletas de cores para aplicações, apresentações e design instrucional.">
+    <title>Gl Cores Fontes e Fundos - Fundos Visuais, Paletas de Cores & Pares Tipográficos</title>
+    <meta name="description" content="Galeria moderna de fundos visuais em alta resolução, gerador de paletas de cores e pares tipográficos harmoniosos para aplicações, vibe coding e design instrucional.">
     
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>">
     
@@ -172,6 +172,30 @@
         .btn-nav-paletas:hover {
             transform: translateY(-2px);
             box-shadow: 0 0 25px rgba(244, 63, 94, 0.6);
+            filter: brightness(1.1);
+        }
+
+        .btn-nav-fontes {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(135deg, #0ea5e9, #6366f1);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 0.5rem 1.15rem;
+            border-radius: 999px;
+            font-size: 0.88rem;
+            font-weight: 700;
+            letter-spacing: 0.2px;
+            box-shadow: 0 0 15px rgba(14, 165, 233, 0.35);
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            cursor: pointer;
+        }
+
+        .btn-nav-fontes:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 25px rgba(14, 165, 233, 0.6);
             filter: brightness(1.1);
         }
 
@@ -693,8 +717,8 @@
             <a href="index.html" class="brand">
                 <div class="brand-logo">🎨</div>
                 <div class="brand-text">
-                    <h1>Gl Cores e Fundos</h1>
-                    <p>Assets Visuais & Paletas de Cores</p>
+                    <h1>Gl Cores Fontes e Fundos</h1>
+                    <p>Fundos Visuais, Paletas de Cores & Pares Tipográficos</p>
                 </div>
             </a>
 
@@ -706,6 +730,9 @@
             <div class="header-right">
                 <a href="paletas.html" target="_blank" class="btn-nav-paletas" title="Abrir Gerador de Paletas de Cores em nova aba">
                     🎨 Paletas de Cores ↗
+                </a>
+                <a href="fontes.html" target="_blank" class="btn-nav-fontes" title="Abrir Catálogo de Pares Tipográficos em nova aba">
+                    🔤 Fontes e Tipografia ↗
                 </a>
                 <div class="stats-badge" id="statsBadge">
                     <span>Total:</span> <strong id="totalCount">674</strong> <span>fundos</span>

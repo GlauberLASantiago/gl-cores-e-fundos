@@ -1,0 +1,2522 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gl Cores Fontes e Fundos - 40 Combinações Tipográficas</title>
+    <meta name="description" content="Guia definitivo de 40 pares tipográficos do Google Fonts com prévias reais e cópia de prompt para Vibe Coding e Web Design.">
+    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔤</text></svg>">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Todas as Fontes do Catálogo -->
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@700;800&family=Alegreya:wght@700;800&family=Alegreya+Sans:wght@400;500&family=Archivo:wght@400;500;600&family=Archivo+Black:wght@400&family=Be+Vietnam+Pro:wght@700;800&family=Bodoni+Moda:wght@700;900&family=Bricolage+Grotesque:wght@700;800&family=Castoro:wght@400&family=Chivo:wght@700;800;900&family=Cinzel:wght@700;900&family=Cormorant:wght@600;700&family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500;700&family=DM+Serif+Display:wght@400&family=Epilogue:wght@700;800;900&family=Exo+2:wght@700;800;900&family=Figtree:wght@700;800&family=Fira+Sans:wght@400;500&family=Fraunces:wght@700;900&family=Instrument+Serif:wght@400&family=Inter:wght@400;500&family=JetBrains+Mono:wght@700;800&family=Josefin+Sans:wght@600;700&family=Karla:wght@400;500&family=Krona+One:wght@400&family=Lato:wght@400;500;700&family=Lexend:wght@600;700;800&family=Libre+Baskerville:wght@700&family=Manrope:wght@400;500;700;800&family=Merriweather:wght@700;900&family=Montserrat:wght@400;500;700;800&family=Newsreader:wght@600;700;800&family=Noto+Sans:wght@400;500&family=Nunito:wght@400;600&family=Open+Sans:wght@400;600&family=Oswald:wght@600;700&family=Outfit:wght@400;500;600;800&family=Playfair+Display:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&family=Proza+Libre:wght@400;500&family=Raleway:wght@400;500&family=Readex+Pro:wght@400;500&family=Red+Hat+Display:wght@700;900&family=Red+Hat+Text:wght@400;500&family=Righteous:wght@400&family=Roboto:wght@400;500&family=Rubik:wght@700;800&family=Schibsted+Grotesk:wght@700;800&family=Sora:wght@700;800&family=Source+Sans+3:wght@400;500&family=Source+Serif+4:wght@400;600&family=Space+Grotesk:wght@600;700&family=Space+Mono:wght@400;700&family=Spline+Sans:wght@400;500&family=Syne:wght@700;800&family=Unbounded:wght@700;800;900&family=Urbanist:wght@700;800;900&family=Work+Sans:wght@400;500;600&family=Young+Serif:wght@400&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            background: linear-gradient(rgba(15, 23, 42, 0.90), rgba(15, 23, 42, 0.95)), url('abstrato/05_realista_gotas_de_agua_vidro_bokeh.png') center / cover no-repeat fixed;
+            min-height: 100vh;
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.72);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glass-card:hover {
+            border-color: rgba(56, 189, 248, 0.45);
+            box-shadow: 0 10px 30px -10px rgba(56, 189, 248, 0.25);
+        }
+        /* Toast */
+        #toast {
+            visibility: hidden;
+            opacity: 0;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        #toast.show {
+            visibility: visible;
+            opacity: 1;
+            bottom: 2.5rem;
+        }
+    </style>
+</head>
+<body class="text-slate-100 p-4 sm:p-6 md:p-10">
+
+    <div class="max-w-6xl mx-auto">
+        
+        <!-- Barra de Navegação Superior -->
+        <nav class="flex items-center justify-between flex-wrap gap-4 mb-8 pb-4 border-b border-slate-700/60">
+            <div class="flex items-center gap-3">
+                <a href="index.html" class="inline-flex items-center gap-2 bg-slate-800 hover:bg-slate-700 border border-slate-600 text-white font-semibold py-2 px-4 rounded-xl shadow transition-all text-sm">
+                    <span>🖼️</span> Galeria de Fundos
+                </a>
+                <a href="paletas.html" class="inline-flex items-center gap-2 bg-gradient-to-r from-rose-500 to-purple-600 hover:from-rose-600 hover:to-purple-700 text-white font-semibold py-2 px-4 rounded-xl shadow transition-all text-sm">
+                    <span>🎨</span> Paletas de Cores
+                </a>
+            </div>
+            
+            <div class="flex items-center gap-2">
+                <span class="text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-full bg-sky-500/20 text-sky-400 border border-sky-500/30">
+                    🔤 Gl Cores Fontes e Fundos
+                </span>
+            </div>
+        </nav>
+
+        <!-- Header da Página -->
+        <header class="text-center mb-12">
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-white tracking-tight" style="font-family: 'Outfit', sans-serif;">
+                40 Pares Tipográficos Selecionados
+            </h1>
+            <p class="text-lg text-slate-400 max-w-3xl mx-auto mt-3" style="font-family: 'Inter', sans-serif;">
+                Combinações harmoniosas do Google Fonts com títulos, subtítulos e parágrafos reais. Copie o prompt pronto para guiar assistentes de IA em <em>vibe coding</em> ou integre diretamente ao seu CSS.
+            </p>
+            
+            <!-- Barra de Busca e Filtros -->
+            <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
+                <button onclick="filterCategory('TODOS')" class="cat-btn active px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-sky-500 text-white shadow-lg transition-all" data-cat="TODOS">
+                    Todos (40)
+                </button>
+                <button onclick="filterCategory('Tech & SaaS')" class="cat-btn px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-slate-800 text-slate-300 hover:bg-slate-700 border border-slate-700 transition-all" data-cat="Tech & SaaS">
+                    Tech & SaaS
+                </button>
+                <button onclick="filterCategory('Fintech & Apps')" class="cat-btn px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-slate-800 text-slate-300 hover:bg-slate-700 border border-slate-700 transition-all" data-cat="Fintech & Apps">
+                    Fintech & Apps
+                </button>
+                <button onclick="filterCategory('Editorial & Luxo')" class="cat-btn px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-slate-800 text-slate-300 hover:bg-slate-700 border border-slate-700 transition-all" data-cat="Editorial & Luxo">
+                    Editorial & Luxo
+                </button>
+                <button onclick="filterCategory('Criativo & Agência')" class="cat-btn px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-slate-800 text-slate-300 hover:bg-slate-700 border border-slate-700 transition-all" data-cat="Criativo & Agência">
+                    Criativo & Agência
+                </button>
+                <button onclick="filterCategory('Clássico & Acadêmico')" class="cat-btn px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-slate-800 text-slate-300 hover:bg-slate-700 border border-slate-700 transition-all" data-cat="Clássico & Acadêmico">
+                    Clássico & Acadêmico
+                </button>
+                <button onclick="filterCategory('Cyberpunk & Web3')" class="cat-btn px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-slate-800 text-slate-300 hover:bg-slate-700 border border-slate-700 transition-all" data-cat="Cyberpunk & Web3">
+                    Cyberpunk & Web3
+                </button>
+            </div>
+            
+            <div class="mt-4 max-w-md mx-auto">
+                <input type="text" id="fontSearch" oninput="searchPairings()" placeholder="Buscar por fonte (ex: Outfit, Playfair, Inter)..." class="w-full bg-slate-800/80 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white placeholder-slate-400 focus:outline-none focus:border-sky-500 transition-all shadow-inner">
+            </div>
+        </header>
+
+        <!-- Grid de Cards Tipográficos -->
+        <div id="pairingsGrid" class="space-y-8">
+
+            <!-- Card 1: Outfit + Inter -->
+            <div class="pairing-card glass-card rounded-2xl p-6 sm:p-8 transition-all" data-category="Tech & SaaS" data-fonts="outfit inter">
+                
+                <!-- Cabeçalho do Card -->
+                <div class="flex flex-wrap items-center justify-between gap-3 pb-4 mb-6 border-b border-slate-700/50">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs font-bold uppercase px-3 py-1 rounded-full bg-slate-800 border border-slate-600 text-sky-400">
+                            #01 • Tech & SaaS
+                        </span>
+                        <h2 class="text-xl font-bold text-white">
+                            <span class="text-sky-300">Outfit</span> <span class="text-slate-500 font-light">+</span> <span class="text-indigo-300">Inter</span>
+                        </h2>
+                    </div>
+                    
+                    <div class="flex items-center gap-2">
+                        <button onclick="copyAIPrompt('Outfit', 'Inter', 'Tech & SaaS', this)" class="bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-600 hover:to-indigo-700 text-white font-semibold py-2 px-4 rounded-xl text-xs shadow-md transition-all">
+                            📋 Copiar Prompt IA
+                        </button>
+                        <button onclick="copyCSSCode('Outfit', 'Inter', this)" class="bg-slate-800 hover:bg-slate-700 border border-slate-600 text-slate-200 font-semibold py-2 px-3 rounded-xl text-xs transition-all">
+                            💻 Copiar CSS
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Demonstração Tipográfica Real -->
+                <div class="bg-slate-900/60 rounded-xl p-6 sm:p-8 border border-slate-800/80 shadow-inner mb-4 space-y-4">
+                    
+                    <!-- Título Real -->
+                    <h3 class="text-2xl sm:text-3xl md:text-4xl text-white font-bold tracking-tight leading-tight" style="font-family: 'Outfit', sans-serif;">
+                        Acelerando a Próxima Fronteira Digital
+                    </h3>
+                    
+                    <!-- Subtítulo Real -->
+                    <h4 class="text-lg sm:text-xl text-sky-200/90 font-medium" style="font-family: 'Outfit', sans-serif;">
+                        Arquitetura escalável, design refinado e interfaces de alta performance.
+                    </h4>
+                    
+                    <!-- Texto Normal Real -->
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed" style="font-family: 'Inter', sans-serif;">
+                        Desenvolva experiências intuitivas e consistentes que conectam pessoas a propósitos claros através de tipografia geométrica equilibrada e legibilidade impecável em qualquer resolução.
+                    </p>
+                </div>
+
+                <!-- Rodapé com Metadados e Vibe -->
+                <div class="flex flex-wrap items-center justify-between text-xs text-slate-400 gap-2">
+                    <div>
+                        <span class="font-semibold text-slate-300">Vibe:</span> Moderno, limpo, startups de tecnologia e plataformas em nuvem.
+                    </div>
+                    <div class="flex items-center gap-4 text-slate-500">
+                        <span>Título: <strong class="text-slate-300 font-mono">Outfit</strong></span>
+                        <span>Corpo: <strong class="text-slate-300 font-mono">Inter</strong></span>
+                        <a href="https://fonts.google.com/specimen/Outfit" target="_blank" class="hover:text-sky-400 underline">Google Fonts ↗</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Card 2: Plus Jakarta Sans + DM Sans -->
+            <div class="pairing-card glass-card rounded-2xl p-6 sm:p-8 transition-all" data-category="Fintech & Apps" data-fonts="plus jakarta sans dm sans">
+                
+                <!-- Cabeçalho do Card -->
+                <div class="flex flex-wrap items-center justify-between gap-3 pb-4 mb-6 border-b border-slate-700/50">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs font-bold uppercase px-3 py-1 rounded-full bg-slate-800 border border-slate-600 text-sky-400">
+                            #02 • Fintech & Apps
+                        </span>
+                        <h2 class="text-xl font-bold text-white">
+                            <span class="text-sky-300">Plus Jakarta Sans</span> <span class="text-slate-500 font-light">+</span> <span class="text-indigo-300">DM Sans</span>
+                        </h2>
+                    </div>
+                    
+                    <div class="flex items-center gap-2">
+                        <button onclick="copyAIPrompt('Plus Jakarta Sans', 'DM Sans', 'Fintech & Apps', this)" class="bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-600 hover:to-indigo-700 text-white font-semibold py-2 px-4 rounded-xl text-xs shadow-md transition-all">
+                            📋 Copiar Prompt IA
+                        </button>
+                        <button onclick="copyCSSCode('Plus Jakarta Sans', 'DM Sans', this)" class="bg-slate-800 hover:bg-slate-700 border border-slate-600 text-slate-200 font-semibold py-2 px-3 rounded-xl text-xs transition-all">
+                            💻 Copiar CSS
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Demonstração Tipográfica Real -->
+                <div class="bg-slate-900/60 rounded-xl p-6 sm:p-8 border border-slate-800/80 shadow-inner mb-4 space-y-4">
+                    
+                    <!-- Título Real -->
+                    <h3 class="text-2xl sm:text-3xl md:text-4xl text-white font-bold tracking-tight leading-tight" style="font-family: 'Plus Jakarta Sans', sans-serif;">
+                        Finanças Transparentes e Inteligentes
+                    </h3>
+                    
+                    <!-- Subtítulo Real -->
+                    <h4 class="text-lg sm:text-xl text-sky-200/90 font-medium" style="font-family: 'Plus Jakarta Sans', sans-serif;">
+                        Gerencie seus ativos com segurança e agilidade em tempo real.
+                    </h4>
+                    
+                    <!-- Texto Normal Real -->
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed" style="font-family: 'DM Sans', sans-serif;">
+                        Uma combinação amigável e sólida com proporções abertas, ideal para painéis analíticos, tabelas de dados financeiros e aplicativos móveis de grande escala.
+                    </p>
+                </div>
+
+                <!-- Rodapé com Metadados e Vibe -->
+                <div class="flex flex-wrap items-center justify-between text-xs text-slate-400 gap-2">
+                    <div>
+                        <span class="font-semibold text-slate-300">Vibe:</span> Profissional, acolhedor e altamente confiável para bancos digitais.
+                    </div>
+                    <div class="flex items-center gap-4 text-slate-500">
+                        <span>Título: <strong class="text-slate-300 font-mono">Plus Jakarta Sans</strong></span>
+                        <span>Corpo: <strong class="text-slate-300 font-mono">DM Sans</strong></span>
+                        <a href="https://fonts.google.com/specimen/Plus+Jakarta+Sans" target="_blank" class="hover:text-sky-400 underline">Google Fonts ↗</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Card 3: Syne + Work Sans -->
+            <div class="pairing-card glass-card rounded-2xl p-6 sm:p-8 transition-all" data-category="Criativo & Agência" data-fonts="syne work sans">
+                
+                <!-- Cabeçalho do Card -->
+                <div class="flex flex-wrap items-center justify-between gap-3 pb-4 mb-6 border-b border-slate-700/50">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs font-bold uppercase px-3 py-1 rounded-full bg-slate-800 border border-slate-600 text-sky-400">
+                            #03 • Criativo & Agência
+                        </span>
+                        <h2 class="text-xl font-bold text-white">
+                            <span class="text-sky-300">Syne</span> <span class="text-slate-500 font-light">+</span> <span class="text-indigo-300">Work Sans</span>
+                        </h2>
+                    </div>
+                    
+                    <div class="flex items-center gap-2">
+                        <button onclick="copyAIPrompt('Syne', 'Work Sans', 'Criativo & Agência', this)" class="bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-600 hover:to-indigo-700 text-white font-semibold py-2 px-4 rounded-xl text-xs shadow-md transition-all">
+                            📋 Copiar Prompt IA
+                        </button>
+                        <button onclick="copyCSSCode('Syne', 'Work Sans', this)" class="bg-slate-800 hover:bg-slate-700 border border-slate-600 text-slate-200 font-semibold py-2 px-3 rounded-xl text-xs transition-all">
+                            💻 Copiar CSS
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Demonstração Tipográfica Real -->
+                <div class="bg-slate-900/60 rounded-xl p-6 sm:p-8 border border-slate-800/80 shadow-inner mb-4 space-y-4">
+                    
+                    <!-- Título Real -->
+                    <h3 class="text-2xl sm:text-3xl md:text-4xl text-white font-bold tracking-tight leading-tight" style="font-family: 'Syne', sans-serif;">
+                        Redefinindo os Limites da Estética Visual
+                    </h3>
+                    
+                    <!-- Subtítulo Real -->
+                    <h4 class="text-lg sm:text-xl text-sky-200/90 font-medium" style="font-family: 'Syne', sans-serif;">
+                        Design de vanguarda para marcas que recusam o lugar-comum.
+                    </h4>
+                    
+                    <!-- Texto Normal Real -->
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed" style="font-family: 'Work Sans', sans-serif;">
+                        A expressividade escultórica e dramática de Syne combinada à estabilidade neutra de Work Sans produz layouts provocativos e cheios de personalidade artística.
+                    </p>
+                </div>
+
+                <!-- Rodapé com Metadados e Vibe -->
+                <div class="flex flex-wrap items-center justify-between text-xs text-slate-400 gap-2">
+                    <div>
+                        <span class="font-semibold text-slate-300">Vibe:</span> Ousado, editorial de arte, estúdios de design e marcas de moda.
+                    </div>
+                    <div class="flex items-center gap-4 text-slate-500">
+                        <span>Título: <strong class="text-slate-300 font-mono">Syne</strong></span>
+                        <span>Corpo: <strong class="text-slate-300 font-mono">Work Sans</strong></span>
+                        <a href="https://fonts.google.com/specimen/Syne" target="_blank" class="hover:text-sky-400 underline">Google Fonts ↗</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Card 4: Space Grotesk + Space Mono -->
+            <div class="pairing-card glass-card rounded-2xl p-6 sm:p-8 transition-all" data-category="Cyberpunk & Web3" data-fonts="space grotesk space mono">
+                
+                <!-- Cabeçalho do Card -->
+                <div class="flex flex-wrap items-center justify-between gap-3 pb-4 mb-6 border-b border-slate-700/50">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs font-bold uppercase px-3 py-1 rounded-full bg-slate-800 border border-slate-600 text-sky-400">
+                            #04 • Cyberpunk & Web3
+                        </span>
+                        <h2 class="text-xl font-bold text-white">
+                            <span class="text-sky-300">Space Grotesk</span> <span class="text-slate-500 font-light">+</span> <span class="text-indigo-300">Space Mono</span>
+                        </h2>
+                    </div>
+                    
+                    <div class="flex items-center gap-2">
+                        <button onclick="copyAIPrompt('Space Grotesk', 'Space Mono', 'Cyberpunk & Web3', this)" class="bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-600 hover:to-indigo-700 text-white font-semibold py-2 px-4 rounded-xl text-xs shadow-md transition-all">
+                            📋 Copiar Prompt IA
+                        </button>
+                        <button onclick="copyCSSCode('Space Grotesk', 'Space Mono', this)" class="bg-slate-800 hover:bg-slate-700 border border-slate-600 text-slate-200 font-semibold py-2 px-3 rounded-xl text-xs transition-all">
+                            💻 Copiar CSS
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Demonstração Tipográfica Real -->
+                <div class="bg-slate-900/60 rounded-xl p-6 sm:p-8 border border-slate-800/80 shadow-inner mb-4 space-y-4">
+                    
+                    <!-- Título Real -->
+                    <h3 class="text-2xl sm:text-3xl md:text-4xl text-white font-bold tracking-tight leading-tight" style="font-family: 'Space Grotesk', sans-serif;">
+                        Protocolos Descentralizados & Redes Quânticas
+                    </h3>
+                    
+                    <!-- Subtítulo Real -->
+                    <h4 class="text-lg sm:text-xl text-sky-200/90 font-medium" style="font-family: 'Space Grotesk', sans-serif;">
+                        Criptografia avançada e nós autônomos na nova web.
+                    </h4>
+                    
+                    <!-- Texto Normal Real -->
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed" style="font-family: 'Space Mono', sans-serif;">
+                        Construído sobre o legado aeroespacial e da computação retrofuturista, este par tipográfico transmite precisão matemática e espírito hacker em cada linha de código.
+                    </p>
+                </div>
+
+                <!-- Rodapé com Metadados e Vibe -->
+                <div class="flex flex-wrap items-center justify-between text-xs text-slate-400 gap-2">
+                    <div>
+                        <span class="font-semibold text-slate-300">Vibe:</span> Cripto, blockchain, ferramentas para desenvolvedores e ficção científica.
+                    </div>
+                    <div class="flex items-center gap-4 text-slate-500">
+                        <span>Título: <strong class="text-slate-300 font-mono">Space Grotesk</strong></span>
+                        <span>Corpo: <strong class="text-slate-300 font-mono">Space Mono</strong></span>
+                        <a href="https://fonts.google.com/specimen/Space+Grotesk" target="_blank" class="hover:text-sky-400 underline">Google Fonts ↗</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Card 5: Playfair Display + Plus Jakarta Sans -->
+            <div class="pairing-card glass-card rounded-2xl p-6 sm:p-8 transition-all" data-category="Editorial & Luxo" data-fonts="playfair display plus jakarta sans">
+                
+                <!-- Cabeçalho do Card -->
+                <div class="flex flex-wrap items-center justify-between gap-3 pb-4 mb-6 border-b border-slate-700/50">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs font-bold uppercase px-3 py-1 rounded-full bg-slate-800 border border-slate-600 text-sky-400">
+                            #05 • Editorial & Luxo
+                        </span>
+                        <h2 class="text-xl font-bold text-white">
+                            <span class="text-sky-300">Playfair Display</span> <span class="text-slate-500 font-light">+</span> <span class="text-indigo-300">Plus Jakarta Sans</span>
+                        </h2>
+                    </div>
+                    
+                    <div class="flex items-center gap-2">
+                        <button onclick="copyAIPrompt('Playfair Display', 'Plus Jakarta Sans', 'Editorial & Luxo', this)" class="bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-600 hover:to-indigo-700 text-white font-semibold py-2 px-4 rounded-xl text-xs shadow-md transition-all">
+                            📋 Copiar Prompt IA
+                        </button>
+                        <button onclick="copyCSSCode('Playfair Display', 'Plus Jakarta Sans', this)" class="bg-slate-800 hover:bg-slate-700 border border-slate-600 text-slate-200 font-semibold py-2 px-3 rounded-xl text-xs transition-all">
+                            💻 Copiar CSS
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Demonstração Tipográfica Real -->
+                <div class="bg-slate-900/60 rounded-xl p-6 sm:p-8 border border-slate-800/80 shadow-inner mb-4 space-y-4">
+                    
+                    <!-- Título Real -->
+                    <h3 class="text-2xl sm:text-3xl md:text-4xl text-white font-bold tracking-tight leading-tight" style="font-family: 'Playfair Display', sans-serif;">
+                        A Nobreza dos Materiais & Detalhes Feitos à Mão
+                    </h3>
+                    
+                    <!-- Subtítulo Real -->
+                    <h4 class="text-lg sm:text-xl text-sky-200/90 font-medium" style="font-family: 'Playfair Display', sans-serif;">
+                        A elegância clássica reinventada para o mundo contemporâneo.
+                    </h4>
+                    
+                    <!-- Texto Normal Real -->
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed" style="font-family: 'Plus Jakarta Sans', sans-serif;">
+                        As serifas delicadas e contrastadas de Playfair Display criam impacto sofisticado nos títulos, enquanto o corpo sem serifa mantém a leitura leve, fluida e relaxante.
+                    </p>
+                </div>
+
+                <!-- Rodapé com Metadados e Vibe -->
+                <div class="flex flex-wrap items-center justify-between text-xs text-slate-400 gap-2">
+                    <div>
+                        <span class="font-semibold text-slate-300">Vibe:</span> Hotelaria de alto padrão, cosméticos de luxo, vinhos e revistas.
+                    </div>
+                    <div class="flex items-center gap-4 text-slate-500">
+                        <span>Título: <strong class="text-slate-300 font-mono">Playfair Display</strong></span>
+                        <span>Corpo: <strong class="text-slate-300 font-mono">Plus Jakarta Sans</strong></span>
+                        <a href="https://fonts.google.com/specimen/Playfair+Display" target="_blank" class="hover:text-sky-400 underline">Google Fonts ↗</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Card 6: Cinzel + Cormorant Garamond -->
+            <div class="pairing-card glass-card rounded-2xl p-6 sm:p-8 transition-all" data-category="Editorial & Luxo" data-fonts="cinzel cormorant garamond">
+                
+                <!-- Cabeçalho do Card -->
+                <div class="flex flex-wrap items-center justify-between gap-3 pb-4 mb-6 border-b border-slate-700/50">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs font-bold uppercase px-3 py-1 rounded-full bg-slate-800 border border-slate-600 text-sky-400">
+                            #06 • Editorial & Luxo
+                        </span>
+                        <h2 class="text-xl font-bold text-white">
+                            <span class="text-sky-300">Cinzel</span> <span class="text-slate-500 font-light">+</span> <span class="text-indigo-300">Cormorant Garamond</span>
+                        </h2>
+                    </div>
+                    
+                    <div class="flex items-center gap-2">
+                        <button onclick="copyAIPrompt('Cinzel', 'Cormorant Garamond', 'Editorial & Luxo', this)" class="bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-600 hover:to-indigo-700 text-white font-semibold py-2 px-4 rounded-xl text-xs shadow-md transition-all">
+                            📋 Copiar Prompt IA
+                        </button>
+                        <button onclick="copyCSSCode('Cinzel', 'Cormorant Garamond', this)" class="bg-slate-800 hover:bg-slate-700 border border-slate-600 text-slate-200 font-semibold py-2 px-3 rounded-xl text-xs transition-all">
+                            💻 Copiar CSS
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Demonstração Tipográfica Real -->
+                <div class="bg-slate-900/60 rounded-xl p-6 sm:p-8 border border-slate-800/80 shadow-inner mb-4 space-y-4">
+                    
+                    <!-- Título Real -->
+                    <h3 class="text-2xl sm:text-3xl md:text-4xl text-white font-bold tracking-tight leading-tight" style="font-family: 'Cinzel', sans-serif;">
+                        Tradição Eterna & Arquitetura Imperial
+                    </h3>
+                    
+                    <!-- Subtítulo Real -->
+                    <h4 class="text-lg sm:text-xl text-sky-200/90 font-medium" style="font-family: 'Cinzel', sans-serif;">
+                        Monumentalidade lapidada na proporção clássica romana.
+                    </h4>
+                    
+                    <!-- Texto Normal Real -->
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed" style="font-family: 'Cormorant Garamond', sans-serif;">
+                        Inspirado em inscrições em pedra do Império Romano, este duo puramente serifado carrega gravitas histórica e refinamento estético sem igual.
+                    </p>
+                </div>
+
+                <!-- Rodapé com Metadados e Vibe -->
+                <div class="flex flex-wrap items-center justify-between text-xs text-slate-400 gap-2">
+                    <div>
+                        <span class="font-semibold text-slate-300">Vibe:</span> Joalheria fina, patrimônio histórico, cerimônias e alta-costura.
+                    </div>
+                    <div class="flex items-center gap-4 text-slate-500">
+                        <span>Título: <strong class="text-slate-300 font-mono">Cinzel</strong></span>
+                        <span>Corpo: <strong class="text-slate-300 font-mono">Cormorant Garamond</strong></span>
+                        <a href="https://fonts.google.com/specimen/Cinzel" target="_blank" class="hover:text-sky-400 underline">Google Fonts ↗</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Card 7: Sora + Readex Pro -->
+            <div class="pairing-card glass-card rounded-2xl p-6 sm:p-8 transition-all" data-category="Tech & SaaS" data-fonts="sora readex pro">
+                
+                <!-- Cabeçalho do Card -->
+                <div class="flex flex-wrap items-center justify-between gap-3 pb-4 mb-6 border-b border-slate-700/50">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs font-bold uppercase px-3 py-1 rounded-full bg-slate-800 border border-slate-600 text-sky-400">
+                            #07 • Tech & SaaS
+                        </span>
+                        <h2 class="text-xl font-bold text-white">
+                            <span class="text-sky-300">Sora</span> <span class="text-slate-500 font-light">+</span> <span class="text-indigo-300">Readex Pro</span>
+                        </h2>
+                    </div>
+                    
+                    <div class="flex items-center gap-2">
+                        <button onclick="copyAIPrompt('Sora', 'Readex Pro', 'Tech & SaaS', this)" class="bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-600 hover:to-indigo-700 text-white font-semibold py-2 px-4 rounded-xl text-xs shadow-md transition-all">
+                            📋 Copiar Prompt IA
+                        </button>
+                        <button onclick="copyCSSCode('Sora', 'Readex Pro', this)" class="bg-slate-800 hover:bg-slate-700 border border-slate-600 text-slate-200 font-semibold py-2 px-3 rounded-xl text-xs transition-all">
+                            💻 Copiar CSS
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Demonstração Tipográfica Real -->
+                <div class="bg-slate-900/60 rounded-xl p-6 sm:p-8 border border-slate-800/80 shadow-inner mb-4 space-y-4">
+                    
+                    <!-- Título Real -->
+                    <h3 class="text-2xl sm:text-3xl md:text-4xl text-white font-bold tracking-tight leading-tight" style="font-family: 'Sora', sans-serif;">
+                        Interfaces Humanizadas para Inteligência Artificial
+                    </h3>
+                    
+                    <!-- Subtítulo Real -->
+                    <h4 class="text-lg sm:text-xl text-sky-200/90 font-medium" style="font-family: 'Sora', sans-serif;">
+                        Simplicidade orgânica no diálogo entre humanos e modelos neurais.
+                    </h4>
+                    
+                    <!-- Texto Normal Real -->
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed" style="font-family: 'Readex Pro', sans-serif;">
+                        Com cantos arredondados sutis e construção geométrica, Sora e Readex Pro formam um par futurista caloroso, excelente para chatbots, assistentes virtuais e Web Apps.
+                    </p>
+                </div>
+
+                <!-- Rodapé com Metadados e Vibe -->
+                <div class="flex flex-wrap items-center justify-between text-xs text-slate-400 gap-2">
+                    <div>
+                        <span class="font-semibold text-slate-300">Vibe:</span> IA generativa, biotecnologia e interfaces conversacionais.
+                    </div>
+                    <div class="flex items-center gap-4 text-slate-500">
+                        <span>Título: <strong class="text-slate-300 font-mono">Sora</strong></span>
+                        <span>Corpo: <strong class="text-slate-300 font-mono">Readex Pro</strong></span>
+                        <a href="https://fonts.google.com/specimen/Sora" target="_blank" class="hover:text-sky-400 underline">Google Fonts ↗</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Card 8: Lexend + Inter -->
+            <div class="pairing-card glass-card rounded-2xl p-6 sm:p-8 transition-all" data-category="Produtividade & Dashboard" data-fonts="lexend inter">
+                
+                <!-- Cabeçalho do Card -->
+                <div class="flex flex-wrap items-center justify-between gap-3 pb-4 mb-6 border-b border-slate-700/50">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs font-bold uppercase px-3 py-1 rounded-full bg-slate-800 border border-slate-600 text-sky-400">
+                            #08 • Produtividade & Dashboard
+                        </span>
+                        <h2 class="text-xl font-bold text-white">
+                            <span class="text-sky-300">Lexend</span> <span class="text-slate-500 font-light">+</span> <span class="text-indigo-300">Inter</span>
+                        </h2>
+                    </div>
+                    
+                    <div class="flex items-center gap-2">
+                        <button onclick="copyAIPrompt('Lexend', 'Inter', 'Produtividade & Dashboard', this)" class="bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-600 hover:to-indigo-700 text-white font-semibold py-2 px-4 rounded-xl text-xs shadow-md transition-all">
+                            📋 Copiar Prompt IA
+                        </button>
+                        <button onclick="copyCSSCode('Lexend', 'Inter', this)" class="bg-slate-800 hover:bg-slate-700 border border-slate-600 text-slate-200 font-semibold py-2 px-3 rounded-xl text-xs transition-all">
+                            💻 Copiar CSS
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Demonstração Tipográfica Real -->
+                <div class="bg-slate-900/60 rounded-xl p-6 sm:p-8 border border-slate-800/80 shadow-inner mb-4 space-y-4">
+                    
+                    <!-- Título Real -->
+                    <h3 class="text-2xl sm:text-3xl md:text-4xl text-white font-bold tracking-tight leading-tight" style="font-family: 'Lexend', sans-serif;">
+                        Velocidade Cognitiva e Foco Total
+                    </h3>
+                    
+                    <!-- Subtítulo Real -->
+                    <h4 class="text-lg sm:text-xl text-sky-200/90 font-medium" style="font-family: 'Lexend', sans-serif;">
+                        Tipografia projetada cientificamente para reduzir a fadiga de leitura.
+                    </h4>
+                    
+                    <!-- Texto Normal Real -->
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed" style="font-family: 'Inter', sans-serif;">
+                        A família Lexend foi desenvolvida com base em pesquisas oftalmológicas para acelerar o reconhecimento de caracteres, tornando o trabalho com dados mais produtivo.
+                    </p>
+                </div>
+
+                <!-- Rodapé com Metadados e Vibe -->
+                <div class="flex flex-wrap items-center justify-between text-xs text-slate-400 gap-2">
+                    <div>
+                        <span class="font-semibold text-slate-300">Vibe:</span> SaaS de produtividade, CRMs, planilhas e gerenciadores de projetos.
+                    </div>
+                    <div class="flex items-center gap-4 text-slate-500">
+                        <span>Título: <strong class="text-slate-300 font-mono">Lexend</strong></span>
+                        <span>Corpo: <strong class="text-slate-300 font-mono">Inter</strong></span>
+                        <a href="https://fonts.google.com/specimen/Lexend" target="_blank" class="hover:text-sky-400 underline">Google Fonts ↗</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Card 9: Fraunces + Inter -->
+            <div class="pairing-card glass-card rounded-2xl p-6 sm:p-8 transition-all" data-category="Criativo & Vintage" data-fonts="fraunces inter">
+                
+                <!-- Cabeçalho do Card -->
+                <div class="flex flex-wrap items-center justify-between gap-3 pb-4 mb-6 border-b border-slate-700/50">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs font-bold uppercase px-3 py-1 rounded-full bg-slate-800 border border-slate-600 text-sky-400">
+                            #09 • Criativo & Vintage
+                        </span>
+                        <h2 class="text-xl font-bold text-white">
+                            <span class="text-sky-300">Fraunces</span> <span class="text-slate-500 font-light">+</span> <span class="text-indigo-300">Inter</span>
+                        </h2>
+                    </div>
+                    
+                    <div class="flex items-center gap-2">
+                        <button onclick="copyAIPrompt('Fraunces', 'Inter', 'Criativo & Vintage', this)" class="bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-600 hover:to-indigo-700 text-white font-semibold py-2 px-4 rounded-xl text-xs shadow-md transition-all">
+                            📋 Copiar Prompt IA
+                        </button>
+                        <button onclick="copyCSSCode('Fraunces', 'Inter', this)" class="bg-slate-800 hover:bg-slate-700 border border-slate-600 text-slate-200 font-semibold py-2 px-3 rounded-xl text-xs transition-all">
+                            💻 Copiar CSS
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Demonstração Tipográfica Real -->
+                <div class="bg-slate-900/60 rounded-xl p-6 sm:p-8 border border-slate-800/80 shadow-inner mb-4 space-y-4">
+                    
+                    <!-- Título Real -->
+                    <h3 class="text-2xl sm:text-3xl md:text-4xl text-white font-bold tracking-tight leading-tight" style="font-family: 'Fraunces', sans-serif;">
+                        Cafés Especiais & Torrefação Artesanal
+                    </h3>
+                    
+                    <!-- Subtítulo Real -->
+                    <h4 class="text-lg sm:text-xl text-sky-200/90 font-medium" style="font-family: 'Fraunces', sans-serif;">
+                        Sabores autênticos cultivados com paixão e respeito à terra.
+                    </h4>
+                    
+                    <!-- Texto Normal Real -->
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed" style="font-family: 'Inter', sans-serif;">
+                        Fraunces traz serifas expressivas e orgânicas inspiradas no design de livros e rótulos do início do século XX, enquanto Inter ancora o layout na precisão digital.
+                    </p>
+                </div>
+
+                <!-- Rodapé com Metadados e Vibe -->
+                <div class="flex flex-wrap items-center justify-between text-xs text-slate-400 gap-2">
+                    <div>
+                        <span class="font-semibold text-slate-300">Vibe:</span> Gastronomia artesanal, cafeterias, bebidas botânicas e cervejarias.
+                    </div>
+                    <div class="flex items-center gap-4 text-slate-500">
+                        <span>Título: <strong class="text-slate-300 font-mono">Fraunces</strong></span>
+                        <span>Corpo: <strong class="text-slate-300 font-mono">Inter</strong></span>
+                        <a href="https://fonts.google.com/specimen/Fraunces" target="_blank" class="hover:text-sky-400 underline">Google Fonts ↗</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Card 10: Unbounded + Spline Sans -->
+            <div class="pairing-card glass-card rounded-2xl p-6 sm:p-8 transition-all" data-category="Cyberpunk & Web3" data-fonts="unbounded spline sans">
+                
+                <!-- Cabeçalho do Card -->
+                <div class="flex flex-wrap items-center justify-between gap-3 pb-4 mb-6 border-b border-slate-700/50">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs font-bold uppercase px-3 py-1 rounded-full bg-slate-800 border border-slate-600 text-sky-400">
+                            #10 • Cyberpunk & Web3
+                        </span>
+                        <h2 class="text-xl font-bold text-white">
+                            <span class="text-sky-300">Unbounded</span> <span class="text-slate-500 font-light">+</span> <span class="text-indigo-300">Spline Sans</span>
+                        </h2>
+                    </div>
+                    
+                    <div class="flex items-center gap-2">
+                        <button onclick="copyAIPrompt('Unbounded', 'Spline Sans', 'Cyberpunk & Web3', this)" class="bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-600 hover:to-indigo-700 text-white font-semibold py-2 px-4 rounded-xl text-xs shadow-md transition-all">
+                            📋 Copiar Prompt IA
+                        </button>
+                        <button onclick="copyCSSCode('Unbounded', 'Spline Sans', this)" class="bg-slate-800 hover:bg-slate-700 border border-slate-600 text-slate-200 font-semibold py-2 px-3 rounded-xl text-xs transition-all">
+                            💻 Copiar CSS
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Demonstração Tipográfica Real -->
+                <div class="bg-slate-900/60 rounded-xl p-6 sm:p-8 border border-slate-800/80 shadow-inner mb-4 space-y-4">
+                    
+                    <!-- Título Real -->
+                    <h3 class="text-2xl sm:text-3xl md:text-4xl text-white font-bold tracking-tight leading-tight" style="font-family: 'Unbounded', sans-serif;">
+                        Cultura Urbana & Comunidades Digitais
+                    </h3>
+                    
+                    <!-- Subtítulo Real -->
+                    <h4 class="text-lg sm:text-xl text-sky-200/90 font-medium" style="font-family: 'Unbounded', sans-serif;">
+                        Sem fronteiras para a imaginação e a colaboração global.
+                    </h4>
+                    
+                    <!-- Texto Normal Real -->
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed" style="font-family: 'Spline Sans', sans-serif;">
+                        Unbounded é uma das fontes mais audaciosas do Google Fonts: ultra-expandida, geométrica e magnética, perfeita para manchetes de alto impacto e posters interativos.
+                    </p>
+                </div>
+
+                <!-- Rodapé com Metadados e Vibe -->
+                <div class="flex flex-wrap items-center justify-between text-xs text-slate-400 gap-2">
+                    <div>
+                        <span class="font-semibold text-slate-300">Vibe:</span> Eventos de música eletrônica, games, festivais e streaming.
+                    </div>
+                    <div class="flex items-center gap-4 text-slate-500">
+                        <span>Título: <strong class="text-slate-300 font-mono">Unbounded</strong></span>
+                        <span>Corpo: <strong class="text-slate-300 font-mono">Spline Sans</strong></span>
+                        <a href="https://fonts.google.com/specimen/Unbounded" target="_blank" class="hover:text-sky-400 underline">Google Fonts ↗</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Card 11: Montserrat + Open Sans -->
+            <div class="pairing-card glass-card rounded-2xl p-6 sm:p-8 transition-all" data-category="Corporativo & Institucional" data-fonts="montserrat open sans">
+                
+                <!-- Cabeçalho do Card -->
+                <div class="flex flex-wrap items-center justify-between gap-3 pb-4 mb-6 border-b border-slate-700/50">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs font-bold uppercase px-3 py-1 rounded-full bg-slate-800 border border-slate-600 text-sky-400">
+                            #11 • Corporativo & Institucional
+                        </span>
+                        <h2 class="text-xl font-bold text-white">
+                            <span class="text-sky-300">Montserrat</span> <span class="text-slate-500 font-light">+</span> <span class="text-indigo-300">Open Sans</span>
+                        </h2>
+                    </div>
+                    
+                    <div class="flex items-center gap-2">
+                        <button onclick="copyAIPrompt('Montserrat', 'Open Sans', 'Corporativo & Institucional', this)" class="bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-600 hover:to-indigo-700 text-white font-semibold py-2 px-4 rounded-xl text-xs shadow-md transition-all">
+                            📋 Copiar Prompt IA
+                        </button>
+                        <button onclick="copyCSSCode('Montserrat', 'Open Sans', this)" class="bg-slate-800 hover:bg-slate-700 border border-slate-600 text-slate-200 font-semibold py-2 px-3 rounded-xl text-xs transition-all">
+                            💻 Copiar CSS
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Demonstração Tipográfica Real -->
+                <div class="bg-slate-900/60 rounded-xl p-6 sm:p-8 border border-slate-800/80 shadow-inner mb-4 space-y-4">
+                    
+                    <!-- Título Real -->
+                    <h3 class="text-2xl sm:text-3xl md:text-4xl text-white font-bold tracking-tight leading-tight" style="font-family: 'Montserrat', sans-serif;">
+                        Compromisso com o Futuro Sustentável
+                    </h3>
+                    
+                    <!-- Subtítulo Real -->
+                    <h4 class="text-lg sm:text-xl text-sky-200/90 font-medium" style="font-family: 'Montserrat', sans-serif;">
+                        Governança corporativa, ética e transparência em todas as ações.
+                    </h4>
+                    
+                    <!-- Texto Normal Real -->
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed" style="font-family: 'Open Sans', sans-serif;">
+                        Um dos pares mais consagrados da web moderna. A majestade geométrica de Montserrat e a neutralidade cristalina de Open Sans garantem aceitação corporativa universal.
+                    </p>
+                </div>
+
+                <!-- Rodapé com Metadados e Vibe -->
+                <div class="flex flex-wrap items-center justify-between text-xs text-slate-400 gap-2">
+                    <div>
+                        <span class="font-semibold text-slate-300">Vibe:</span> Relatórios anuais, portais governamentais, consultorias e ONGs.
+                    </div>
+                    <div class="flex items-center gap-4 text-slate-500">
+                        <span>Título: <strong class="text-slate-300 font-mono">Montserrat</strong></span>
+                        <span>Corpo: <strong class="text-slate-300 font-mono">Open Sans</strong></span>
+                        <a href="https://fonts.google.com/specimen/Montserrat" target="_blank" class="hover:text-sky-400 underline">Google Fonts ↗</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Card 12: Poppins + Roboto -->
+            <div class="pairing-card glass-card rounded-2xl p-6 sm:p-8 transition-all" data-category="Fintech & Apps" data-fonts="poppins roboto">
+                
+                <!-- Cabeçalho do Card -->
+                <div class="flex flex-wrap items-center justify-between gap-3 pb-4 mb-6 border-b border-slate-700/50">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs font-bold uppercase px-3 py-1 rounded-full bg-slate-800 border border-slate-600 text-sky-400">
+                            #12 • Fintech & Apps
+                        </span>
+                        <h2 class="text-xl font-bold text-white">
+                            <span class="text-sky-300">Poppins</span> <span class="text-slate-500 font-light">+</span> <span class="text-indigo-300">Roboto</span>
+                        </h2>
+                    </div>
+                    
+                    <div class="flex items-center gap-2">
+                        <button onclick="copyAIPrompt('Poppins', 'Roboto', 'Fintech & Apps', this)" class="bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-600 hover:to-indigo-700 text-white font-semibold py-2 px-4 rounded-xl text-xs shadow-md transition-all">
+                            📋 Copiar Prompt IA
+                        </button>
+                        <button onclick="copyCSSCode('Poppins', 'Roboto', this)" class="bg-slate-800 hover:bg-slate-700 border border-slate-600 text-slate-200 font-semibold py-2 px-3 rounded-xl text-xs transition-all">
+                            💻 Copiar CSS
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Demonstração Tipográfica Real -->
+                <div class="bg-slate-900/60 rounded-xl p-6 sm:p-8 border border-slate-800/80 shadow-inner mb-4 space-y-4">
+                    
+                    <!-- Título Real -->
+                    <h3 class="text-2xl sm:text-3xl md:text-4xl text-white font-bold tracking-tight leading-tight" style="font-family: 'Poppins', sans-serif;">
+                        Aprenda no Seu Ritmo, Onde Quiser
+                    </h3>
+                    
+                    <!-- Subtítulo Real -->
+                    <h4 class="text-lg sm:text-xl text-sky-200/90 font-medium" style="font-family: 'Poppins', sans-serif;">
+                        Cursos interativos criados pelos maiores especialistas do mercado.
+                    </h4>
+                    
+                    <!-- Texto Normal Real -->
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed" style="font-family: 'Roboto', sans-serif;">
+                        As formas perfeitamente circulares de Poppins transmitem alegria e receptividade imediata, enquanto Roboto cuida dos textos longos com equilíbrio comprovado.
+                    </p>
+                </div>
+
+                <!-- Rodapé com Metadados e Vibe -->
+                <div class="flex flex-wrap items-center justify-between text-xs text-slate-400 gap-2">
+                    <div>
+                        <span class="font-semibold text-slate-300">Vibe:</span> EdTech, aplicativos de bem-estar, delivery e comunidades de aprendizado.
+                    </div>
+                    <div class="flex items-center gap-4 text-slate-500">
+                        <span>Título: <strong class="text-slate-300 font-mono">Poppins</strong></span>
+                        <span>Corpo: <strong class="text-slate-300 font-mono">Roboto</strong></span>
+                        <a href="https://fonts.google.com/specimen/Poppins" target="_blank" class="hover:text-sky-400 underline">Google Fonts ↗</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Card 13: Archivo Black + Archivo -->
+            <div class="pairing-card glass-card rounded-2xl p-6 sm:p-8 transition-all" data-category="Criativo & Agência" data-fonts="archivo black archivo">
+                
+                <!-- Cabeçalho do Card -->
+                <div class="flex flex-wrap items-center justify-between gap-3 pb-4 mb-6 border-b border-slate-700/50">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs font-bold uppercase px-3 py-1 rounded-full bg-slate-800 border border-slate-600 text-sky-400">
+                            #13 • Criativo & Agência
+                        </span>
+                        <h2 class="text-xl font-bold text-white">
+                            <span class="text-sky-300">Archivo Black</span> <span class="text-slate-500 font-light">+</span> <span class="text-indigo-300">Archivo</span>
+                        </h2>
+                    </div>
+                    
+                    <div class="flex items-center gap-2">
+                        <button onclick="copyAIPrompt('Archivo Black', 'Archivo', 'Criativo & Agência', this)" class="bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-600 hover:to-indigo-700 text-white font-semibold py-2 px-4 rounded-xl text-xs shadow-md transition-all">
+                            📋 Copiar Prompt IA
+                        </button>
+                        <button onclick="copyCSSCode('Archivo Black', 'Archivo', this)" class="bg-slate-800 hover:bg-slate-700 border border-slate-600 text-slate-200 font-semibold py-2 px-3 rounded-xl text-xs transition-all">
+                            💻 Copiar CSS
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Demonstração Tipográfica Real -->
+                <div class="bg-slate-900/60 rounded-xl p-6 sm:p-8 border border-slate-800/80 shadow-inner mb-4 space-y-4">
+                    
+                    <!-- Título Real -->
+                    <h3 class="text-2xl sm:text-3xl md:text-4xl text-white font-bold tracking-tight leading-tight" style="font-family: 'Archivo Black', sans-serif;">
+                        ENERGIA BRUTA & DESEMPENHO ATLÉTICO
+                    </h3>
+                    
+                    <!-- Subtítulo Real -->
+                    <h4 class="text-lg sm:text-xl text-sky-200/90 font-medium" style="font-family: 'Archivo Black', sans-serif;">
+                        Superando recordes com tecnologia têxtil de absorção de impacto.
+                    </h4>
+                    
+                    <!-- Texto Normal Real -->
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed" style="font-family: 'Archivo', sans-serif;">
+                        O peso pesado Archivo Black cria um impacto brutal e urbano, reminiscente de tipografia de outdoors esportivos, cartazes tipográficos e equipamentos de treino.
+                    </p>
+                </div>
+
+                <!-- Rodapé com Metadados e Vibe -->
+                <div class="flex flex-wrap items-center justify-between text-xs text-slate-400 gap-2">
+                    <div>
+                        <span class="font-semibold text-slate-300">Vibe:</span> Moda esportiva, academias, eventos de corrida e streetwear.
+                    </div>
+                    <div class="flex items-center gap-4 text-slate-500">
+                        <span>Título: <strong class="text-slate-300 font-mono">Archivo Black</strong></span>
+                        <span>Corpo: <strong class="text-slate-300 font-mono">Archivo</strong></span>
+                        <a href="https://fonts.google.com/specimen/Archivo+Black" target="_blank" class="hover:text-sky-400 underline">Google Fonts ↗</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Card 14: Bricolage Grotesque + Manrope -->
+            <div class="pairing-card glass-card rounded-2xl p-6 sm:p-8 transition-all" data-category="Tech & SaaS" data-fonts="bricolage grotesque manrope">
+                
+                <!-- Cabeçalho do Card -->
+                <div class="flex flex-wrap items-center justify-between gap-3 pb-4 mb-6 border-b border-slate-700/50">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs font-bold uppercase px-3 py-1 rounded-full bg-slate-800 border border-slate-600 text-sky-400">
+                            #14 • Tech & SaaS
+                        </span>
+                        <h2 class="text-xl font-bold text-white">
+                            <span class="text-sky-300">Bricolage Grotesque</span> <span class="text-slate-500 font-light">+</span> <span class="text-indigo-300">Manrope</span>
+                        </h2>
+                    </div>
+                    
+                    <div class="flex items-center gap-2">
+                        <button onclick="copyAIPrompt('Bricolage Grotesque', 'Manrope', 'Tech & SaaS', this)" class="bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-600 hover:to-indigo-700 text-white font-semibold py-2 px-4 rounded-xl text-xs shadow-md transition-all">
+                            📋 Copiar Prompt IA
+                        </button>
+                        <button onclick="copyCSSCode('Bricolage Grotesque', 'Manrope', this)" class="bg-slate-800 hover:bg-slate-700 border border-slate-600 text-slate-200 font-semibold py-2 px-3 rounded-xl text-xs transition-all">
+                            💻 Copiar CSS
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Demonstração Tipográfica Real -->
+                <div class="bg-slate-900/60 rounded-xl p-6 sm:p-8 border border-slate-800/80 shadow-inner mb-4 space-y-4">
+                    
+                    <!-- Título Real -->
+                    <h3 class="text-2xl sm:text-3xl md:text-4xl text-white font-bold tracking-tight leading-tight" style="font-family: 'Bricolage Grotesque', sans-serif;">
+                        A Nova Onda do Design de Software
+                    </h3>
+                    
+                    <!-- Subtítulo Real -->
+                    <h4 class="text-lg sm:text-xl text-sky-200/90 font-medium" style="font-family: 'Bricolage Grotesque', sans-serif;">
+                        Ferramentas divertidas para criadores de conteúdo e podcasters.
+                    </h4>
+                    
+                    <!-- Texto Normal Real -->
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed" style="font-family: 'Manrope', sans-serif;">
+                        Bricolage Grotesque mescla o rigor helvético com toques excêntricos franceses e ingleses, resultando em um visual moderno com muita alma e frescor.
+                    </p>
+                </div>
+
+                <!-- Rodapé com Metadados e Vibe -->
+                <div class="flex flex-wrap items-center justify-between text-xs text-slate-400 gap-2">
+                    <div>
+                        <span class="font-semibold text-slate-300">Vibe:</span> Ferramentas de IA para criadores, newsletters, SaaS de áudio e vídeo.
+                    </div>
+                    <div class="flex items-center gap-4 text-slate-500">
+                        <span>Título: <strong class="text-slate-300 font-mono">Bricolage Grotesque</strong></span>
+                        <span>Corpo: <strong class="text-slate-300 font-mono">Manrope</strong></span>
+                        <a href="https://fonts.google.com/specimen/Bricolage+Grotesque" target="_blank" class="hover:text-sky-400 underline">Google Fonts ↗</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Card 15: Merriweather + Source Sans 3 -->
+            <div class="pairing-card glass-card rounded-2xl p-6 sm:p-8 transition-all" data-category="Clássico & Acadêmico" data-fonts="merriweather source sans 3">
+                
+                <!-- Cabeçalho do Card -->
+                <div class="flex flex-wrap items-center justify-between gap-3 pb-4 mb-6 border-b border-slate-700/50">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs font-bold uppercase px-3 py-1 rounded-full bg-slate-800 border border-slate-600 text-sky-400">
+                            #15 • Clássico & Acadêmico
+                        </span>
+                        <h2 class="text-xl font-bold text-white">
+                            <span class="text-sky-300">Merriweather</span> <span class="text-slate-500 font-light">+</span> <span class="text-indigo-300">Source Sans 3</span>
+                        </h2>
+                    </div>
+                    
+                    <div class="flex items-center gap-2">
+                        <button onclick="copyAIPrompt('Merriweather', 'Source Sans 3', 'Clássico & Acadêmico', this)" class="bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-600 hover:to-indigo-700 text-white font-semibold py-2 px-4 rounded-xl text-xs shadow-md transition-all">
+                            📋 Copiar Prompt IA
+                        </button>
+                        <button onclick="copyCSSCode('Merriweather', 'Source Sans 3', this)" class="bg-slate-800 hover:bg-slate-700 border border-slate-600 text-slate-200 font-semibold py-2 px-3 rounded-xl text-xs transition-all">
+                            💻 Copiar CSS
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Demonstração Tipográfica Real -->
+                <div class="bg-slate-900/60 rounded-xl p-6 sm:p-8 border border-slate-800/80 shadow-inner mb-4 space-y-4">
+                    
+                    <!-- Título Real -->
+                    <h3 class="text-2xl sm:text-3xl md:text-4xl text-white font-bold tracking-tight leading-tight" style="font-family: 'Merriweather', sans-serif;">
+                        Pesquisas Clínicas e Avanços em Medicina Genômica
+                    </h3>
+                    
+                    <!-- Subtítulo Real -->
+                    <h4 class="text-lg sm:text-xl text-sky-200/90 font-medium" style="font-family: 'Merriweather', sans-serif;">
+                        Evidências empíricas sobre a eficácia de terapias direcionadas.
+                    </h4>
+                    
+                    <!-- Texto Normal Real -->
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed" style="font-family: 'Source Sans 3', sans-serif;">
+                        Projetada especificamente para telas por Eben Sorkin, Merriweather é incrivelmente confortável de ler em títulos, casando perfeitamente com a família Source Sans.
+                    </p>
+                </div>
+
+                <!-- Rodapé com Metadados e Vibe -->
+                <div class="flex flex-wrap items-center justify-between text-xs text-slate-400 gap-2">
+                    <div>
+                        <span class="font-semibold text-slate-300">Vibe:</span> Periódicos científicos, faculdades de medicina, advocacia e think tanks.
+                    </div>
+                    <div class="flex items-center gap-4 text-slate-500">
+                        <span>Título: <strong class="text-slate-300 font-mono">Merriweather</strong></span>
+                        <span>Corpo: <strong class="text-slate-300 font-mono">Source Sans 3</strong></span>
+                        <a href="https://fonts.google.com/specimen/Merriweather" target="_blank" class="hover:text-sky-400 underline">Google Fonts ↗</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Card 16: DM Serif Display + DM Sans -->
+            <div class="pairing-card glass-card rounded-2xl p-6 sm:p-8 transition-all" data-category="Editorial & Luxo" data-fonts="dm serif display dm sans">
+                
+                <!-- Cabeçalho do Card -->
+                <div class="flex flex-wrap items-center justify-between gap-3 pb-4 mb-6 border-b border-slate-700/50">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs font-bold uppercase px-3 py-1 rounded-full bg-slate-800 border border-slate-600 text-sky-400">
+                            #16 • Editorial & Luxo
+                        </span>
+                        <h2 class="text-xl font-bold text-white">
+                            <span class="text-sky-300">DM Serif Display</span> <span class="text-slate-500 font-light">+</span> <span class="text-indigo-300">DM Sans</span>
+                        </h2>
+                    </div>
+                    
+                    <div class="flex items-center gap-2">
+                        <button onclick="copyAIPrompt('DM Serif Display', 'DM Sans', 'Editorial & Luxo', this)" class="bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-600 hover:to-indigo-700 text-white font-semibold py-2 px-4 rounded-xl text-xs shadow-md transition-all">
+                            📋 Copiar Prompt IA
+                        </button>
+                        <button onclick="copyCSSCode('DM Serif Display', 'DM Sans', this)" class="bg-slate-800 hover:bg-slate-700 border border-slate-600 text-slate-200 font-semibold py-2 px-3 rounded-xl text-xs transition-all">
+                            💻 Copiar CSS
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Demonstração Tipográfica Real -->
+                <div class="bg-slate-900/60 rounded-xl p-6 sm:p-8 border border-slate-800/80 shadow-inner mb-4 space-y-4">
+                    
+                    <!-- Título Real -->
+                    <h3 class="text-2xl sm:text-3xl md:text-4xl text-white font-bold tracking-tight leading-tight" style="font-family: 'DM Serif Display', sans-serif;">
+                        Narrativas Contemporâneas & Grandes Reportagens
+                    </h3>
+                    
+                    <!-- Subtítulo Real -->
+                    <h4 class="text-lg sm:text-xl text-sky-200/90 font-medium" style="font-family: 'DM Serif Display', sans-serif;">
+                        Histórias que revelam a complexidade do mundo ao nosso redor.
+                    </h4>
+                    
+                    <!-- Texto Normal Real -->
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed" style="font-family: 'DM Sans', sans-serif;">
+                        Irmãs tipográficas da fundição Colophon, a dupla DM Serif e DM Sans compartilha esqueletos estruturais harmônicos, criando elegância editorial espontânea.
+                    </p>
+                </div>
+
+                <!-- Rodapé com Metadados e Vibe -->
+                <div class="flex flex-wrap items-center justify-between text-xs text-slate-400 gap-2">
+                    <div>
+                        <span class="font-semibold text-slate-300">Vibe:</span> Jornalismo investigativo, revistas de arquitetura e blogs literários.
+                    </div>
+                    <div class="flex items-center gap-4 text-slate-500">
+                        <span>Título: <strong class="text-slate-300 font-mono">DM Serif Display</strong></span>
+                        <span>Corpo: <strong class="text-slate-300 font-mono">DM Sans</strong></span>
+                        <a href="https://fonts.google.com/specimen/DM+Serif+Display" target="_blank" class="hover:text-sky-400 underline">Google Fonts ↗</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Card 17: Chivo + Lato -->
+            <div class="pairing-card glass-card rounded-2xl p-6 sm:p-8 transition-all" data-category="Corporativo & Institucional" data-fonts="chivo lato">
+                
+                <!-- Cabeçalho do Card -->
+                <div class="flex flex-wrap items-center justify-between gap-3 pb-4 mb-6 border-b border-slate-700/50">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs font-bold uppercase px-3 py-1 rounded-full bg-slate-800 border border-slate-600 text-sky-400">
+                            #17 • Corporativo & Institucional
+                        </span>
+                        <h2 class="text-xl font-bold text-white">
+                            <span class="text-sky-300">Chivo</span> <span class="text-slate-500 font-light">+</span> <span class="text-indigo-300">Lato</span>
+                        </h2>
+                    </div>
+                    
+                    <div class="flex items-center gap-2">
+                        <button onclick="copyAIPrompt('Chivo', 'Lato', 'Corporativo & Institucional', this)" class="bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-600 hover:to-indigo-700 text-white font-semibold py-2 px-4 rounded-xl text-xs shadow-md transition-all">
+                            📋 Copiar Prompt IA
+                        </button>
+                        <button onclick="copyCSSCode('Chivo', 'Lato', this)" class="bg-slate-800 hover:bg-slate-700 border border-slate-600 text-slate-200 font-semibold py-2 px-3 rounded-xl text-xs transition-all">
+                            💻 Copiar CSS
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Demonstração Tipográfica Real -->
+                <div class="bg-slate-900/60 rounded-xl p-6 sm:p-8 border border-slate-800/80 shadow-inner mb-4 space-y-4">
+                    
+                    <!-- Título Real -->
+                    <h3 class="text-2xl sm:text-3xl md:text-4xl text-white font-bold tracking-tight leading-tight" style="font-family: 'Chivo', sans-serif;">
+                        Logística Global & Cadeias de Distribuição
+                    </h3>
+                    
+                    <!-- Subtítulo Real -->
+                    <h4 class="text-lg sm:text-xl text-sky-200/90 font-medium" style="font-family: 'Chivo', sans-serif;">
+                        Eficiência portuária com rastreamento por satélite e telemetria.
+                    </h4>
+                    
+                    <!-- Texto Normal Real -->
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed" style="font-family: 'Lato', sans-serif;">
+                        Chivo possui presença marcante e confiança imediata nos títulos, complementada pelas formas semi-arredondadas e calorosas de Lato no corpo do texto.
+                    </p>
+                </div>
+
+                <!-- Rodapé com Metadados e Vibe -->
+                <div class="flex flex-wrap items-center justify-between text-xs text-slate-400 gap-2">
+                    <div>
+                        <span class="font-semibold text-slate-300">Vibe:</span> Indústria automotiva, transporte aéreo, portos e energia.
+                    </div>
+                    <div class="flex items-center gap-4 text-slate-500">
+                        <span>Título: <strong class="text-slate-300 font-mono">Chivo</strong></span>
+                        <span>Corpo: <strong class="text-slate-300 font-mono">Lato</strong></span>
+                        <a href="https://fonts.google.com/specimen/Chivo" target="_blank" class="hover:text-sky-400 underline">Google Fonts ↗</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Card 18: Oswald + Nunito -->
+            <div class="pairing-card glass-card rounded-2xl p-6 sm:p-8 transition-all" data-category="Criativo & Agência" data-fonts="oswald nunito">
+                
+                <!-- Cabeçalho do Card -->
+                <div class="flex flex-wrap items-center justify-between gap-3 pb-4 mb-6 border-b border-slate-700/50">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs font-bold uppercase px-3 py-1 rounded-full bg-slate-800 border border-slate-600 text-sky-400">
+                            #18 • Criativo & Agência
+                        </span>
+                        <h2 class="text-xl font-bold text-white">
+                            <span class="text-sky-300">Oswald</span> <span class="text-slate-500 font-light">+</span> <span class="text-indigo-300">Nunito</span>
+                        </h2>
+                    </div>
+                    
+                    <div class="flex items-center gap-2">
+                        <button onclick="copyAIPrompt('Oswald', 'Nunito', 'Criativo & Agência', this)" class="bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-600 hover:to-indigo-700 text-white font-semibold py-2 px-4 rounded-xl text-xs shadow-md transition-all">
+                            📋 Copiar Prompt IA
+                        </button>
+                        <button onclick="copyCSSCode('Oswald', 'Nunito', this)" class="bg-slate-800 hover:bg-slate-700 border border-slate-600 text-slate-200 font-semibold py-2 px-3 rounded-xl text-xs transition-all">
+                            💻 Copiar CSS
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Demonstração Tipográfica Real -->
+                <div class="bg-slate-900/60 rounded-xl p-6 sm:p-8 border border-slate-800/80 shadow-inner mb-4 space-y-4">
+                    
+                    <!-- Título Real -->
+                    <h3 class="text-2xl sm:text-3xl md:text-4xl text-white font-bold tracking-tight leading-tight" style="font-family: 'Oswald', sans-serif;">
+                        ÚLTIMA HORA: DESCOBERTAS NO OCEANO PROFUNDO
+                    </h3>
+                    
+                    <!-- Subtítulo Real -->
+                    <h4 class="text-lg sm:text-xl text-sky-200/90 font-medium" style="font-family: 'Oswald', sans-serif;">
+                        Expedição internacional documenta espécies bioluminescentes inéditas.
+                    </h4>
+                    
+                    <!-- Texto Normal Real -->
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed" style="font-family: 'Nunito', sans-serif;">
+                        Oswald reinterpreta a clássica tipografia gótica condensada, ideal para manchetes impactantes com espaço otimizado, enquanto Nunito traz acolhimento e leveza.
+                    </p>
+                </div>
+
+                <!-- Rodapé com Metadados e Vibe -->
+                <div class="flex flex-wrap items-center justify-between text-xs text-slate-400 gap-2">
+                    <div>
+                        <span class="font-semibold text-slate-300">Vibe:</span> Portais de notícias, revistas digitais, cinema e documentários.
+                    </div>
+                    <div class="flex items-center gap-4 text-slate-500">
+                        <span>Título: <strong class="text-slate-300 font-mono">Oswald</strong></span>
+                        <span>Corpo: <strong class="text-slate-300 font-mono">Nunito</strong></span>
+                        <a href="https://fonts.google.com/specimen/Oswald" target="_blank" class="hover:text-sky-400 underline">Google Fonts ↗</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Card 19: JetBrains Mono + Inter -->
+            <div class="pairing-card glass-card rounded-2xl p-6 sm:p-8 transition-all" data-category="Developer & Código" data-fonts="jetbrains mono inter">
+                
+                <!-- Cabeçalho do Card -->
+                <div class="flex flex-wrap items-center justify-between gap-3 pb-4 mb-6 border-b border-slate-700/50">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs font-bold uppercase px-3 py-1 rounded-full bg-slate-800 border border-slate-600 text-sky-400">
+                            #19 • Developer & Código
+                        </span>
+                        <h2 class="text-xl font-bold text-white">
+                            <span class="text-sky-300">JetBrains Mono</span> <span class="text-slate-500 font-light">+</span> <span class="text-indigo-300">Inter</span>
+                        </h2>
+                    </div>
+                    
+                    <div class="flex items-center gap-2">
+                        <button onclick="copyAIPrompt('JetBrains Mono', 'Inter', 'Developer & Código', this)" class="bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-600 hover:to-indigo-700 text-white font-semibold py-2 px-4 rounded-xl text-xs shadow-md transition-all">
+                            📋 Copiar Prompt IA
+                        </button>
+                        <button onclick="copyCSSCode('JetBrains Mono', 'Inter', this)" class="bg-slate-800 hover:bg-slate-700 border border-slate-600 text-slate-200 font-semibold py-2 px-3 rounded-xl text-xs transition-all">
+                            💻 Copiar CSS
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Demonstração Tipográfica Real -->
+                <div class="bg-slate-900/60 rounded-xl p-6 sm:p-8 border border-slate-800/80 shadow-inner mb-4 space-y-4">
+                    
+                    <!-- Título Real -->
+                    <h3 class="text-2xl sm:text-3xl md:text-4xl text-white font-bold tracking-tight leading-tight" style="font-family: 'JetBrains Mono', sans-serif;">
+                        const api = new QuantumCluster();
+                    </h3>
+                    
+                    <!-- Subtítulo Real -->
+                    <h4 class="text-lg sm:text-xl text-sky-200/90 font-medium" style="font-family: 'JetBrains Mono', sans-serif;">
+                        Compiladores distribuídos, microkernels e observabilidade em tempo real.
+                    </h4>
+                    
+                    <!-- Texto Normal Real -->
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed" style="font-family: 'Inter', sans-serif;">
+                        Para documentações técnicas, terminais e ferramentas de desenvolvimento de ponta. Títulos em JetBrains Mono transmitem domínio de engenharia no primeiro segundo.
+                    </p>
+                </div>
+
+                <!-- Rodapé com Metadados e Vibe -->
+                <div class="flex flex-wrap items-center justify-between text-xs text-slate-400 gap-2">
+                    <div>
+                        <span class="font-semibold text-slate-300">Vibe:</span> Docs de APIs, frameworks de código aberto, CLI tools e devops.
+                    </div>
+                    <div class="flex items-center gap-4 text-slate-500">
+                        <span>Título: <strong class="text-slate-300 font-mono">JetBrains Mono</strong></span>
+                        <span>Corpo: <strong class="text-slate-300 font-mono">Inter</strong></span>
+                        <a href="https://fonts.google.com/specimen/JetBrains+Mono" target="_blank" class="hover:text-sky-400 underline">Google Fonts ↗</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Card 20: Epilogue + Inter -->
+            <div class="pairing-card glass-card rounded-2xl p-6 sm:p-8 transition-all" data-category="Criativo & Agência" data-fonts="epilogue inter">
+                
+                <!-- Cabeçalho do Card -->
+                <div class="flex flex-wrap items-center justify-between gap-3 pb-4 mb-6 border-b border-slate-700/50">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs font-bold uppercase px-3 py-1 rounded-full bg-slate-800 border border-slate-600 text-sky-400">
+                            #20 • Criativo & Agência
+                        </span>
+                        <h2 class="text-xl font-bold text-white">
+                            <span class="text-sky-300">Epilogue</span> <span class="text-slate-500 font-light">+</span> <span class="text-indigo-300">Inter</span>
+                        </h2>
+                    </div>
+                    
+                    <div class="flex items-center gap-2">
+                        <button onclick="copyAIPrompt('Epilogue', 'Inter', 'Criativo & Agência', this)" class="bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-600 hover:to-indigo-700 text-white font-semibold py-2 px-4 rounded-xl text-xs shadow-md transition-all">
+                            📋 Copiar Prompt IA
+                        </button>
+                        <button onclick="copyCSSCode('Epilogue', 'Inter', this)" class="bg-slate-800 hover:bg-slate-700 border border-slate-600 text-slate-200 font-semibold py-2 px-3 rounded-xl text-xs transition-all">
+                            💻 Copiar CSS
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Demonstração Tipográfica Real -->
+                <div class="bg-slate-900/60 rounded-xl p-6 sm:p-8 border border-slate-800/80 shadow-inner mb-4 space-y-4">
+                    
+                    <!-- Título Real -->
+                    <h3 class="text-2xl sm:text-3xl md:text-4xl text-white font-bold tracking-tight leading-tight" style="font-family: 'Epilogue', sans-serif;">
+                        Estratégia de Marca com Foco em Pessoas
+                    </h3>
+                    
+                    <!-- Subtítulo Real -->
+                    <h4 class="text-lg sm:text-xl text-sky-200/90 font-medium" style="font-family: 'Epilogue', sans-serif;">
+                        Construindo identidades memoráveis que resistem ao teste do tempo.
+                    </h4>
+                    
+                    <!-- Texto Normal Real -->
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed" style="font-family: 'Inter', sans-serif;">
+                        Epilogue é uma sans-serif humanista com proporções generosas e desenho marcante, transmitindo maturidade criativa sem soar pretensiosa.
+                    </p>
+                </div>
+
+                <!-- Rodapé com Metadados e Vibe -->
+                <div class="flex flex-wrap items-center justify-between text-xs text-slate-400 gap-2">
+                    <div>
+                        <span class="font-semibold text-slate-300">Vibe:</span> Agências de branding, estúdios fotográficos e consultorias de UX.
+                    </div>
+                    <div class="flex items-center gap-4 text-slate-500">
+                        <span>Título: <strong class="text-slate-300 font-mono">Epilogue</strong></span>
+                        <span>Corpo: <strong class="text-slate-300 font-mono">Inter</strong></span>
+                        <a href="https://fonts.google.com/specimen/Epilogue" target="_blank" class="hover:text-sky-400 underline">Google Fonts ↗</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Card 21: Cormorant + Proza Libre -->
+            <div class="pairing-card glass-card rounded-2xl p-6 sm:p-8 transition-all" data-category="Clássico & Acadêmico" data-fonts="cormorant proza libre">
+                
+                <!-- Cabeçalho do Card -->
+                <div class="flex flex-wrap items-center justify-between gap-3 pb-4 mb-6 border-b border-slate-700/50">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs font-bold uppercase px-3 py-1 rounded-full bg-slate-800 border border-slate-600 text-sky-400">
+                            #21 • Clássico & Acadêmico
+                        </span>
+                        <h2 class="text-xl font-bold text-white">
+                            <span class="text-sky-300">Cormorant</span> <span class="text-slate-500 font-light">+</span> <span class="text-indigo-300">Proza Libre</span>
+                        </h2>
+                    </div>
+                    
+                    <div class="flex items-center gap-2">
+                        <button onclick="copyAIPrompt('Cormorant', 'Proza Libre', 'Clássico & Acadêmico', this)" class="bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-600 hover:to-indigo-700 text-white font-semibold py-2 px-4 rounded-xl text-xs shadow-md transition-all">
+                            📋 Copiar Prompt IA
+                        </button>
+                        <button onclick="copyCSSCode('Cormorant', 'Proza Libre', this)" class="bg-slate-800 hover:bg-slate-700 border border-slate-600 text-slate-200 font-semibold py-2 px-3 rounded-xl text-xs transition-all">
+                            💻 Copiar CSS
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Demonstração Tipográfica Real -->
+                <div class="bg-slate-900/60 rounded-xl p-6 sm:p-8 border border-slate-800/80 shadow-inner mb-4 space-y-4">
+                    
+                    <!-- Título Real -->
+                    <h3 class="text-2xl sm:text-3xl md:text-4xl text-white font-bold tracking-tight leading-tight" style="font-family: 'Cormorant', sans-serif;">
+                        A Geometria Sagrada nos Manuscritos Renascentistas
+                    </h3>
+                    
+                    <!-- Subtítulo Real -->
+                    <h4 class="text-lg sm:text-xl text-sky-200/90 font-medium" style="font-family: 'Cormorant', sans-serif;">
+                        Estudos sobre harmonia proporcional na Florença do século XV.
+                    </h4>
+                    
+                    <!-- Texto Normal Real -->
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed" style="font-family: 'Proza Libre', sans-serif;">
+                        Cormorant é aclamada por sua fidelidade aos tipos de Claude Garamont do século XVI, gerando uma experiência de leitura que evoca pergaminhos e bibliotecas clássicas.
+                    </p>
+                </div>
+
+                <!-- Rodapé com Metadados e Vibe -->
+                <div class="flex flex-wrap items-center justify-between text-xs text-slate-400 gap-2">
+                    <div>
+                        <span class="font-semibold text-slate-300">Vibe:</span> Museus, fundações culturais, antiquários e leilões de arte.
+                    </div>
+                    <div class="flex items-center gap-4 text-slate-500">
+                        <span>Título: <strong class="text-slate-300 font-mono">Cormorant</strong></span>
+                        <span>Corpo: <strong class="text-slate-300 font-mono">Proza Libre</strong></span>
+                        <a href="https://fonts.google.com/specimen/Cormorant" target="_blank" class="hover:text-sky-400 underline">Google Fonts ↗</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Card 22: Be Vietnam Pro + Manrope -->
+            <div class="pairing-card glass-card rounded-2xl p-6 sm:p-8 transition-all" data-category="Tech & SaaS" data-fonts="be vietnam pro manrope">
+                
+                <!-- Cabeçalho do Card -->
+                <div class="flex flex-wrap items-center justify-between gap-3 pb-4 mb-6 border-b border-slate-700/50">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs font-bold uppercase px-3 py-1 rounded-full bg-slate-800 border border-slate-600 text-sky-400">
+                            #22 • Tech & SaaS
+                        </span>
+                        <h2 class="text-xl font-bold text-white">
+                            <span class="text-sky-300">Be Vietnam Pro</span> <span class="text-slate-500 font-light">+</span> <span class="text-indigo-300">Manrope</span>
+                        </h2>
+                    </div>
+                    
+                    <div class="flex items-center gap-2">
+                        <button onclick="copyAIPrompt('Be Vietnam Pro', 'Manrope', 'Tech & SaaS', this)" class="bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-600 hover:to-indigo-700 text-white font-semibold py-2 px-4 rounded-xl text-xs shadow-md transition-all">
+                            📋 Copiar Prompt IA
+                        </button>
+                        <button onclick="copyCSSCode('Be Vietnam Pro', 'Manrope', this)" class="bg-slate-800 hover:bg-slate-700 border border-slate-600 text-slate-200 font-semibold py-2 px-3 rounded-xl text-xs transition-all">
+                            💻 Copiar CSS
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Demonstração Tipográfica Real -->
+                <div class="bg-slate-900/60 rounded-xl p-6 sm:p-8 border border-slate-800/80 shadow-inner mb-4 space-y-4">
+                    
+                    <!-- Título Real -->
+                    <h3 class="text-2xl sm:text-3xl md:text-4xl text-white font-bold tracking-tight leading-tight" style="font-family: 'Be Vietnam Pro', sans-serif;">
+                        Colaboração Fluida em Ambientes Híbridos
+                    </h3>
+                    
+                    <!-- Subtítulo Real -->
+                    <h4 class="text-lg sm:text-xl text-sky-200/90 font-medium" style="font-family: 'Be Vietnam Pro', sans-serif;">
+                        Sincronização instantânea de documentos e notas de reuniões.
+                    </h4>
+                    
+                    <!-- Texto Normal Real -->
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed" style="font-family: 'Manrope', sans-serif;">
+                        Be Vietnam Pro foi meticulosamente desenhada para renderização em telas HiDPI, harmonizando-se com Manrope em produtos de produtividade global.
+                    </p>
+                </div>
+
+                <!-- Rodapé com Metadados e Vibe -->
+                <div class="flex flex-wrap items-center justify-between text-xs text-slate-400 gap-2">
+                    <div>
+                        <span class="font-semibold text-slate-300">Vibe:</span> Aplicativos de colaboração remota, suítes de escritório e videochamadas.
+                    </div>
+                    <div class="flex items-center gap-4 text-slate-500">
+                        <span>Título: <strong class="text-slate-300 font-mono">Be Vietnam Pro</strong></span>
+                        <span>Corpo: <strong class="text-slate-300 font-mono">Manrope</strong></span>
+                        <a href="https://fonts.google.com/specimen/Be+Vietnam+Pro" target="_blank" class="hover:text-sky-400 underline">Google Fonts ↗</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Card 23: Libre Baskerville + Source Serif 4 -->
+            <div class="pairing-card glass-card rounded-2xl p-6 sm:p-8 transition-all" data-category="Clássico & Acadêmico" data-fonts="libre baskerville source serif 4">
+                
+                <!-- Cabeçalho do Card -->
+                <div class="flex flex-wrap items-center justify-between gap-3 pb-4 mb-6 border-b border-slate-700/50">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs font-bold uppercase px-3 py-1 rounded-full bg-slate-800 border border-slate-600 text-sky-400">
+                            #23 • Clássico & Acadêmico
+                        </span>
+                        <h2 class="text-xl font-bold text-white">
+                            <span class="text-sky-300">Libre Baskerville</span> <span class="text-slate-500 font-light">+</span> <span class="text-indigo-300">Source Serif 4</span>
+                        </h2>
+                    </div>
+                    
+                    <div class="flex items-center gap-2">
+                        <button onclick="copyAIPrompt('Libre Baskerville', 'Source Serif 4', 'Clássico & Acadêmico', this)" class="bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-600 hover:to-indigo-700 text-white font-semibold py-2 px-4 rounded-xl text-xs shadow-md transition-all">
+                            📋 Copiar Prompt IA
+                        </button>
+                        <button onclick="copyCSSCode('Libre Baskerville', 'Source Serif 4', this)" class="bg-slate-800 hover:bg-slate-700 border border-slate-600 text-slate-200 font-semibold py-2 px-3 rounded-xl text-xs transition-all">
+                            💻 Copiar CSS
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Demonstração Tipográfica Real -->
+                <div class="bg-slate-900/60 rounded-xl p-6 sm:p-8 border border-slate-800/80 shadow-inner mb-4 space-y-4">
+                    
+                    <!-- Título Real -->
+                    <h3 class="text-2xl sm:text-3xl md:text-4xl text-white font-bold tracking-tight leading-tight" style="font-family: 'Libre Baskerville', sans-serif;">
+                        A Filosofia Moral e os Dilemas da Modernidade
+                    </h3>
+                    
+                    <!-- Subtítulo Real -->
+                    <h4 class="text-lg sm:text-xl text-sky-200/90 font-medium" style="font-family: 'Libre Baskerville', sans-serif;">
+                        Reflexões sobre a ética do dever, a virtude e a razão prática.
+                    </h4>
+                    
+                    <!-- Texto Normal Real -->
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed" style="font-family: 'Source Serif 4', sans-serif;">
+                        Para quem busca imersão leitora de longa duração. Ambas as famílias foram criadas especificamente para grandes blocos de texto sem cansar a visão do leitor.
+                    </p>
+                </div>
+
+                <!-- Rodapé com Metadados e Vibe -->
+                <div class="flex flex-wrap items-center justify-between text-xs text-slate-400 gap-2">
+                    <div>
+                        <span class="font-semibold text-slate-300">Vibe:</span> E-books, editoras de livros, ensaios filosóficos e direito.
+                    </div>
+                    <div class="flex items-center gap-4 text-slate-500">
+                        <span>Título: <strong class="text-slate-300 font-mono">Libre Baskerville</strong></span>
+                        <span>Corpo: <strong class="text-slate-300 font-mono">Source Serif 4</strong></span>
+                        <a href="https://fonts.google.com/specimen/Libre+Baskerville" target="_blank" class="hover:text-sky-400 underline">Google Fonts ↗</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Card 24: Manrope + Fira Sans -->
+            <div class="pairing-card glass-card rounded-2xl p-6 sm:p-8 transition-all" data-category="Produtividade & Dashboard" data-fonts="manrope fira sans">
+                
+                <!-- Cabeçalho do Card -->
+                <div class="flex flex-wrap items-center justify-between gap-3 pb-4 mb-6 border-b border-slate-700/50">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs font-bold uppercase px-3 py-1 rounded-full bg-slate-800 border border-slate-600 text-sky-400">
+                            #24 • Produtividade & Dashboard
+                        </span>
+                        <h2 class="text-xl font-bold text-white">
+                            <span class="text-sky-300">Manrope</span> <span class="text-slate-500 font-light">+</span> <span class="text-indigo-300">Fira Sans</span>
+                        </h2>
+                    </div>
+                    
+                    <div class="flex items-center gap-2">
+                        <button onclick="copyAIPrompt('Manrope', 'Fira Sans', 'Produtividade & Dashboard', this)" class="bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-600 hover:to-indigo-700 text-white font-semibold py-2 px-4 rounded-xl text-xs shadow-md transition-all">
+                            📋 Copiar Prompt IA
+                        </button>
+                        <button onclick="copyCSSCode('Manrope', 'Fira Sans', this)" class="bg-slate-800 hover:bg-slate-700 border border-slate-600 text-slate-200 font-semibold py-2 px-3 rounded-xl text-xs transition-all">
+                            💻 Copiar CSS
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Demonstração Tipográfica Real -->
+                <div class="bg-slate-900/60 rounded-xl p-6 sm:p-8 border border-slate-800/80 shadow-inner mb-4 space-y-4">
+                    
+                    <!-- Título Real -->
+                    <h3 class="text-2xl sm:text-3xl md:text-4xl text-white font-bold tracking-tight leading-tight" style="font-family: 'Manrope', sans-serif;">
+                        Métricas de Conversão & Retenção de Clientes
+                    </h3>
+                    
+                    <!-- Subtítulo Real -->
+                    <h4 class="text-lg sm:text-xl text-sky-200/90 font-medium" style="font-family: 'Manrope', sans-serif;">
+                        Acompanhe funis de vendas com inteligência preditiva acionável.
+                    </h4>
+                    
+                    <!-- Texto Normal Real -->
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed" style="font-family: 'Fira Sans', sans-serif;">
+                        Manrope nos títulos traz modernidade geométrica, enquanto Fira Sans fornece legibilidade densa e precisa para números, legendas e gráficos analíticos.
+                    </p>
+                </div>
+
+                <!-- Rodapé com Metadados e Vibe -->
+                <div class="flex flex-wrap items-center justify-between text-xs text-slate-400 gap-2">
+                    <div>
+                        <span class="font-semibold text-slate-300">Vibe:</span> Dashboards de Business Intelligence, Google Analytics e CRM.
+                    </div>
+                    <div class="flex items-center gap-4 text-slate-500">
+                        <span>Título: <strong class="text-slate-300 font-mono">Manrope</strong></span>
+                        <span>Corpo: <strong class="text-slate-300 font-mono">Fira Sans</strong></span>
+                        <a href="https://fonts.google.com/specimen/Manrope" target="_blank" class="hover:text-sky-400 underline">Google Fonts ↗</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Card 25: Urbanist + Outfit -->
+            <div class="pairing-card glass-card rounded-2xl p-6 sm:p-8 transition-all" data-category="Criativo & Agência" data-fonts="urbanist outfit">
+                
+                <!-- Cabeçalho do Card -->
+                <div class="flex flex-wrap items-center justify-between gap-3 pb-4 mb-6 border-b border-slate-700/50">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs font-bold uppercase px-3 py-1 rounded-full bg-slate-800 border border-slate-600 text-sky-400">
+                            #25 • Criativo & Agência
+                        </span>
+                        <h2 class="text-xl font-bold text-white">
+                            <span class="text-sky-300">Urbanist</span> <span class="text-slate-500 font-light">+</span> <span class="text-indigo-300">Outfit</span>
+                        </h2>
+                    </div>
+                    
+                    <div class="flex items-center gap-2">
+                        <button onclick="copyAIPrompt('Urbanist', 'Outfit', 'Criativo & Agência', this)" class="bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-600 hover:to-indigo-700 text-white font-semibold py-2 px-4 rounded-xl text-xs shadow-md transition-all">
+                            📋 Copiar Prompt IA
+                        </button>
+                        <button onclick="copyCSSCode('Urbanist', 'Outfit', this)" class="bg-slate-800 hover:bg-slate-700 border border-slate-600 text-slate-200 font-semibold py-2 px-3 rounded-xl text-xs transition-all">
+                            💻 Copiar CSS
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Demonstração Tipográfica Real -->
+                <div class="bg-slate-900/60 rounded-xl p-6 sm:p-8 border border-slate-800/80 shadow-inner mb-4 space-y-4">
+                    
+                    <!-- Título Real -->
+                    <h3 class="text-2xl sm:text-3xl md:text-4xl text-white font-bold tracking-tight leading-tight" style="font-family: 'Urbanist', sans-serif;">
+                        Moda Urbana Sustentável & Fibras Recicladas
+                    </h3>
+                    
+                    <!-- Subtítulo Real -->
+                    <h4 class="text-lg sm:text-xl text-sky-200/90 font-medium" style="font-family: 'Urbanist', sans-serif;">
+                        Vestuário conceitual feito a partir de resíduos têxteis do oceano.
+                    </h4>
+                    
+                    <!-- Texto Normal Real -->
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed" style="font-family: 'Outfit', sans-serif;">
+                        Com linhas retas refinadas e curvas milimetricamente calibradas, Urbanist e Outfit entregam sofisticação minimalista para e-commerce de vestuário contemporâneo.
+                    </p>
+                </div>
+
+                <!-- Rodapé com Metadados e Vibe -->
+                <div class="flex flex-wrap items-center justify-between text-xs text-slate-400 gap-2">
+                    <div>
+                        <span class="font-semibold text-slate-300">Vibe:</span> Marcas de streetwear consciente, calçados premium e cosméticos limpos.
+                    </div>
+                    <div class="flex items-center gap-4 text-slate-500">
+                        <span>Título: <strong class="text-slate-300 font-mono">Urbanist</strong></span>
+                        <span>Corpo: <strong class="text-slate-300 font-mono">Outfit</strong></span>
+                        <a href="https://fonts.google.com/specimen/Urbanist" target="_blank" class="hover:text-sky-400 underline">Google Fonts ↗</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Card 26: Bodoni Moda + Raleway -->
+            <div class="pairing-card glass-card rounded-2xl p-6 sm:p-8 transition-all" data-category="Editorial & Luxo" data-fonts="bodoni moda raleway">
+                
+                <!-- Cabeçalho do Card -->
+                <div class="flex flex-wrap items-center justify-between gap-3 pb-4 mb-6 border-b border-slate-700/50">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs font-bold uppercase px-3 py-1 rounded-full bg-slate-800 border border-slate-600 text-sky-400">
+                            #26 • Editorial & Luxo
+                        </span>
+                        <h2 class="text-xl font-bold text-white">
+                            <span class="text-sky-300">Bodoni Moda</span> <span class="text-slate-500 font-light">+</span> <span class="text-indigo-300">Raleway</span>
+                        </h2>
+                    </div>
+                    
+                    <div class="flex items-center gap-2">
+                        <button onclick="copyAIPrompt('Bodoni Moda', 'Raleway', 'Editorial & Luxo', this)" class="bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-600 hover:to-indigo-700 text-white font-semibold py-2 px-4 rounded-xl text-xs shadow-md transition-all">
+                            📋 Copiar Prompt IA
+                        </button>
+                        <button onclick="copyCSSCode('Bodoni Moda', 'Raleway', this)" class="bg-slate-800 hover:bg-slate-700 border border-slate-600 text-slate-200 font-semibold py-2 px-3 rounded-xl text-xs transition-all">
+                            💻 Copiar CSS
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Demonstração Tipográfica Real -->
+                <div class="bg-slate-900/60 rounded-xl p-6 sm:p-8 border border-slate-800/80 shadow-inner mb-4 space-y-4">
+                    
+                    <!-- Título Real -->
+                    <h3 class="text-2xl sm:text-3xl md:text-4xl text-white font-bold tracking-tight leading-tight" style="font-family: 'Bodoni Moda', sans-serif;">
+                        A Semana da Alta-Costura em Paris & Milão
+                    </h3>
+                    
+                    <!-- Subtítulo Real -->
+                    <h4 class="text-lg sm:text-xl text-sky-200/90 font-medium" style="font-family: 'Bodoni Moda', sans-serif;">
+                        Silhuetas teatrais e alfaiataria impecável nas passarelas internacionais.
+                    </h4>
+                    
+                    <!-- Texto Normal Real -->
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed" style="font-family: 'Raleway', sans-serif;">
+                        O contraste extremo entre traços grossos e finos de Bodoni Moda exala glamour cinematográfico, contrastando com o toque artístico de Raleway nos textos.
+                    </p>
+                </div>
+
+                <!-- Rodapé com Metadados e Vibe -->
+                <div class="flex flex-wrap items-center justify-between text-xs text-slate-400 gap-2">
+                    <div>
+                        <span class="font-semibold text-slate-300">Vibe:</span> Vogue, alta-costura, perfumes importados e eventos black-tie.
+                    </div>
+                    <div class="flex items-center gap-4 text-slate-500">
+                        <span>Título: <strong class="text-slate-300 font-mono">Bodoni Moda</strong></span>
+                        <span>Corpo: <strong class="text-slate-300 font-mono">Raleway</strong></span>
+                        <a href="https://fonts.google.com/specimen/Bodoni+Moda" target="_blank" class="hover:text-sky-400 underline">Google Fonts ↗</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Card 27: Figtree + Noto Sans -->
+            <div class="pairing-card glass-card rounded-2xl p-6 sm:p-8 transition-all" data-category="Fintech & Apps" data-fonts="figtree noto sans">
+                
+                <!-- Cabeçalho do Card -->
+                <div class="flex flex-wrap items-center justify-between gap-3 pb-4 mb-6 border-b border-slate-700/50">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs font-bold uppercase px-3 py-1 rounded-full bg-slate-800 border border-slate-600 text-sky-400">
+                            #27 • Fintech & Apps
+                        </span>
+                        <h2 class="text-xl font-bold text-white">
+                            <span class="text-sky-300">Figtree</span> <span class="text-slate-500 font-light">+</span> <span class="text-indigo-300">Noto Sans</span>
+                        </h2>
+                    </div>
+                    
+                    <div class="flex items-center gap-2">
+                        <button onclick="copyAIPrompt('Figtree', 'Noto Sans', 'Fintech & Apps', this)" class="bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-600 hover:to-indigo-700 text-white font-semibold py-2 px-4 rounded-xl text-xs shadow-md transition-all">
+                            📋 Copiar Prompt IA
+                        </button>
+                        <button onclick="copyCSSCode('Figtree', 'Noto Sans', this)" class="bg-slate-800 hover:bg-slate-700 border border-slate-600 text-slate-200 font-semibold py-2 px-3 rounded-xl text-xs transition-all">
+                            💻 Copiar CSS
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Demonstração Tipográfica Real -->
+                <div class="bg-slate-900/60 rounded-xl p-6 sm:p-8 border border-slate-800/80 shadow-inner mb-4 space-y-4">
+                    
+                    <!-- Título Real -->
+                    <h3 class="text-2xl sm:text-3xl md:text-4xl text-white font-bold tracking-tight leading-tight" style="font-family: 'Figtree', sans-serif;">
+                        Educação Financeira para Toda a Família
+                    </h3>
+                    
+                    <!-- Subtítulo Real -->
+                    <h4 class="text-lg sm:text-xl text-sky-200/90 font-medium" style="font-family: 'Figtree', sans-serif;">
+                        Metas conjuntas, cofrinhos digitais e hábitos que geram prosperidade.
+                    </h4>
+                    
+                    <!-- Texto Normal Real -->
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed" style="font-family: 'Noto Sans', sans-serif;">
+                        Figtree possui charme amigável e formas claras que eliminam qualquer sensação de complexidade, enquanto Noto Sans garante suporte multilíngue universal.
+                    </p>
+                </div>
+
+                <!-- Rodapé com Metadados e Vibe -->
+                <div class="flex flex-wrap items-center justify-between text-xs text-slate-400 gap-2">
+                    <div>
+                        <span class="font-semibold text-slate-300">Vibe:</span> Finanças pessoais, aplicativos infantis e ONGs de inclusão.
+                    </div>
+                    <div class="flex items-center gap-4 text-slate-500">
+                        <span>Título: <strong class="text-slate-300 font-mono">Figtree</strong></span>
+                        <span>Corpo: <strong class="text-slate-300 font-mono">Noto Sans</strong></span>
+                        <a href="https://fonts.google.com/specimen/Figtree" target="_blank" class="hover:text-sky-400 underline">Google Fonts ↗</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Card 28: Alegreya + Alegreya Sans -->
+            <div class="pairing-card glass-card rounded-2xl p-6 sm:p-8 transition-all" data-category="Clássico & Acadêmico" data-fonts="alegreya alegreya sans">
+                
+                <!-- Cabeçalho do Card -->
+                <div class="flex flex-wrap items-center justify-between gap-3 pb-4 mb-6 border-b border-slate-700/50">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs font-bold uppercase px-3 py-1 rounded-full bg-slate-800 border border-slate-600 text-sky-400">
+                            #28 • Clássico & Acadêmico
+                        </span>
+                        <h2 class="text-xl font-bold text-white">
+                            <span class="text-sky-300">Alegreya</span> <span class="text-slate-500 font-light">+</span> <span class="text-indigo-300">Alegreya Sans</span>
+                        </h2>
+                    </div>
+                    
+                    <div class="flex items-center gap-2">
+                        <button onclick="copyAIPrompt('Alegreya', 'Alegreya Sans', 'Clássico & Acadêmico', this)" class="bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-600 hover:to-indigo-700 text-white font-semibold py-2 px-4 rounded-xl text-xs shadow-md transition-all">
+                            📋 Copiar Prompt IA
+                        </button>
+                        <button onclick="copyCSSCode('Alegreya', 'Alegreya Sans', this)" class="bg-slate-800 hover:bg-slate-700 border border-slate-600 text-slate-200 font-semibold py-2 px-3 rounded-xl text-xs transition-all">
+                            💻 Copiar CSS
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Demonstração Tipográfica Real -->
+                <div class="bg-slate-900/60 rounded-xl p-6 sm:p-8 border border-slate-800/80 shadow-inner mb-4 space-y-4">
+                    
+                    <!-- Título Real -->
+                    <h3 class="text-2xl sm:text-3xl md:text-4xl text-white font-bold tracking-tight leading-tight" style="font-family: 'Alegreya', sans-serif;">
+                        Crítica Literária & Antologias da Poesia Moderna
+                    </h3>
+                    
+                    <!-- Subtítulo Real -->
+                    <h4 class="text-lg sm:text-xl text-sky-200/90 font-medium" style="font-family: 'Alegreya', sans-serif;">
+                        Vozes líricas que capturaram as inquietações do século XX.
+                    </h4>
+                    
+                    <!-- Texto Normal Real -->
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed" style="font-family: 'Alegreya Sans', sans-serif;">
+                        Projetada pelo designer argentino Juan Pablo del Peral, a superfamília Alegreya foi premiada como um dos designs tipográficos mais humanistas das últimas décadas.
+                    </p>
+                </div>
+
+                <!-- Rodapé com Metadados e Vibe -->
+                <div class="flex flex-wrap items-center justify-between text-xs text-slate-400 gap-2">
+                    <div>
+                        <span class="font-semibold text-slate-300">Vibe:</span> Poesia, ensaios culturais, cafés literários e livrarias independentes.
+                    </div>
+                    <div class="flex items-center gap-4 text-slate-500">
+                        <span>Título: <strong class="text-slate-300 font-mono">Alegreya</strong></span>
+                        <span>Corpo: <strong class="text-slate-300 font-mono">Alegreya Sans</strong></span>
+                        <a href="https://fonts.google.com/specimen/Alegreya" target="_blank" class="hover:text-sky-400 underline">Google Fonts ↗</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Card 29: Josefin Sans + Lato -->
+            <div class="pairing-card glass-card rounded-2xl p-6 sm:p-8 transition-all" data-category="Criativo & Vintage" data-fonts="josefin sans lato">
+                
+                <!-- Cabeçalho do Card -->
+                <div class="flex flex-wrap items-center justify-between gap-3 pb-4 mb-6 border-b border-slate-700/50">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs font-bold uppercase px-3 py-1 rounded-full bg-slate-800 border border-slate-600 text-sky-400">
+                            #29 • Criativo & Vintage
+                        </span>
+                        <h2 class="text-xl font-bold text-white">
+                            <span class="text-sky-300">Josefin Sans</span> <span class="text-slate-500 font-light">+</span> <span class="text-indigo-300">Lato</span>
+                        </h2>
+                    </div>
+                    
+                    <div class="flex items-center gap-2">
+                        <button onclick="copyAIPrompt('Josefin Sans', 'Lato', 'Criativo & Vintage', this)" class="bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-600 hover:to-indigo-700 text-white font-semibold py-2 px-4 rounded-xl text-xs shadow-md transition-all">
+                            📋 Copiar Prompt IA
+                        </button>
+                        <button onclick="copyCSSCode('Josefin Sans', 'Lato', this)" class="bg-slate-800 hover:bg-slate-700 border border-slate-600 text-slate-200 font-semibold py-2 px-3 rounded-xl text-xs transition-all">
+                            💻 Copiar CSS
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Demonstração Tipográfica Real -->
+                <div class="bg-slate-900/60 rounded-xl p-6 sm:p-8 border border-slate-800/80 shadow-inner mb-4 space-y-4">
+                    
+                    <!-- Título Real -->
+                    <h3 class="text-2xl sm:text-3xl md:text-4xl text-white font-bold tracking-tight leading-tight" style="font-family: 'Josefin Sans', sans-serif;">
+                        A Era de Ouro do Cinema & Arquitetura Art Déco
+                    </h3>
+                    
+                    <!-- Subtítulo Real -->
+                    <h4 class="text-lg sm:text-xl text-sky-200/90 font-medium" style="font-family: 'Josefin Sans', sans-serif;">
+                        Linhas aerodinâmicas e ornamentos em bronze na Nova York dos anos 1930.
+                    </h4>
+                    
+                    <!-- Texto Normal Real -->
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed" style="font-family: 'Lato', sans-serif;">
+                        Com proporções geométricas elegantes inspiradas nos anos 1920 e 1930, Josefin Sans traz requinte nostálgico que salta aos olhos em cartazes e títulos.
+                    </p>
+                </div>
+
+                <!-- Rodapé com Metadados e Vibe -->
+                <div class="flex flex-wrap items-center justify-between text-xs text-slate-400 gap-2">
+                    <div>
+                        <span class="font-semibold text-slate-300">Vibe:</span> Bares speakeasy, cinema clássico, jazz clubs e fragrâncias vintage.
+                    </div>
+                    <div class="flex items-center gap-4 text-slate-500">
+                        <span>Título: <strong class="text-slate-300 font-mono">Josefin Sans</strong></span>
+                        <span>Corpo: <strong class="text-slate-300 font-mono">Lato</strong></span>
+                        <a href="https://fonts.google.com/specimen/Josefin+Sans" target="_blank" class="hover:text-sky-400 underline">Google Fonts ↗</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Card 30: Krona One + Montserrat -->
+            <div class="pairing-card glass-card rounded-2xl p-6 sm:p-8 transition-all" data-category="Cyberpunk & Web3" data-fonts="krona one montserrat">
+                
+                <!-- Cabeçalho do Card -->
+                <div class="flex flex-wrap items-center justify-between gap-3 pb-4 mb-6 border-b border-slate-700/50">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs font-bold uppercase px-3 py-1 rounded-full bg-slate-800 border border-slate-600 text-sky-400">
+                            #30 • Cyberpunk & Web3
+                        </span>
+                        <h2 class="text-xl font-bold text-white">
+                            <span class="text-sky-300">Krona One</span> <span class="text-slate-500 font-light">+</span> <span class="text-indigo-300">Montserrat</span>
+                        </h2>
+                    </div>
+                    
+                    <div class="flex items-center gap-2">
+                        <button onclick="copyAIPrompt('Krona One', 'Montserrat', 'Cyberpunk & Web3', this)" class="bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-600 hover:to-indigo-700 text-white font-semibold py-2 px-4 rounded-xl text-xs shadow-md transition-all">
+                            📋 Copiar Prompt IA
+                        </button>
+                        <button onclick="copyCSSCode('Krona One', 'Montserrat', this)" class="bg-slate-800 hover:bg-slate-700 border border-slate-600 text-slate-200 font-semibold py-2 px-3 rounded-xl text-xs transition-all">
+                            💻 Copiar CSS
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Demonstração Tipográfica Real -->
+                <div class="bg-slate-900/60 rounded-xl p-6 sm:p-8 border border-slate-800/80 shadow-inner mb-4 space-y-4">
+                    
+                    <!-- Título Real -->
+                    <h3 class="text-2xl sm:text-3xl md:text-4xl text-white font-bold tracking-tight leading-tight" style="font-family: 'Krona One', sans-serif;">
+                        PROPULSÃO IÔNICA & EXPLORAÇÃO INTERPLANETÁRIA
+                    </h3>
+                    
+                    <!-- Subtítulo Real -->
+                    <h4 class="text-lg sm:text-xl text-sky-200/90 font-medium" style="font-family: 'Krona One', sans-serif;">
+                        Sondas autônomas no cinturão de asteroides entre Marte e Júpiter.
+                    </h4>
+                    
+                    <!-- Texto Normal Real -->
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed" style="font-family: 'Montserrat', sans-serif;">
+                        Krona One é compacta, semi-estendida e de inspiração aeroespacial, perfeita para logotipos de naves, painéis de instrumentos de voo e manchetes de ficção científica.
+                    </p>
+                </div>
+
+                <!-- Rodapé com Metadados e Vibe -->
+                <div class="flex flex-wrap items-center justify-between text-xs text-slate-400 gap-2">
+                    <div>
+                        <span class="font-semibold text-slate-300">Vibe:</span> Aeroespacial, satélites, robótica espacial e simuladores de voo.
+                    </div>
+                    <div class="flex items-center gap-4 text-slate-500">
+                        <span>Título: <strong class="text-slate-300 font-mono">Krona One</strong></span>
+                        <span>Corpo: <strong class="text-slate-300 font-mono">Montserrat</strong></span>
+                        <a href="https://fonts.google.com/specimen/Krona+One" target="_blank" class="hover:text-sky-400 underline">Google Fonts ↗</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Card 31: Rubik + Karla -->
+            <div class="pairing-card glass-card rounded-2xl p-6 sm:p-8 transition-all" data-category="Fintech & Apps" data-fonts="rubik karla">
+                
+                <!-- Cabeçalho do Card -->
+                <div class="flex flex-wrap items-center justify-between gap-3 pb-4 mb-6 border-b border-slate-700/50">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs font-bold uppercase px-3 py-1 rounded-full bg-slate-800 border border-slate-600 text-sky-400">
+                            #31 • Fintech & Apps
+                        </span>
+                        <h2 class="text-xl font-bold text-white">
+                            <span class="text-sky-300">Rubik</span> <span class="text-slate-500 font-light">+</span> <span class="text-indigo-300">Karla</span>
+                        </h2>
+                    </div>
+                    
+                    <div class="flex items-center gap-2">
+                        <button onclick="copyAIPrompt('Rubik', 'Karla', 'Fintech & Apps', this)" class="bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-600 hover:to-indigo-700 text-white font-semibold py-2 px-4 rounded-xl text-xs shadow-md transition-all">
+                            📋 Copiar Prompt IA
+                        </button>
+                        <button onclick="copyCSSCode('Rubik', 'Karla', this)" class="bg-slate-800 hover:bg-slate-700 border border-slate-600 text-slate-200 font-semibold py-2 px-3 rounded-xl text-xs transition-all">
+                            💻 Copiar CSS
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Demonstração Tipográfica Real -->
+                <div class="bg-slate-900/60 rounded-xl p-6 sm:p-8 border border-slate-800/80 shadow-inner mb-4 space-y-4">
+                    
+                    <!-- Título Real -->
+                    <h3 class="text-2xl sm:text-3xl md:text-4xl text-white font-bold tracking-tight leading-tight" style="font-family: 'Rubik', sans-serif;">
+                        Hábitos Saudáveis sem Complicação
+                    </h3>
+                    
+                    <!-- Subtítulo Real -->
+                    <h4 class="text-lg sm:text-xl text-sky-200/90 font-medium" style="font-family: 'Rubik', sans-serif;">
+                        Monitore seus treinos, sono e hidratação com lembretes inteligentes.
+                    </h4>
+                    
+                    <!-- Texto Normal Real -->
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed" style="font-family: 'Karla', sans-serif;">
+                        Cantos suavemente arredondados em Rubik transmitem gentileza e encorajamento, enquanto Karla equilibra com personalidade despretensiosa nos parágrafos.
+                    </p>
+                </div>
+
+                <!-- Rodapé com Metadados e Vibe -->
+                <div class="flex flex-wrap items-center justify-between text-xs text-slate-400 gap-2">
+                    <div>
+                        <span class="font-semibold text-slate-300">Vibe:</span> Fitness apps, meditação, receitas saudáveis e diários digitais.
+                    </div>
+                    <div class="flex items-center gap-4 text-slate-500">
+                        <span>Título: <strong class="text-slate-300 font-mono">Rubik</strong></span>
+                        <span>Corpo: <strong class="text-slate-300 font-mono">Karla</strong></span>
+                        <a href="https://fonts.google.com/specimen/Rubik" target="_blank" class="hover:text-sky-400 underline">Google Fonts ↗</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Card 32: Righteous + Work Sans -->
+            <div class="pairing-card glass-card rounded-2xl p-6 sm:p-8 transition-all" data-category="Criativo & Vintage" data-fonts="righteous work sans">
+                
+                <!-- Cabeçalho do Card -->
+                <div class="flex flex-wrap items-center justify-between gap-3 pb-4 mb-6 border-b border-slate-700/50">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs font-bold uppercase px-3 py-1 rounded-full bg-slate-800 border border-slate-600 text-sky-400">
+                            #32 • Criativo & Vintage
+                        </span>
+                        <h2 class="text-xl font-bold text-white">
+                            <span class="text-sky-300">Righteous</span> <span class="text-slate-500 font-light">+</span> <span class="text-indigo-300">Work Sans</span>
+                        </h2>
+                    </div>
+                    
+                    <div class="flex items-center gap-2">
+                        <button onclick="copyAIPrompt('Righteous', 'Work Sans', 'Criativo & Vintage', this)" class="bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-600 hover:to-indigo-700 text-white font-semibold py-2 px-4 rounded-xl text-xs shadow-md transition-all">
+                            📋 Copiar Prompt IA
+                        </button>
+                        <button onclick="copyCSSCode('Righteous', 'Work Sans', this)" class="bg-slate-800 hover:bg-slate-700 border border-slate-600 text-slate-200 font-semibold py-2 px-3 rounded-xl text-xs transition-all">
+                            💻 Copiar CSS
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Demonstração Tipográfica Real -->
+                <div class="bg-slate-900/60 rounded-xl p-6 sm:p-8 border border-slate-800/80 shadow-inner mb-4 space-y-4">
+                    
+                    <!-- Título Real -->
+                    <h3 class="text-2xl sm:text-3xl md:text-4xl text-white font-bold tracking-tight leading-tight" style="font-family: 'Righteous', sans-serif;">
+                        RETRO SYNTHWAVE & ARCADES DOS ANOS 80
+                    </h3>
+                    
+                    <!-- Subtítulo Real -->
+                    <h4 class="text-lg sm:text-xl text-sky-200/90 font-medium" style="font-family: 'Righteous', sans-serif;">
+                        Luzes de néon, guitarras elétricas e sintetizadores analógicos.
+                    </h4>
+                    
+                    <!-- Texto Normal Real -->
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed" style="font-family: 'Work Sans', sans-serif;">
+                        Righteous recria com perfeição a estética das capas de fita K7 e jogos de fliperama dos anos 1980, ancorada pela sólida legibilidade de Work Sans.
+                    </p>
+                </div>
+
+                <!-- Rodapé com Metadados e Vibe -->
+                <div class="flex flex-wrap items-center justify-between text-xs text-slate-400 gap-2">
+                    <div>
+                        <span class="font-semibold text-slate-300">Vibe:</span> Jogos retrô, música synthwave, noites nostálgicas e lanchonetes retrô.
+                    </div>
+                    <div class="flex items-center gap-4 text-slate-500">
+                        <span>Título: <strong class="text-slate-300 font-mono">Righteous</strong></span>
+                        <span>Corpo: <strong class="text-slate-300 font-mono">Work Sans</strong></span>
+                        <a href="https://fonts.google.com/specimen/Righteous" target="_blank" class="hover:text-sky-400 underline">Google Fonts ↗</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Card 33: Newsreader + Inter -->
+            <div class="pairing-card glass-card rounded-2xl p-6 sm:p-8 transition-all" data-category="Clássico & Acadêmico" data-fonts="newsreader inter">
+                
+                <!-- Cabeçalho do Card -->
+                <div class="flex flex-wrap items-center justify-between gap-3 pb-4 mb-6 border-b border-slate-700/50">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs font-bold uppercase px-3 py-1 rounded-full bg-slate-800 border border-slate-600 text-sky-400">
+                            #33 • Clássico & Acadêmico
+                        </span>
+                        <h2 class="text-xl font-bold text-white">
+                            <span class="text-sky-300">Newsreader</span> <span class="text-slate-500 font-light">+</span> <span class="text-indigo-300">Inter</span>
+                        </h2>
+                    </div>
+                    
+                    <div class="flex items-center gap-2">
+                        <button onclick="copyAIPrompt('Newsreader', 'Inter', 'Clássico & Acadêmico', this)" class="bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-600 hover:to-indigo-700 text-white font-semibold py-2 px-4 rounded-xl text-xs shadow-md transition-all">
+                            📋 Copiar Prompt IA
+                        </button>
+                        <button onclick="copyCSSCode('Newsreader', 'Inter', this)" class="bg-slate-800 hover:bg-slate-700 border border-slate-600 text-slate-200 font-semibold py-2 px-3 rounded-xl text-xs transition-all">
+                            💻 Copiar CSS
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Demonstração Tipográfica Real -->
+                <div class="bg-slate-900/60 rounded-xl p-6 sm:p-8 border border-slate-800/80 shadow-inner mb-4 space-y-4">
+                    
+                    <!-- Título Real -->
+                    <h3 class="text-2xl sm:text-3xl md:text-4xl text-white font-bold tracking-tight leading-tight" style="font-family: 'Newsreader', sans-serif;">
+                        Análise Geopolítica: A Transição Energética na Europa
+                    </h3>
+                    
+                    <!-- Subtítulo Real -->
+                    <h4 class="text-lg sm:text-xl text-sky-200/90 font-medium" style="font-family: 'Newsreader', sans-serif;">
+                        Desafios regulatórios e investimentos massivos em hidrogênio verde.
+                    </h4>
+                    
+                    <!-- Texto Normal Real -->
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed" style="font-family: 'Inter', sans-serif;">
+                        Criada pela fundição Production Type para o Google, Newsreader é a celebração do design editorial de notícias de prestígio no século XXI.
+                    </p>
+                </div>
+
+                <!-- Rodapé com Metadados e Vibe -->
+                <div class="flex flex-wrap items-center justify-between text-xs text-slate-400 gap-2">
+                    <div>
+                        <span class="font-semibold text-slate-300">Vibe:</span> The New York Times, Financial Times, newsletters no Substack e colunas.
+                    </div>
+                    <div class="flex items-center gap-4 text-slate-500">
+                        <span>Título: <strong class="text-slate-300 font-mono">Newsreader</strong></span>
+                        <span>Corpo: <strong class="text-slate-300 font-mono">Inter</strong></span>
+                        <a href="https://fonts.google.com/specimen/Newsreader" target="_blank" class="hover:text-sky-400 underline">Google Fonts ↗</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Card 34: Albert Sans + DM Sans -->
+            <div class="pairing-card glass-card rounded-2xl p-6 sm:p-8 transition-all" data-category="Tech & SaaS" data-fonts="albert sans dm sans">
+                
+                <!-- Cabeçalho do Card -->
+                <div class="flex flex-wrap items-center justify-between gap-3 pb-4 mb-6 border-b border-slate-700/50">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs font-bold uppercase px-3 py-1 rounded-full bg-slate-800 border border-slate-600 text-sky-400">
+                            #34 • Tech & SaaS
+                        </span>
+                        <h2 class="text-xl font-bold text-white">
+                            <span class="text-sky-300">Albert Sans</span> <span class="text-slate-500 font-light">+</span> <span class="text-indigo-300">DM Sans</span>
+                        </h2>
+                    </div>
+                    
+                    <div class="flex items-center gap-2">
+                        <button onclick="copyAIPrompt('Albert Sans', 'DM Sans', 'Tech & SaaS', this)" class="bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-600 hover:to-indigo-700 text-white font-semibold py-2 px-4 rounded-xl text-xs shadow-md transition-all">
+                            📋 Copiar Prompt IA
+                        </button>
+                        <button onclick="copyCSSCode('Albert Sans', 'DM Sans', this)" class="bg-slate-800 hover:bg-slate-700 border border-slate-600 text-slate-200 font-semibold py-2 px-3 rounded-xl text-xs transition-all">
+                            💻 Copiar CSS
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Demonstração Tipográfica Real -->
+                <div class="bg-slate-900/60 rounded-xl p-6 sm:p-8 border border-slate-800/80 shadow-inner mb-4 space-y-4">
+                    
+                    <!-- Título Real -->
+                    <h3 class="text-2xl sm:text-3xl md:text-4xl text-white font-bold tracking-tight leading-tight" style="font-family: 'Albert Sans', sans-serif;">
+                        Simplicidade Escandinava & Vida Minimalista
+                    </h3>
+                    
+                    <!-- Subtítulo Real -->
+                    <h4 class="text-lg sm:text-xl text-sky-200/90 font-medium" style="font-family: 'Albert Sans', sans-serif;">
+                        Mobiliário funcional que valoriza a luz natural e a madeira maciça.
+                    </h4>
+                    
+                    <!-- Texto Normal Real -->
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed" style="font-family: 'DM Sans', sans-serif;">
+                        Inspirada na tipografia modernista nórdica do início do século XX, Albert Sans transmite pureza de linhas, ordem espacial e serenidade contemporânea.
+                    </p>
+                </div>
+
+                <!-- Rodapé com Metadados e Vibe -->
+                <div class="flex flex-wrap items-center justify-between text-xs text-slate-400 gap-2">
+                    <div>
+                        <span class="font-semibold text-slate-300">Vibe:</span> Design de interiores escandinavo, marcas de iluminação e sustentabilidade.
+                    </div>
+                    <div class="flex items-center gap-4 text-slate-500">
+                        <span>Título: <strong class="text-slate-300 font-mono">Albert Sans</strong></span>
+                        <span>Corpo: <strong class="text-slate-300 font-mono">DM Sans</strong></span>
+                        <a href="https://fonts.google.com/specimen/Albert+Sans" target="_blank" class="hover:text-sky-400 underline">Google Fonts ↗</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Card 35: Red Hat Display + Red Hat Text -->
+            <div class="pairing-card glass-card rounded-2xl p-6 sm:p-8 transition-all" data-category="Corporativo & Institucional" data-fonts="red hat display red hat text">
+                
+                <!-- Cabeçalho do Card -->
+                <div class="flex flex-wrap items-center justify-between gap-3 pb-4 mb-6 border-b border-slate-700/50">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs font-bold uppercase px-3 py-1 rounded-full bg-slate-800 border border-slate-600 text-sky-400">
+                            #35 • Corporativo & Institucional
+                        </span>
+                        <h2 class="text-xl font-bold text-white">
+                            <span class="text-sky-300">Red Hat Display</span> <span class="text-slate-500 font-light">+</span> <span class="text-indigo-300">Red Hat Text</span>
+                        </h2>
+                    </div>
+                    
+                    <div class="flex items-center gap-2">
+                        <button onclick="copyAIPrompt('Red Hat Display', 'Red Hat Text', 'Corporativo & Institucional', this)" class="bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-600 hover:to-indigo-700 text-white font-semibold py-2 px-4 rounded-xl text-xs shadow-md transition-all">
+                            📋 Copiar Prompt IA
+                        </button>
+                        <button onclick="copyCSSCode('Red Hat Display', 'Red Hat Text', this)" class="bg-slate-800 hover:bg-slate-700 border border-slate-600 text-slate-200 font-semibold py-2 px-3 rounded-xl text-xs transition-all">
+                            💻 Copiar CSS
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Demonstração Tipográfica Real -->
+                <div class="bg-slate-900/60 rounded-xl p-6 sm:p-8 border border-slate-800/80 shadow-inner mb-4 space-y-4">
+                    
+                    <!-- Título Real -->
+                    <h3 class="text-2xl sm:text-3xl md:text-4xl text-white font-bold tracking-tight leading-tight" style="font-family: 'Red Hat Display', sans-serif;">
+                        Sistemas Operacionais & Infraestrutura de Nuvem Híbrida
+                    </h3>
+                    
+                    <!-- Subtítulo Real -->
+                    <h4 class="text-lg sm:text-xl text-sky-200/90 font-medium" style="font-family: 'Red Hat Display', sans-serif;">
+                        Contêineres seguros e orquestração de microsserviços em escala planetária.
+                    </h4>
+                    
+                    <!-- Texto Normal Real -->
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed" style="font-family: 'Red Hat Text', sans-serif;">
+                        Comissionada pela Red Hat para sua identidade corporativa aberta, esta superfamília foi concebida desde o primeiro traço para unificar títulos e corpos perfeitamente.
+                    </p>
+                </div>
+
+                <!-- Rodapé com Metadados e Vibe -->
+                <div class="flex flex-wrap items-center justify-between text-xs text-slate-400 gap-2">
+                    <div>
+                        <span class="font-semibold text-slate-300">Vibe:</span> Linux, cloud computing, enterprise software e telecomunicações.
+                    </div>
+                    <div class="flex items-center gap-4 text-slate-500">
+                        <span>Título: <strong class="text-slate-300 font-mono">Red Hat Display</strong></span>
+                        <span>Corpo: <strong class="text-slate-300 font-mono">Red Hat Text</strong></span>
+                        <a href="https://fonts.google.com/specimen/Red+Hat+Display" target="_blank" class="hover:text-sky-400 underline">Google Fonts ↗</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Card 36: Instrument Serif + Inter -->
+            <div class="pairing-card glass-card rounded-2xl p-6 sm:p-8 transition-all" data-category="Editorial & Luxo" data-fonts="instrument serif inter">
+                
+                <!-- Cabeçalho do Card -->
+                <div class="flex flex-wrap items-center justify-between gap-3 pb-4 mb-6 border-b border-slate-700/50">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs font-bold uppercase px-3 py-1 rounded-full bg-slate-800 border border-slate-600 text-sky-400">
+                            #36 • Editorial & Luxo
+                        </span>
+                        <h2 class="text-xl font-bold text-white">
+                            <span class="text-sky-300">Instrument Serif</span> <span class="text-slate-500 font-light">+</span> <span class="text-indigo-300">Inter</span>
+                        </h2>
+                    </div>
+                    
+                    <div class="flex items-center gap-2">
+                        <button onclick="copyAIPrompt('Instrument Serif', 'Inter', 'Editorial & Luxo', this)" class="bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-600 hover:to-indigo-700 text-white font-semibold py-2 px-4 rounded-xl text-xs shadow-md transition-all">
+                            📋 Copiar Prompt IA
+                        </button>
+                        <button onclick="copyCSSCode('Instrument Serif', 'Inter', this)" class="bg-slate-800 hover:bg-slate-700 border border-slate-600 text-slate-200 font-semibold py-2 px-3 rounded-xl text-xs transition-all">
+                            💻 Copiar CSS
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Demonstração Tipográfica Real -->
+                <div class="bg-slate-900/60 rounded-xl p-6 sm:p-8 border border-slate-800/80 shadow-inner mb-4 space-y-4">
+                    
+                    <!-- Título Real -->
+                    <h3 class="text-2xl sm:text-3xl md:text-4xl text-white font-bold tracking-tight leading-tight" style="font-family: 'Instrument Serif', sans-serif;">
+                        A Renascença do Software Artesanal e Vibe Coding
+                    </h3>
+                    
+                    <!-- Subtítulo Real -->
+                    <h4 class="text-lg sm:text-xl text-sky-200/90 font-medium" style="font-family: 'Instrument Serif', sans-serif;">
+                        Micro-ferramentas construídas por desenvolvedores independentes.
+                    </h4>
+                    
+                    <!-- Texto Normal Real -->
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed" style="font-family: 'Inter', sans-serif;">
+                        Instrument Serif é a queridinha dos fundadores do Silicon Valley e da cena de vibe coding atual: elegante, esguia e nostálgica, combinada com a precisão de Inter.
+                    </p>
+                </div>
+
+                <!-- Rodapé com Metadados e Vibe -->
+                <div class="flex flex-wrap items-center justify-between text-xs text-slate-400 gap-2">
+                    <div>
+                        <span class="font-semibold text-slate-300">Vibe:</span> Indie hackers, ferramentas de IA para desenvolvedores e estúdios modernos.
+                    </div>
+                    <div class="flex items-center gap-4 text-slate-500">
+                        <span>Título: <strong class="text-slate-300 font-mono">Instrument Serif</strong></span>
+                        <span>Corpo: <strong class="text-slate-300 font-mono">Inter</strong></span>
+                        <a href="https://fonts.google.com/specimen/Instrument+Serif" target="_blank" class="hover:text-sky-400 underline">Google Fonts ↗</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Card 37: Young Serif + Inter -->
+            <div class="pairing-card glass-card rounded-2xl p-6 sm:p-8 transition-all" data-category="Criativo & Vintage" data-fonts="young serif inter">
+                
+                <!-- Cabeçalho do Card -->
+                <div class="flex flex-wrap items-center justify-between gap-3 pb-4 mb-6 border-b border-slate-700/50">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs font-bold uppercase px-3 py-1 rounded-full bg-slate-800 border border-slate-600 text-sky-400">
+                            #37 • Criativo & Vintage
+                        </span>
+                        <h2 class="text-xl font-bold text-white">
+                            <span class="text-sky-300">Young Serif</span> <span class="text-slate-500 font-light">+</span> <span class="text-indigo-300">Inter</span>
+                        </h2>
+                    </div>
+                    
+                    <div class="flex items-center gap-2">
+                        <button onclick="copyAIPrompt('Young Serif', 'Inter', 'Criativo & Vintage', this)" class="bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-600 hover:to-indigo-700 text-white font-semibold py-2 px-4 rounded-xl text-xs shadow-md transition-all">
+                            📋 Copiar Prompt IA
+                        </button>
+                        <button onclick="copyCSSCode('Young Serif', 'Inter', this)" class="bg-slate-800 hover:bg-slate-700 border border-slate-600 text-slate-200 font-semibold py-2 px-3 rounded-xl text-xs transition-all">
+                            💻 Copiar CSS
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Demonstração Tipográfica Real -->
+                <div class="bg-slate-900/60 rounded-xl p-6 sm:p-8 border border-slate-800/80 shadow-inner mb-4 space-y-4">
+                    
+                    <!-- Título Real -->
+                    <h3 class="text-2xl sm:text-3xl md:text-4xl text-white font-bold tracking-tight leading-tight" style="font-family: 'Young Serif', sans-serif;">
+                        Pão de Fermentação Natural & Farinhas Ancestrais
+                    </h3>
+                    
+                    <!-- Subtítulo Real -->
+                    <h4 class="text-lg sm:text-xl text-sky-200/90 font-medium" style="font-family: 'Young Serif', sans-serif;">
+                        A paciência do tempo revelando sabores inesquecíveis a cada fornada.
+                    </h4>
+                    
+                    <!-- Texto Normal Real -->
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed" style="font-family: 'Inter', sans-serif;">
+                        Com curvas generosas e serifas arredondadas acolhedoras, Young Serif é aconchegante como uma padaria de bairro ou um ateliê de cerâmica.
+                    </p>
+                </div>
+
+                <!-- Rodapé com Metadados e Vibe -->
+                <div class="flex flex-wrap items-center justify-between text-xs text-slate-400 gap-2">
+                    <div>
+                        <span class="font-semibold text-slate-300">Vibe:</span> Panificação artesanal, cerâmica, agricultura orgânica e feiras livres.
+                    </div>
+                    <div class="flex items-center gap-4 text-slate-500">
+                        <span>Título: <strong class="text-slate-300 font-mono">Young Serif</strong></span>
+                        <span>Corpo: <strong class="text-slate-300 font-mono">Inter</strong></span>
+                        <a href="https://fonts.google.com/specimen/Young+Serif" target="_blank" class="hover:text-sky-400 underline">Google Fonts ↗</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Card 38: Schibsted Grotesk + Source Sans 3 -->
+            <div class="pairing-card glass-card rounded-2xl p-6 sm:p-8 transition-all" data-category="Corporativo & Institucional" data-fonts="schibsted grotesk source sans 3">
+                
+                <!-- Cabeçalho do Card -->
+                <div class="flex flex-wrap items-center justify-between gap-3 pb-4 mb-6 border-b border-slate-700/50">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs font-bold uppercase px-3 py-1 rounded-full bg-slate-800 border border-slate-600 text-sky-400">
+                            #38 • Corporativo & Institucional
+                        </span>
+                        <h2 class="text-xl font-bold text-white">
+                            <span class="text-sky-300">Schibsted Grotesk</span> <span class="text-slate-500 font-light">+</span> <span class="text-indigo-300">Source Sans 3</span>
+                        </h2>
+                    </div>
+                    
+                    <div class="flex items-center gap-2">
+                        <button onclick="copyAIPrompt('Schibsted Grotesk', 'Source Sans 3', 'Corporativo & Institucional', this)" class="bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-600 hover:to-indigo-700 text-white font-semibold py-2 px-4 rounded-xl text-xs shadow-md transition-all">
+                            📋 Copiar Prompt IA
+                        </button>
+                        <button onclick="copyCSSCode('Schibsted Grotesk', 'Source Sans 3', this)" class="bg-slate-800 hover:bg-slate-700 border border-slate-600 text-slate-200 font-semibold py-2 px-3 rounded-xl text-xs transition-all">
+                            💻 Copiar CSS
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Demonstração Tipográfica Real -->
+                <div class="bg-slate-900/60 rounded-xl p-6 sm:p-8 border border-slate-800/80 shadow-inner mb-4 space-y-4">
+                    
+                    <!-- Título Real -->
+                    <h3 class="text-2xl sm:text-3xl md:text-4xl text-white font-bold tracking-tight leading-tight" style="font-family: 'Schibsted Grotesk', sans-serif;">
+                        Jornalismo de Dados e Democracia Digital
+                    </h3>
+                    
+                    <!-- Subtítulo Real -->
+                    <h4 class="text-lg sm:text-xl text-sky-200/90 font-medium" style="font-family: 'Schibsted Grotesk', sans-serif;">
+                        Fatos verificados e investigações orientadas por registros públicos.
+                    </h4>
+                    
+                    <!-- Texto Normal Real -->
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed" style="font-family: 'Source Sans 3', sans-serif;">
+                        Criada pelo maior grupo de mídia dos países nórdicos, Schibsted Grotesk é robusta, democrática e desenhada para comunicação pública clara e imparcial.
+                    </p>
+                </div>
+
+                <!-- Rodapé com Metadados e Vibe -->
+                <div class="flex flex-wrap items-center justify-between text-xs text-slate-400 gap-2">
+                    <div>
+                        <span class="font-semibold text-slate-300">Vibe:</span> Redações de notícias, agências de checagem e portais de transparência.
+                    </div>
+                    <div class="flex items-center gap-4 text-slate-500">
+                        <span>Título: <strong class="text-slate-300 font-mono">Schibsted Grotesk</strong></span>
+                        <span>Corpo: <strong class="text-slate-300 font-mono">Source Sans 3</strong></span>
+                        <a href="https://fonts.google.com/specimen/Schibsted+Grotesk" target="_blank" class="hover:text-sky-400 underline">Google Fonts ↗</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Card 39: Exo 2 + Roboto -->
+            <div class="pairing-card glass-card rounded-2xl p-6 sm:p-8 transition-all" data-category="Cyberpunk & Web3" data-fonts="exo 2 roboto">
+                
+                <!-- Cabeçalho do Card -->
+                <div class="flex flex-wrap items-center justify-between gap-3 pb-4 mb-6 border-b border-slate-700/50">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs font-bold uppercase px-3 py-1 rounded-full bg-slate-800 border border-slate-600 text-sky-400">
+                            #39 • Cyberpunk & Web3
+                        </span>
+                        <h2 class="text-xl font-bold text-white">
+                            <span class="text-sky-300">Exo 2</span> <span class="text-slate-500 font-light">+</span> <span class="text-indigo-300">Roboto</span>
+                        </h2>
+                    </div>
+                    
+                    <div class="flex items-center gap-2">
+                        <button onclick="copyAIPrompt('Exo 2', 'Roboto', 'Cyberpunk & Web3', this)" class="bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-600 hover:to-indigo-700 text-white font-semibold py-2 px-4 rounded-xl text-xs shadow-md transition-all">
+                            📋 Copiar Prompt IA
+                        </button>
+                        <button onclick="copyCSSCode('Exo 2', 'Roboto', this)" class="bg-slate-800 hover:bg-slate-700 border border-slate-600 text-slate-200 font-semibold py-2 px-3 rounded-xl text-xs transition-all">
+                            💻 Copiar CSS
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Demonstração Tipográfica Real -->
+                <div class="bg-slate-900/60 rounded-xl p-6 sm:p-8 border border-slate-800/80 shadow-inner mb-4 space-y-4">
+                    
+                    <!-- Título Real -->
+                    <h3 class="text-2xl sm:text-3xl md:text-4xl text-white font-bold tracking-tight leading-tight" style="font-family: 'Exo 2', sans-serif;">
+                        CAMPEONATO MUNDIAL DE ESPORTS & SIMULADORES
+                    </h3>
+                    
+                    <!-- Subtítulo Real -->
+                    <h4 class="text-lg sm:text-xl text-sky-200/90 font-medium" style="font-family: 'Exo 2', sans-serif;">
+                        Transmissão ao vivo com telemetria e análise tática em 4K 120fps.
+                    </h4>
+                    
+                    <!-- Texto Normal Real -->
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed" style="font-family: 'Roboto', sans-serif;">
+                        Exo 2 possui cortes angulares e dinamismo cinético nos caracteres, expressando velocidade, adrenalina e tecnologia gamer em cada detalhe.
+                    </p>
+                </div>
+
+                <!-- Rodapé com Metadados e Vibe -->
+                <div class="flex flex-wrap items-center justify-between text-xs text-slate-400 gap-2">
+                    <div>
+                        <span class="font-semibold text-slate-300">Vibe:</span> Ligas de esports, periféricos gamer, simuladores e plataformas Twitch.
+                    </div>
+                    <div class="flex items-center gap-4 text-slate-500">
+                        <span>Título: <strong class="text-slate-300 font-mono">Exo 2</strong></span>
+                        <span>Corpo: <strong class="text-slate-300 font-mono">Roboto</strong></span>
+                        <a href="https://fonts.google.com/specimen/Exo+2" target="_blank" class="hover:text-sky-400 underline">Google Fonts ↗</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Card 40: Castoro + Plus Jakarta Sans -->
+            <div class="pairing-card glass-card rounded-2xl p-6 sm:p-8 transition-all" data-category="Clássico & Acadêmico" data-fonts="castoro plus jakarta sans">
+                
+                <!-- Cabeçalho do Card -->
+                <div class="flex flex-wrap items-center justify-between gap-3 pb-4 mb-6 border-b border-slate-700/50">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs font-bold uppercase px-3 py-1 rounded-full bg-slate-800 border border-slate-600 text-sky-400">
+                            #40 • Clássico & Acadêmico
+                        </span>
+                        <h2 class="text-xl font-bold text-white">
+                            <span class="text-sky-300">Castoro</span> <span class="text-slate-500 font-light">+</span> <span class="text-indigo-300">Plus Jakarta Sans</span>
+                        </h2>
+                    </div>
+                    
+                    <div class="flex items-center gap-2">
+                        <button onclick="copyAIPrompt('Castoro', 'Plus Jakarta Sans', 'Clássico & Acadêmico', this)" class="bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-600 hover:to-indigo-700 text-white font-semibold py-2 px-4 rounded-xl text-xs shadow-md transition-all">
+                            📋 Copiar Prompt IA
+                        </button>
+                        <button onclick="copyCSSCode('Castoro', 'Plus Jakarta Sans', this)" class="bg-slate-800 hover:bg-slate-700 border border-slate-600 text-slate-200 font-semibold py-2 px-3 rounded-xl text-xs transition-all">
+                            💻 Copiar CSS
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Demonstração Tipográfica Real -->
+                <div class="bg-slate-900/60 rounded-xl p-6 sm:p-8 border border-slate-800/80 shadow-inner mb-4 space-y-4">
+                    
+                    <!-- Título Real -->
+                    <h3 class="text-2xl sm:text-3xl md:text-4xl text-white font-bold tracking-tight leading-tight" style="font-family: 'Castoro', sans-serif;">
+                        A Tradição Jurídica e o Estado Democrático de Direito
+                    </h3>
+                    
+                    <!-- Subtítulo Real -->
+                    <h4 class="text-lg sm:text-xl text-sky-200/90 font-medium" style="font-family: 'Castoro', sans-serif;">
+                        Jurisprudência comparada e tratados constitucionais no século XXI.
+                    </h4>
+                    
+                    <!-- Texto Normal Real -->
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed" style="font-family: 'Plus Jakarta Sans', sans-serif;">
+                        Castoro foi desenvolvida por John Hudson e pela fundição Tiro Typeworks para publicações acadêmicas exigentes, aliando solenidade secular à modernidade de Jakarta.
+                    </p>
+                </div>
+
+                <!-- Rodapé com Metadados e Vibe -->
+                <div class="flex flex-wrap items-center justify-between text-xs text-slate-400 gap-2">
+                    <div>
+                        <span class="font-semibold text-slate-300">Vibe:</span> Escritórios de advocacia, tribunais, tratados de diplomacia e história.
+                    </div>
+                    <div class="flex items-center gap-4 text-slate-500">
+                        <span>Título: <strong class="text-slate-300 font-mono">Castoro</strong></span>
+                        <span>Corpo: <strong class="text-slate-300 font-mono">Plus Jakarta Sans</strong></span>
+                        <a href="https://fonts.google.com/specimen/Castoro" target="_blank" class="hover:text-sky-400 underline">Google Fonts ↗</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="fixed left-1/2 -translate-x-1/2 bottom-5 z-50 bg-slate-900/95 border border-sky-400 shadow-2xl rounded-2xl px-6 py-3.5 text-white font-semibold text-sm flex items-center gap-3 backdrop-blur-xl">
+        <span id="toastIcon">📋</span>
+        <span id="toastMsg">Prompt copiado para a área de transferência!</span>
+    </div>
+
+    <script>
+        // Copiar Prompt Completo para IA
+        function copyAIPrompt(titleFont, bodyFont, category, btn) {
+            const promptText = `Por favor, aplique a seguinte combinação tipográfica no projeto:
+- Títulos: '${titleFont}', sans-serif (Google Fonts)
+- Subtítulos e Corpo: '${bodyFont}', sans-serif (Google Fonts)
+- Categoria / Estilo: ${category}
+
+Para importar no HTML / CSS:
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=${titleFont.replace(/ /g, '+')}:wght@600;700;800&family=${bodyFont.replace(/ /g, '+')}:wght@400;500;600&display=swap" rel="stylesheet">
+
+Regras de CSS:
+:root {
+  --font-title: '${titleFont}', sans-serif;
+  --font-body: '${bodyFont}', sans-serif;
+}
+h1, h2, h3, h4 { font-family: var(--font-title); }
+body, p, span, a, input, button { font-family: var(--font-body); }`;
+
+            copyText(promptText, "📋 Prompt para IA copiado com sucesso!", btn);
+        }
+
+        // Copiar apenas o snippet CSS
+        function copyCSSCode(titleFont, bodyFont, btn) {
+            const cssSnippet = `:root {
+  --font-title: '${titleFont}', sans-serif;
+  --font-body: '${bodyFont}', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 { font-family: var(--font-title); }
+body, p, li, blockquote { font-family: var(--font-body); }`;
+
+            copyText(cssSnippet, "💻 Variáveis CSS copiadas!", btn);
+        }
+
+        function copyText(text, successMsg, btn) {
+            if (navigator.clipboard && window.isSecureContext) {
+                navigator.clipboard.writeText(text).then(() => {
+                    triggerFeedback(btn, successMsg);
+                }).catch(() => {
+                    fallbackCopy(text, btn, successMsg);
+                });
+            } else {
+                fallbackCopy(text, btn, successMsg);
+            }
+        }
+
+        function fallbackCopy(text, btn, successMsg) {
+            const t = document.createElement('textarea');
+            t.style.position = 'absolute';
+            t.style.left = '-9999px';
+            t.value = text;
+            document.body.appendChild(t);
+            t.select();
+            try {
+                document.execCommand('copy');
+                triggerFeedback(btn, successMsg);
+            } catch (err) {
+                alert('Copie manualmente:\n' + text);
+            } finally {
+                document.body.removeChild(t);
+            }
+        }
+
+        function triggerFeedback(btn, msg) {
+            const orig = btn.innerText;
+            btn.innerText = '✓ Copiado!';
+            showToast(msg);
+            setTimeout(() => {
+                btn.innerText = orig;
+            }, 2000);
+        }
+
+        function showToast(msg) {
+            const toast = document.getElementById('toast');
+            document.getElementById('toastMsg').innerText = msg;
+            toast.classList.add('show');
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 2500);
+        }
+
+        // Filtragem por Categoria
+        let currentCategory = 'TODOS';
+        function filterCategory(cat) {
+            currentCategory = cat;
+            document.querySelectorAll('.cat-btn').forEach(b => {
+                if (b.getAttribute('data-cat') === cat) {
+                    b.className = 'cat-btn active px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-sky-500 text-white shadow-lg transition-all';
+                } else {
+                    b.className = 'cat-btn px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-slate-800 text-slate-300 hover:bg-slate-700 border border-slate-700 transition-all';
+                }
+            });
+            applyFilters();
+        }
+
+        function searchPairings() {
+            applyFilters();
+        }
+
+        function applyFilters() {
+            const q = document.getElementById('fontSearch').value.toLowerCase().trim();
+            const cards = document.querySelectorAll('.pairing-card');
+            cards.forEach(card => {
+                const cardCat = card.getAttribute('data-category');
+                const cardFonts = card.getAttribute('data-fonts');
+                const matchCat = (currentCategory === 'TODOS' || cardCat === currentCategory);
+                const matchSearch = (!q || cardFonts.includes(q) || cardCat.toLowerCase().includes(q));
+                
+                if (matchCat && matchSearch) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
