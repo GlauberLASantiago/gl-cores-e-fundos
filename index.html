@@ -11,7 +11,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital,wght@0,400;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <style>
         :root {
@@ -26,11 +26,19 @@
             --accent-purple: #a855f7;
             --text-main: #f8fafc;
             --text-muted: #94a3b8;
-            --font-title: 'Outfit', sans-serif;
+            --font-title: 'Instrument Serif', serif;
             --font-body: 'Inter', sans-serif;
             --radius-sm: 8px;
             --radius-md: 14px;
             --radius-lg: 20px;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: var(--font-title);
+        }
+
+        body, p, span, a, input, button {
+            font-family: var(--font-body);
         }
 
         * {
