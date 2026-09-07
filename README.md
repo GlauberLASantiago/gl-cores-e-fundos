@@ -93,9 +93,10 @@ fundos/
 ## 🚀 Como Usar
 
 1. **Uso Local:** Dê um duplo clique no arquivo `index.html` em seu computador para abrir no navegador.
-2. **Uso Online (GitHub Pages):** Acesse a URL pública do seu repositório publicada via GitHub Pages.
-3. Alterne livremente entre as 3 ferramentas (**Fundos Visuais**, **Paletas de Cores** e **Pares Tipográficos**) pela barra unificada no topo.
-4. Utilize o botão **Modo Diurno / Noturno** para alternar a experiência visual.
+2. **Uso Online (GitHub Pages):** Acesse [glauberlasantiago.github.io/gl-cores-fontes-e-fundos](https://glauberlasantiago.github.io/gl-cores-fontes-e-fundos/)
+3. **Repositório GitHub:** [github.com/GlauberLASantiago/gl-cores-fontes-e-fundos](https://github.com/GlauberLASantiago/gl-cores-fontes-e-fundos)
+4. Alterne livremente entre as 3 ferramentas (**Fundos Visuais**, **Paletas de Cores** e **Pares Tipográficos**) pela barra unificada no topo.
+5. Utilize o botão **Modo Diurno / Noturno** para alternar a experiência visual.
 
 ---
 
