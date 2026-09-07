@@ -57,7 +57,11 @@ Aplicação web moderna, responsiva e dinâmica composta pela tríade essencial 
    - Filtros de formato: **Todos**, **JPG**, **PNG** e **SVG**.
    - Badges com contagem dinâmica por categoria.
 
-6. **⚡ 100% Funcional Online e Offline:**
+6. **☀️ Modo Diurno & 🌙 Modo Noturno:**
+   - Alternador de tema no cabeçalho com persistência automática no `localStorage`.
+   - Adaptação estética completa das interfaces com efeitos de vidro translúcido (*Glassmorphism*) em modo claro e escuro.
+
+7. **⚡ 100% Funcional Online e Offline:**
    - Possui catálogo embutido e arquivo `catalog.json`, funcionando instantaneamente ao abrir o `index.html` no computador sem necessidade de servidor ou conexão, além de total integração com o GitHub Pages e a API pública do GitHub.
 
 ---
@@ -90,13 +94,13 @@ fundos/
 
 1. **Uso Local:** Dê um duplo clique no arquivo `index.html` em seu computador para abrir no navegador.
 2. **Uso Online (GitHub Pages):** Acesse a URL pública do seu repositório publicada via GitHub Pages.
-3. Escolha uma categoria ou busque pelo estilo desejado.
-4. Clique em qualquer card para abrir o modal de alta resolução, simular a interface ou copiar os códigos de integração com um clique.
+3. Alterne livremente entre as 3 ferramentas (**Fundos Visuais**, **Paletas de Cores** e **Pares Tipográficos**) pela barra unificada no topo.
+4. Utilize o botão **Modo Diurno / Noturno** para alternar a experiência visual.
 
 ---
 
-## ➕ Como Adicionar Novos Fundos
+## 👨‍🏫 Créditos & Apoio Institucional
 
-1. Crie uma nova pasta (para uma nova categoria) ou utilize uma pasta existente.
-2. Salve a imagem dentro dela nos formatos `.jpg`, `.png`, `.svg` ou `.webp` (preferencialmente na proporção 16:9).
-3. Ao enviar as alterações para o GitHub, a nova imagem ou categoria será reconhecida pela galeria.
+- **Desenvolvido por:** Professor Dr. Glauber Santiago — Departamento de Artes e Comunicação (DAC/UFSCar)
+- **Apoio:** [Grupo de Pesquisa Horizonte](https://grupohorizonte.ufscar.br/)
+- **Website do Docente:** [servidores.ufscar.br/glauber](https://servidores.ufscar.br/glauber/)

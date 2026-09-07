@@ -4,45 +4,358 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Gl Cores Fontes e Fundos - Gerador de Paletas de Cores</title>
+
+<!-- Script de Inicialização de Tema (Modo Diurno / Noturno sem FOUC) -->
+<script>
+    (function() {
+        const saved = localStorage.getItem('gl_theme') || 'dark';
+        if (saved === 'light') {
+            document.documentElement.setAttribute('data-theme', 'light');
+            document.documentElement.classList.add('light');
+            document.documentElement.classList.remove('dark');
+        } else {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            document.documentElement.classList.add('dark');
+            document.documentElement.classList.remove('light');
+        }
+    })();
+</script>
+
 <script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+        darkMode: 'class'
+    }
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital,wght@0,400;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 <style>
-/* Estilo para a fonte Inter */
+/* ============================================================
+   NAVBAR UNIFICADA & MODO CLARO / ESCURO
+   ============================================================ */
+:root {
+  --border-color: rgba(255, 255, 255, 0.1);
+  --primary: #38bdf8;
+  --accent-purple: #a855f7;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --font-title: 'Instrument Serif', serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+[data-theme="light"] {
+  --border-color: rgba(0, 0, 0, 0.09);
+  --primary: #0284c7;
+  --text-main: #0f172a;
+  --text-muted: #475569;
+}
+
 body {
-font-family: 'Inter', sans-serif;
-background: linear-gradient(rgba(17, 24, 39, 0.88), rgba(17, 24, 39, 0.94)), url('abstrato/05_realista_gotas_de_agua_vidro_bokeh.png') center / cover no-repeat fixed;
+  font-family: var(--font-body);
+  background: linear-gradient(rgba(17, 24, 39, 0.88), rgba(17, 24, 39, 0.94)), url('abstrato/05_realista_gotas_de_agua_vidro_bokeh.png') center / cover no-repeat fixed;
+  min-height: 100vh;
 }
+
+[data-theme="light"] body {
+  background: linear-gradient(rgba(248, 250, 252, 0.90), rgba(241, 245, 249, 0.94)), url('abstrato/05_realista_gotas_de_agua_vidro_bokeh.png') center / cover no-repeat fixed;
+  color: #0f172a;
+}
+
 h1, h2, h3, h4 {
-font-family: 'Instrument Serif', serif;
-letter-spacing: 0.2px;
+  font-family: var(--font-title);
+  letter-spacing: 0.2px;
 }
-/* Efeito de transição suave nos botões e cards */
+
 .transition-all {
-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.app-header {
+  border-bottom: 1px solid var(--border-color);
+  background: rgba(9, 13, 22, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 0.85rem 1.5rem;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+[data-theme="light"] .app-header {
+  background: rgba(255, 255, 255, 0.9);
+  border-bottom-color: rgba(0, 0, 0, 0.08);
+}
+
+.app-header-inner {
+  max-width: 1360px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.app-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.app-brand-logo {
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(135deg, var(--primary), var(--accent-purple));
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
+  flex-shrink: 0;
+}
+
+.app-brand-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-brand-title {
+  font-family: var(--font-title);
+  font-size: 1.65rem;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  background: linear-gradient(135deg, #ffffff 40%, var(--primary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.15;
+}
+
+[data-theme="light"] .app-brand-title {
+  background: linear-gradient(135deg, #0f172a 40%, #0284c7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.app-brand-tagline {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-family: var(--font-body);
+}
+
+.app-nav-tabs {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 4px;
+  border-radius: 999px;
+  border: 1px solid var(--border-color);
+  gap: 4px;
+}
+
+[data-theme="light"] .app-nav-tabs {
+  background: rgba(0, 0, 0, 0.05);
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+.app-nav-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0.5rem 1.15rem;
+  border-radius: 999px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--text-muted);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: var(--font-body);
+}
+
+.app-nav-tab:hover {
+  color: var(--text-main);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+[data-theme="light"] .app-nav-tab {
+  color: #475569;
+}
+
+[data-theme="light"] .app-nav-tab:hover {
+  color: #0f172a;
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.app-nav-tab.active {
+  background: linear-gradient(135deg, #0ea5e9, #6366f1);
+  color: #ffffff !important;
+  box-shadow: 0 2px 12px rgba(14, 165, 233, 0.4);
+}
+
+.app-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.theme-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid var(--border-color);
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--text-main);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: var(--font-body);
+}
+
+[data-theme="light"] .theme-toggle-btn {
+  background: rgba(0, 0, 0, 0.05);
+  border-color: rgba(0, 0, 0, 0.1);
+  color: #0f172a;
+}
+
+.theme-toggle-btn:hover {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: var(--primary);
+  transform: translateY(-1px);
+}
+
+[data-theme="light"] .theme-toggle-btn:hover {
+  background: rgba(0, 0, 0, 0.09);
+  border-color: #0284c7;
+}
+
+/* ============================================================
+   RODAPÉ UNIFICADO COM CRÉDITOS
+   ============================================================ */
+.app-footer {
+  border-top: 1px solid var(--border-color);
+  background: rgba(9, 13, 22, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 2.2rem 1.5rem;
+  margin-top: 4rem;
+  text-align: center;
+  color: var(--text-muted);
+  font-family: var(--font-body);
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+[data-theme="light"] .app-footer {
+  background: rgba(255, 255, 255, 0.88);
+  border-top-color: rgba(0, 0, 0, 0.08);
+  color: #475569;
+}
+
+.app-footer-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.footer-credit {
+  font-size: 0.95rem;
+  color: var(--text-main);
+  line-height: 1.5;
+}
+
+[data-theme="light"] .footer-credit {
+  color: #0f172a;
+}
+
+.footer-credit strong {
+  color: var(--primary);
+}
+
+[data-theme="light"] .footer-credit strong {
+  color: #0284c7;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-size: 0.88rem;
+}
+
+.footer-link {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #38bdf8;
+  text-decoration: underline;
+}
+
+[data-theme="light"] .footer-link:hover {
+  color: #0369a1;
+}
+
+.footer-sep {
+  opacity: 0.4;
 }
 </style>
 </head>
-<body class="text-gray-800 dark:text-gray-200 p-4 sm:p-6 md:p-8 transition-all">
-<div class="max-w-4xl mx-auto">
+<body class="text-gray-800 dark:text-gray-200 transition-all">
 
-<!-- Barra de Navegação Superior -->
-<nav class="flex items-center justify-between flex-wrap gap-4 mb-8 pb-4 border-b border-gray-200 dark:border-gray-800">
-    <div class="flex items-center gap-3 flex-wrap">
-        <a href="index.html" class="inline-flex items-center gap-2 bg-gradient-to-r from-sky-500 to-indigo-600 text-white font-semibold py-2 px-4 rounded-xl shadow-md hover:shadow-lg hover:from-sky-600 hover:to-indigo-700 transition-all text-sm">
-            <span>🖼️</span> Galeria de Fundos
+<!-- Header Fixo Unificado -->
+<header class="app-header">
+    <div class="app-header-inner">
+        <a href="index.html" class="app-brand" title="Gl Cores Fontes e Fundos - Início">
+            <div class="app-brand-logo">🎨</div>
+            <div class="app-brand-info">
+                <span class="app-brand-title">Gl Cores Fontes e Fundos</span>
+                <span class="app-brand-tagline">Fundos Visuais, Paletas de Cores & Pares Tipográficos</span>
+            </div>
         </a>
-        <a href="fontes.html" class="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-500 to-teal-600 text-white font-semibold py-2 px-4 rounded-xl shadow-md hover:shadow-lg hover:from-emerald-600 hover:to-teal-700 transition-all text-sm">
-            <span>🔤</span> Pares Tipográficos
-        </a>
+
+        <!-- 3 Funcionalidades Selecionáveis -->
+        <nav class="app-nav-tabs" aria-label="Navegação do App">
+            <a href="index.html" class="app-nav-tab">
+                <span class="tab-icon">🖼️</span>
+                <span class="tab-label">Fundos Visuais</span>
+            </a>
+            <a href="paletas.html" class="app-nav-tab active">
+                <span class="tab-icon">🎨</span>
+                <span class="tab-label">Paletas de Cores</span>
+            </a>
+            <a href="fontes.html" class="app-nav-tab">
+                <span class="tab-icon">🔤</span>
+                <span class="tab-label">Pares Tipográficos</span>
+            </a>
+        </nav>
+
+        <div class="app-header-actions">
+            <button id="themeToggleBtn" class="theme-toggle-btn" type="button" aria-label="Alternar modo diurno/noturno" title="Alternar Modo Claro / Escuro">
+                <span class="theme-icon" id="themeIcon">☀️</span>
+                <span class="theme-label" id="themeLabel">Modo Diurno</span>
+            </button>
+        </div>
     </div>
-    <div class="flex items-center gap-3">
-        <span class="text-xs font-semibold px-3 py-1.5 rounded-full bg-blue-100 text-blue-800 dark:bg-blue-900/60 dark:text-blue-300">
-            🎨 Gl Cores Fontes e Fundos
-        </span>
-    </div>
-</nav>
+</header>
+
+<div class="max-w-4xl mx-auto p-4 sm:p-6 md:p-8">
 
 <header class="text-center mb-10">
 <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 dark:text-white tracking-tight">Gerador de Paletas de Cores</h1>
@@ -996,7 +1309,66 @@ Copiar Cores
 
 </main>
 </div>
+
+<!-- Rodapé Unificado com Créditos -->
+<footer class="app-footer">
+    <div class="app-footer-inner">
+        <p class="footer-credit">
+            Desenvolvido pelo <strong>professor Dr. Glauber Santiago</strong> — <span>DAC/UFSCar</span>
+        </p>
+        <div class="footer-links">
+            <span class="footer-label">Apoio:</span>
+            <a href="https://grupohorizonte.ufscar.br/" target="_blank" rel="noopener noreferrer" class="footer-link">
+                Grupo de Pesquisa Horizonte ↗
+            </a>
+            <span class="footer-sep">•</span>
+            <a href="https://servidores.ufscar.br/glauber/" target="_blank" rel="noopener noreferrer" class="footer-link doc-link">
+                🌐 Website do Docente ↗
+            </a>
+        </div>
+    </div>
+</footer>
+
 <script>
+// Alternador de Tema (Modo Diurno / Noturno)
+function initThemeToggle() {
+    const btn = document.getElementById('themeToggleBtn');
+    const icon = document.getElementById('themeIcon');
+    const label = document.getElementById('themeLabel');
+    if (!btn) return;
+
+    function applyTheme(theme) {
+        if (theme === 'light') {
+            document.documentElement.setAttribute('data-theme', 'light');
+            document.documentElement.classList.add('light');
+            document.documentElement.classList.remove('dark');
+            if (icon) icon.textContent = '🌙';
+            if (label) label.textContent = 'Modo Noturno';
+            btn.setAttribute('title', 'Alternar para Modo Noturno');
+        } else {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            document.documentElement.classList.add('dark');
+            document.documentElement.classList.remove('light');
+            if (icon) icon.textContent = '☀️';
+            if (label) label.textContent = 'Modo Diurno';
+            btn.setAttribute('title', 'Alternar para Modo Diurno');
+        }
+    }
+
+    const current = localStorage.getItem('gl_theme') || 'dark';
+    applyTheme(current);
+
+    btn.addEventListener('click', () => {
+        const isLight = document.documentElement.getAttribute('data-theme') === 'light';
+        const nextTheme = isLight ? 'dark' : 'light';
+        localStorage.setItem('gl_theme', nextTheme);
+        applyTheme(nextTheme);
+    });
+}
+
+// Inicializa tema
+initThemeToggle();
+
 // Função para copiar o texto para a área de transferência
 function copyToClipboard(elementId, button) {
 // Obtém os códigos das cores do elemento span oculto

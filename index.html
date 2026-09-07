@@ -8,6 +8,20 @@
     
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>">
     
+    <!-- Script de Inicialização de Tema (Modo Diurno / Noturno sem FOUC) -->
+    <script>
+        (function() {
+            const saved = localStorage.getItem('gl_theme') || 'dark';
+            if (saved === 'light') {
+                document.documentElement.setAttribute('data-theme', 'light');
+                document.documentElement.classList.add('light');
+            } else {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                document.documentElement.classList.remove('light');
+            }
+        })();
+    </script>
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,8 +72,10 @@
                 url('abstrato/05_realista_gotas_de_agua_vidro_bokeh.png') center / cover no-repeat fixed;
         }
 
-        /* Header Moderno */
-        header {
+        /* ============================================================
+           NAVBAR UNIFICADA (3 FUNCIONALIDADES) & HEADER MODERNO
+           ============================================================ */
+        .app-header {
             border-bottom: 1px solid var(--border-color);
             background: rgba(9, 13, 22, 0.85);
             backdrop-filter: blur(16px);
@@ -67,20 +83,21 @@
             position: sticky;
             top: 0;
             z-index: 100;
-            padding: 1.25rem 1.5rem;
+            padding: 0.85rem 1.5rem;
+            transition: background 0.3s ease, border-color 0.3s ease;
         }
 
-        .header-content {
+        .app-header-inner {
             max-width: 1360px;
             margin: 0 auto;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            gap: 1.5rem;
+            gap: 1.25rem;
             flex-wrap: wrap;
         }
 
-        .brand {
+        .app-brand {
             display: flex;
             align-items: center;
             gap: 12px;
@@ -88,7 +105,7 @@
             color: inherit;
         }
 
-        .brand-logo {
+        .app-brand-logo {
             width: 44px;
             height: 44px;
             background: linear-gradient(135deg, var(--primary), var(--accent-purple));
@@ -96,31 +113,129 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             box-shadow: 0 0 20px var(--primary-glow);
+            flex-shrink: 0;
         }
 
-        .brand-text h1 {
+        .app-brand-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .app-brand-title {
             font-family: var(--font-title);
-            font-size: 1.5rem;
-            font-weight: 800;
-            letter-spacing: -0.5px;
+            font-size: 1.65rem;
+            font-weight: 700;
+            letter-spacing: 0.2px;
             background: linear-gradient(135deg, #ffffff 40%, var(--primary));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            line-height: 1.2;
+            line-height: 1.15;
         }
 
-        .brand-text p {
-            font-size: 0.82rem;
+        .app-brand-tagline {
+            font-size: 0.8rem;
             color: var(--text-muted);
+            font-family: var(--font-body);
+        }
+
+        /* 3 Funcionalidades Selecionáveis */
+        .app-nav-tabs {
+            display: inline-flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 4px;
+            border-radius: 999px;
+            border: 1px solid var(--border-color);
+            gap: 4px;
+        }
+
+        .app-nav-tab {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 0.5rem 1.15rem;
+            border-radius: 999px;
+            font-size: 0.88rem;
+            font-weight: 600;
+            text-decoration: none;
+            color: var(--text-muted);
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+            font-family: var(--font-body);
+        }
+
+        .app-nav-tab:hover {
+            color: var(--text-main);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .app-nav-tab.active {
+            background: linear-gradient(135deg, #0ea5e9, #6366f1);
+            color: #ffffff !important;
+            box-shadow: 0 2px 12px rgba(14, 165, 233, 0.4);
+        }
+
+        .app-header-actions {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        /* Botão Alternador de Tema (Modo Diurno / Noturno) */
+        .theme-toggle-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.07);
+            border: 1px solid var(--border-color);
+            padding: 0.5rem 1rem;
+            border-radius: 999px;
+            font-size: 0.86rem;
+            font-weight: 600;
+            color: var(--text-main);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-family: var(--font-body);
+        }
+
+        .theme-toggle-btn:hover {
+            background: rgba(255, 255, 255, 0.14);
+            border-color: var(--primary);
+            transform: translateY(-1px);
+        }
+
+        .stats-badge {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid var(--border-color);
+            padding: 0.45rem 0.9rem;
+            border-radius: 999px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .stats-badge strong {
+            color: var(--primary);
+        }
+
+        /* Barra de Busca & Filtros no Toolbar */
+        .toolbar-search-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.25rem;
+            flex-wrap: wrap;
         }
 
         .search-wrapper {
             position: relative;
             flex: 1;
-            max-width: 400px;
-            min-width: 220px;
+            max-width: 480px;
+            min-width: 240px;
         }
 
         .search-input {
@@ -152,75 +267,218 @@
             font-size: 0.9rem;
         }
 
-        .header-right {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            flex-wrap: wrap;
+        /* ============================================================
+           MODO DIURNO (LIGHT THEME) OVERRIDES
+           ============================================================ */
+        [data-theme="light"] {
+            --bg-dark: #f8fafc;
+            --bg-card: rgba(255, 255, 255, 0.88);
+            --bg-card-hover: rgba(255, 255, 255, 0.98);
+            --border-color: rgba(0, 0, 0, 0.09);
+            --border-hover: rgba(2, 132, 199, 0.5);
+            --primary: #0284c7;
+            --primary-glow: rgba(2, 132, 199, 0.2);
+            --accent: #e11d48;
+            --accent-purple: #7c3aed;
+            --text-main: #0f172a;
+            --text-muted: #475569;
         }
 
-        .btn-nav-paletas {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: linear-gradient(135deg, #f43f5e, #a855f7);
+        [data-theme="light"] body {
+            background: 
+                linear-gradient(rgba(248, 250, 252, 0.90), rgba(241, 245, 249, 0.94)),
+                url('abstrato/05_realista_gotas_de_agua_vidro_bokeh.png') center / cover no-repeat fixed;
+            color: var(--text-main);
+        }
+
+        [data-theme="light"] .app-header {
+            background: rgba(255, 255, 255, 0.9);
+            border-bottom-color: rgba(0, 0, 0, 0.08);
+        }
+
+        [data-theme="light"] .app-brand-title {
+            background: linear-gradient(135deg, #0f172a 40%, #0284c7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        [data-theme="light"] .app-nav-tabs {
+            background: rgba(0, 0, 0, 0.05);
+            border-color: rgba(0, 0, 0, 0.08);
+        }
+
+        [data-theme="light"] .app-nav-tab {
+            color: #475569;
+        }
+
+        [data-theme="light"] .app-nav-tab:hover {
+            color: #0f172a;
+            background: rgba(0, 0, 0, 0.06);
+        }
+
+        [data-theme="light"] .theme-toggle-btn {
+            background: rgba(0, 0, 0, 0.05);
+            border-color: rgba(0, 0, 0, 0.1);
+            color: #0f172a;
+        }
+
+        [data-theme="light"] .theme-toggle-btn:hover {
+            background: rgba(0, 0, 0, 0.09);
+            border-color: #0284c7;
+        }
+
+        [data-theme="light"] .search-input {
+            background: rgba(0, 0, 0, 0.04);
+            border-color: rgba(0, 0, 0, 0.12);
+            color: #0f172a;
+        }
+
+        [data-theme="light"] .search-input:focus {
+            background: #ffffff;
+            border-color: var(--primary);
+        }
+
+        [data-theme="light"] .category-pill {
+            background: rgba(255, 255, 255, 0.85);
+            border-color: rgba(0, 0, 0, 0.1);
+            color: #475569;
+        }
+
+        [data-theme="light"] .category-pill:hover {
+            background: #ffffff;
+            color: #0f172a;
+            border-color: var(--primary);
+        }
+
+        [data-theme="light"] .category-pill.active {
+            background: linear-gradient(135deg, var(--primary), var(--accent-purple));
             color: #ffffff;
-            text-decoration: none;
-            padding: 0.5rem 1.15rem;
-            border-radius: 999px;
-            font-size: 0.88rem;
-            font-weight: 700;
-            letter-spacing: 0.2px;
-            box-shadow: 0 0 15px rgba(244, 63, 94, 0.35);
-            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-            border: 1px solid rgba(255, 255, 255, 0.25);
-            cursor: pointer;
         }
 
-        .btn-nav-paletas:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 0 25px rgba(244, 63, 94, 0.6);
-            filter: brightness(1.1);
+        [data-theme="light"] .format-btn {
+            background: rgba(255, 255, 255, 0.85);
+            border-color: rgba(0, 0, 0, 0.1);
+            color: #475569;
         }
 
-        .btn-nav-fontes {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: linear-gradient(135deg, #0ea5e9, #6366f1);
+        [data-theme="light"] .format-btn:hover {
+            background: #ffffff;
+            color: #0f172a;
+        }
+
+        [data-theme="light"] .format-btn.active {
+            background: #0f172a;
             color: #ffffff;
-            text-decoration: none;
-            padding: 0.5rem 1.15rem;
-            border-radius: 999px;
-            font-size: 0.88rem;
-            font-weight: 700;
-            letter-spacing: 0.2px;
-            box-shadow: 0 0 15px rgba(14, 165, 233, 0.35);
-            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-            border: 1px solid rgba(255, 255, 255, 0.25);
-            cursor: pointer;
         }
 
-        .btn-nav-fontes:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 0 25px rgba(14, 165, 233, 0.6);
-            filter: brightness(1.1);
+        [data-theme="light"] .image-card {
+            background: #ffffff;
+            border-color: rgba(0, 0, 0, 0.08);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
         }
 
-        .stats-badge {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            background: rgba(255, 255, 255, 0.04);
-            border: 1px solid var(--border-color);
-            padding: 0.45rem 0.9rem;
-            border-radius: 999px;
-            font-size: 0.85rem;
+        [data-theme="light"] .modal-window {
+            background: rgba(255, 255, 255, 0.96);
+            border-color: rgba(0, 0, 0, 0.12);
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
+        }
+
+        [data-theme="light"] .modal-title-area h2 {
+            color: #0f172a;
+        }
+
+        [data-theme="light"] .modal-close-btn {
+            background: rgba(0, 0, 0, 0.06);
+            color: #0f172a;
+        }
+
+        [data-theme="light"] .modal-footer {
+            background: rgba(248, 250, 252, 0.95);
+            border-top-color: rgba(0, 0, 0, 0.08);
+        }
+
+        [data-theme="light"] .btn-action-secondary {
+            background: rgba(0, 0, 0, 0.05);
+            border-color: rgba(0, 0, 0, 0.12);
+            color: #0f172a;
+        }
+
+        [data-theme="light"] .btn-action-secondary:hover {
+            background: rgba(0, 0, 0, 0.09);
+        }
+
+        /* ============================================================
+           RODAPÉ UNIFICADO COM CRÉDITOS
+           ============================================================ */
+        .app-footer {
+            border-top: 1px solid var(--border-color);
+            background: rgba(9, 13, 22, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            padding: 2.2rem 1.5rem;
+            margin-top: 4rem;
+            text-align: center;
             color: var(--text-muted);
+            font-family: var(--font-body);
+            transition: background 0.3s ease, border-color 0.3s ease;
         }
 
-        .stats-badge strong {
+        [data-theme="light"] .app-footer {
+            background: rgba(255, 255, 255, 0.88);
+            border-top-color: rgba(0, 0, 0, 0.08);
+            color: #475569;
+        }
+
+        .app-footer-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .footer-credit {
+            font-size: 0.95rem;
+            color: var(--text-main);
+            line-height: 1.5;
+        }
+
+        [data-theme="light"] .footer-credit {
+            color: #0f172a;
+        }
+
+        .footer-credit strong {
             color: var(--primary);
+        }
+
+        .footer-links {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            font-size: 0.88rem;
+        }
+
+        .footer-link {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease, text-decoration 0.2s ease;
+        }
+
+        .footer-link:hover {
+            color: #38bdf8;
+            text-decoration: underline;
+        }
+
+        [data-theme="light"] .footer-link:hover {
+            color: #0369a1;
+        }
+
+        .footer-sep {
+            opacity: 0.4;
         }
 
         /* Container Principal */
@@ -719,29 +977,38 @@
 </head>
 <body>
 
-    <!-- Header Fixo -->
-    <header>
-        <div class="header-content">
-            <a href="index.html" class="brand">
-                <div class="brand-logo">🎨</div>
-                <div class="brand-text">
-                    <h1>Gl Cores Fontes e Fundos</h1>
-                    <p>Fundos Visuais, Paletas de Cores & Pares Tipográficos</p>
+    <!-- Header Fixo Unificado -->
+    <header class="app-header">
+        <div class="app-header-inner">
+            <a href="index.html" class="app-brand" title="Gl Cores Fontes e Fundos - Início">
+                <div class="app-brand-logo">🎨</div>
+                <div class="app-brand-info">
+                    <span class="app-brand-title">Gl Cores Fontes e Fundos</span>
+                    <span class="app-brand-tagline">Fundos Visuais, Paletas de Cores & Pares Tipográficos</span>
                 </div>
             </a>
 
-            <div class="search-wrapper">
-                <span class="search-icon">🔍</span>
-                <input type="text" id="searchInput" class="search-input" placeholder="Buscar fundos por nome, estilo..." autocomplete="off">
-            </div>
+            <!-- 3 Funcionalidades Selecionáveis -->
+            <nav class="app-nav-tabs" aria-label="Navegação do App">
+                <a href="index.html" class="app-nav-tab active">
+                    <span class="tab-icon">🖼️</span>
+                    <span class="tab-label">Fundos Visuais</span>
+                </a>
+                <a href="paletas.html" class="app-nav-tab">
+                    <span class="tab-icon">🎨</span>
+                    <span class="tab-label">Paletas de Cores</span>
+                </a>
+                <a href="fontes.html" class="app-nav-tab">
+                    <span class="tab-icon">🔤</span>
+                    <span class="tab-label">Pares Tipográficos</span>
+                </a>
+            </nav>
 
-            <div class="header-right">
-                <a href="paletas.html" target="_blank" class="btn-nav-paletas" title="Abrir Gerador de Paletas de Cores em nova aba">
-                    🎨 Paletas de Cores ↗
-                </a>
-                <a href="fontes.html" target="_blank" class="btn-nav-fontes" title="Abrir Catálogo de Pares Tipográficos em nova aba">
-                    🔤 Fontes e Tipografia ↗
-                </a>
+            <div class="app-header-actions">
+                <button id="themeToggleBtn" class="theme-toggle-btn" type="button" aria-label="Alternar modo diurno/noturno" title="Alternar Modo Claro / Escuro">
+                    <span class="theme-icon" id="themeIcon">☀️</span>
+                    <span class="theme-label" id="themeLabel">Modo Diurno</span>
+                </button>
                 <div class="stats-badge" id="statsBadge">
                     <span>Total:</span> <strong id="totalCount">674</strong> <span>fundos</span>
                 </div>
@@ -751,24 +1018,50 @@
 
     <!-- Conteúdo Principal -->
     <main class="container">
-        <!-- Toolbar de Filtros -->
+        <!-- Toolbar de Filtros & Busca -->
         <div class="toolbar">
-            <div class="categories-nav" id="categoriesNav">
-                <!-- Injetado dinamicamente via JS -->
+            <div class="toolbar-search-row">
+                <div class="search-wrapper">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="searchInput" class="search-input" placeholder="Buscar fundos por nome, estilo..." autocomplete="off">
+                </div>
+
+                <div class="format-filters">
+                    <span>Formato:</span>
+                    <button type="button" class="format-btn active" data-format="ALL">Todos</button>
+                    <button type="button" class="format-btn" data-format="JPG">JPG</button>
+                    <button type="button" class="format-btn" data-format="PNG">PNG</button>
+                    <button type="button" class="format-btn" data-format="SVG">SVG</button>
+                </div>
             </div>
 
-            <div class="format-filters">
-                <span>Formato:</span>
-                <button type="button" class="format-btn active" data-format="ALL">Todos</button>
-                <button type="button" class="format-btn" data-format="JPG">JPG</button>
-                <button type="button" class="format-btn" data-format="PNG">PNG</button>
-                <button type="button" class="format-btn" data-format="SVG">SVG</button>
+            <div class="categories-nav" id="categoriesNav">
+                <!-- Injetado dinamicamente via JS -->
             </div>
         </div>
 
         <!-- Grid de Cards da Galeria -->
         <div id="gallery"></div>
     </main>
+
+    <!-- Rodapé Unificado com Créditos -->
+    <footer class="app-footer">
+        <div class="app-footer-inner">
+            <p class="footer-credit">
+                Desenvolvido pelo <strong>professor Dr. Glauber Santiago</strong> — <span>DAC/UFSCar</span>
+            </p>
+            <div class="footer-links">
+                <span class="footer-label">Apoio:</span>
+                <a href="https://grupohorizonte.ufscar.br/" target="_blank" rel="noopener noreferrer" class="footer-link">
+                    Grupo de Pesquisa Horizonte ↗
+                </a>
+                <span class="footer-sep">•</span>
+                <a href="https://servidores.ufscar.br/glauber/" target="_blank" rel="noopener noreferrer" class="footer-link doc-link">
+                    🌐 Website do Docente ↗
+                </a>
+            </div>
+        </div>
+    </footer>
 
     <!-- Modal de Visualização & Simulador de Interface -->
     <div class="modal-backdrop" id="previewModal">
@@ -4332,8 +4625,44 @@
             "alta_performance": "✨"
 };
 
+        // Alternador de Tema (Modo Diurno / Noturno)
+        function initThemeToggle() {
+            const btn = document.getElementById('themeToggleBtn');
+            const icon = document.getElementById('themeIcon');
+            const label = document.getElementById('themeLabel');
+            if (!btn) return;
+
+            function applyTheme(theme) {
+                if (theme === 'light') {
+                    document.documentElement.setAttribute('data-theme', 'light');
+                    document.documentElement.classList.add('light');
+                    if (icon) icon.textContent = '🌙';
+                    if (label) label.textContent = 'Modo Noturno';
+                    btn.setAttribute('title', 'Alternar para Modo Noturno');
+                } else {
+                    document.documentElement.setAttribute('data-theme', 'dark');
+                    document.documentElement.classList.remove('light');
+                    if (icon) icon.textContent = '☀️';
+                    if (label) label.textContent = 'Modo Diurno';
+                    btn.setAttribute('title', 'Alternar para Modo Diurno');
+                }
+            }
+
+            const current = localStorage.getItem('gl_theme') || 'dark';
+            applyTheme(current);
+
+            btn.addEventListener('click', () => {
+                const isLight = document.documentElement.getAttribute('data-theme') === 'light';
+                const nextTheme = isLight ? 'dark' : 'light';
+                localStorage.setItem('gl_theme', nextTheme);
+                applyTheme(nextTheme);
+            });
+        }
+
         // Inicialização
         async function init() {
+            initThemeToggle();
+
             // 1. Carrega imediatamente o catálogo local/embutido para exibição instantânea (0 ms)
             try {
                 const res = await fetch('catalog.json');
