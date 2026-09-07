@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <!-- Gradiente de Fundo do Squircle -->
+    <linearGradient id="glBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+
+    <!-- Gradiente da Borda Neon -->
+    <linearGradient id="glBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="45%" stop-color="#818cf8"/>
+      <stop offset="80%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#f43f5e"/>
+    </linearGradient>
+
+    <!-- Gradiente da Letra Principal -->
+    <linearGradient id="glLetter" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#f0f9ff"/>
+      <stop offset="100%" stop-color="#7dd3fc"/>
+    </linearGradient>
+
+    <!-- Gradiente do Cartão de Fundo (Camada 'Fundos') -->
+    <linearGradient id="glCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0.10"/>
+    </linearGradient>
+
+    <!-- Filtro de Brilho / Glow -->
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="14" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Squircle Base com Sombra Suave -->
+  <rect x="20" y="20" width="472" height="472" rx="116" fill="url(#glBg)" stroke="url(#glBorder)" stroke-width="14"/>
+
+  <!-- Camada Traseira de Fundo / Canvas Inclinado (Representando 'Fundos') -->
+  <rect x="96" y="86" width="320" height="320" rx="56" fill="url(#glCard)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="3" transform="rotate(-8 256 246)"/>
+
+  <!-- Camada Frontal de Vidro Fosco -->
+  <rect x="88" y="78" width="336" height="336" rx="60" fill="rgba(15, 23, 42, 0.72)" stroke="rgba(255, 255, 255, 0.22)" stroke-width="3.5"/>
+
+  <!-- Letra Monograma 'G' em Tipografia Refinada Editorial com Serifas Elegantes -->
+  <!-- Construção vetorial limpa para nitidez máxima em 16x16, 32x32 e 512x512 -->
+  <g fill="url(#glLetter)" filter="drop-shadow(0 4px 12px rgba(0,0,0,0.5))">
+    <!-- Letra 'G' estilizada -->
+    <path d="M 242 165 C 220 165 198 174 182 191 C 163 210 152 238 152 270 C 152 304 164 332 184 350 C 202 366 226 374 252 374 C 274 374 294 368 310 357 C 322 349 332 338 337 325 C 340 318 342 308 342 296 L 254 296 L 254 266 L 372 266 L 372 300 C 372 322 366 341 354 358 C 334 384 300 402 254 402 C 214 402 178 389 150 363 C 122 337 106 298 106 252 C 106 206 122 167 151 140 C 178 115 214 102 254 102 C 284 102 312 110 334 125 C 346 133 356 144 363 156 L 332 178 C 326 169 318 162 308 156 C 291 146 270 141 248 141 C 246 141 244 141 242 165 Z"/>
+    
+    <!-- Letra 'l' elegante e esguia -->
+    <rect x="382" y="112" width="28" height="286" rx="12" fill="url(#glLetter)"/>
+    <!-- Terminal serifado clássico no topo do 'l' -->
+    <path d="M 364 126 L 382 112 L 410 112 L 410 134 Z" fill="url(#glLetter)"/>
+  </g>
+
+  <!-- 3 Esferas Cromáticas / Pigmentos (Representando 'Cores') -->
+  <!-- Azul Celeste Neon -->
+  <circle cx="168" cy="434" r="16" fill="#38bdf8" filter="url(#neonGlow)"/>
+  <circle cx="168" cy="434" r="14" fill="#38bdf8"/>
+  <circle cx="164" cy="430" r="4" fill="#ffffff" opacity="0.8"/>
+
+  <!-- Púrpura Neon / Violeta -->
+  <circle cx="256" cy="434" r="16" fill="#a855f7" filter="url(#neonGlow)"/>
+  <circle cx="256" cy="434" r="14" fill="#a855f7"/>
+  <circle cx="252" cy="430" r="4" fill="#ffffff" opacity="0.8"/>
+
+  <!-- Rosa Vibrante / Coral -->
+  <circle cx="344" cy="434" r="16" fill="#f43f5e" filter="url(#neonGlow)"/>
+  <circle cx="344" cy="434" r="14" fill="#f43f5e"/>
+  <circle cx="340" cy="430" r="4" fill="#ffffff" opacity="0.8"/>
+
+  <!-- Faísca de Brilho Estelar no Canto Superior -->
+  <path d="M 406 58 Q 406 82 430 82 Q 406 82 406 106 Q 406 82 382 82 Q 406 82 406 58 Z" fill="#38bdf8" opacity="0.95"/>
+</svg>
