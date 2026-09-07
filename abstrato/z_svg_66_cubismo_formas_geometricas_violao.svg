@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+<defs>
+
+</defs>
+<rect width="1920" height="1080" fill="#0a0807"/>
+    <polygon points="850,350 1020,400 950,650 780,580" fill="#b45309" fill-opacity="0.8"/>
+    <polygon points="1020,400 1140,550 1010,720 950,650" fill="#1e3a8a" fill-opacity="0.8"/>
+    <circle cx="960" cy="540" r="35" fill="#facc15"/>
+    
+</svg>

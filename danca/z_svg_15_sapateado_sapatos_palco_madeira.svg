@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+<defs>
+
+</defs>
+<rect width="1920" height="1080" fill="#120b06"/><line x1="0" y1="400" x2="1920" y2="400" stroke="#451a03" stroke-width="2" stroke-opacity="0.4"/><line x1="0" y1="470" x2="1920" y2="470" stroke="#451a03" stroke-width="2" stroke-opacity="0.4"/><line x1="0" y1="540" x2="1920" y2="540" stroke="#451a03" stroke-width="2" stroke-opacity="0.4"/><line x1="0" y1="610" x2="1920" y2="610" stroke="#451a03" stroke-width="2" stroke-opacity="0.4"/><line x1="0" y1="680" x2="1920" y2="680" stroke="#451a03" stroke-width="2" stroke-opacity="0.4"/><line x1="0" y1="750" x2="1920" y2="750" stroke="#451a03" stroke-width="2" stroke-opacity="0.4"/><line x1="0" y1="820" x2="1920" y2="820" stroke="#451a03" stroke-width="2" stroke-opacity="0.4"/><line x1="0" y1="890" x2="1920" y2="890" stroke="#451a03" stroke-width="2" stroke-opacity="0.4"/><line x1="0" y1="960" x2="1920" y2="960" stroke="#451a03" stroke-width="2" stroke-opacity="0.4"/><line x1="0" y1="1030" x2="1920" y2="1030" stroke="#451a03" stroke-width="2" stroke-opacity="0.4"/>
+    <!-- Left tap shoe -->
+    <path d="M 880 720 C 850 720, 820 740, 820 770 L 920 770 C 920 740, 900 720, 880 720 Z" fill="#1e1b4b"/>
+    <rect x="830" y="770" width="80" height="10" rx="2" fill="#94a3b8"/>
+    <!-- Right tap shoe -->
+    <path d="M 1040 700 C 1010 700, 980 720, 980 750 L 1080 750 C 1080 720, 1060 700, 1040 700 Z" fill="#1e1b4b"/>
+    <rect x="990" y="750" width="80" height="10" rx="2" fill="#94a3b8"/>
+    <!-- Tap rhythm sound rings -->
+    <ellipse cx="870" cy="775" rx="120" ry="35" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-opacity="0.35"/>
+    <ellipse cx="1030" cy="755" rx="140" ry="40" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-opacity="0.35"/>
+    
+</svg>

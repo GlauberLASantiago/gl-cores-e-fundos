@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+<defs>
+
+</defs>
+<rect width="1920" height="1080" fill="#0d1117"/>
+    <path d="M 350 1080 Q 400 650, 550 450" stroke="#78350f" stroke-width="20" fill="none"/>
+    <path d="M 550 450 Q 400 420, 300 500" stroke="#15803d" stroke-width="12" fill="none"/>
+    <path d="M 550 450 Q 550 350, 480 300" stroke="#15803d" stroke-width="12" fill="none"/>
+    <path d="M 550 450 Q 680 380, 750 430" stroke="#15803d" stroke-width="12" fill="none"/>
+    <!-- Horizon sea -->
+    <line x1="0" y1="750" x2="1920" y2="750" stroke="#0284c7" stroke-width="4"/>
+    <circle cx="1400" cy="720" r="80" fill="#f97316"/>
+    
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+<defs>
+
+</defs>
+<rect width="1920" height="1080" fill="#080a0f"/>
+    <rect x="660" y="350" width="600" height="380" rx="12" fill="#1e1e1e" stroke="#475569" stroke-width="3"/>
+    <text x="700" y="420" font-family="monospace" font-size="20" fill="#38bdf8">const future = async () => {</text>
+    <text x="740" y="460" font-family="monospace" font-size="20" fill="#4ade80">  await innovate();</text>
+    <text x="740" y="500" font-family="monospace" font-size="20" fill="#f472b6">  return new Intelligence();</text>
+    <text x="700" y="540" font-family="monospace" font-size="20" fill="#38bdf8">};</text>
+    
+</svg>

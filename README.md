@@ -1,42 +1,91 @@
-# GL Fundos
+# Gl Cores e Fundos - Galeria de Assets Visuais, Paletas de Cores & Design Instrucional
 
-Galeria de assets visuais para aplicações e design instrucional.
+Aplicação web moderna, responsiva e dinâmica composta pela **Galeria de Fundos Visuais em Alta Resolução** (674 fundos: JPG, PNG e SVG) e pelo **Gerador de Paletas de Cores** com temas históricos, cinema, vintage, pop e design institucional.
 
-## Visão geral
+---
 
-Este repositório contém uma página estática em `index.html` que lê as pastas públicas do próprio repositório via API do GitHub e monta uma galeria de imagens por categoria.
+## 🌟 Principais Recursos
 
-Cada pasta do projeto funciona como uma categoria, e cada imagem disponível dentro dela é exibida automaticamente na interface.
+1. **🎨 Gerador de Paletas de Cores (`paletas.html` - 52 Paletas Selecionadas):**
+   - **Tendências UI & Web 2024-2026:** Neo Glassmorphism, Minimalista Dark Mode, Aurora Boreal B2B, Fintech Futurista, Editorial Luxo e Computação Quântica/IA.
+   - **Botânica & Natureza Viva:** Matcha & Bambu, Terracota & Eucalipto, Floresta Bioluminescente, Deserto Atacama, Orquídea Selvagem e Oceano Glacial.
+   - **Moda, Lifestyle & Cafeteria:** Café Especial & Torra, Lavanda & Pêssego, Linho Cru Wabi-Sabi, Veludo Borgonha & Ouro, Cerejeira de Kyoto e Boutique Nude.
+   - **Cinema, Synthwave & Cyberpunk:** Synthwave Miami 1984, Blade Runner Neo-Noir, Simetria Wes Anderson, Matrix Hacker, Interestelar e Duna/Arrakis.
+   - **Arte Pop, Memphis & Alto Impacto:** Solstício Elétrico, Memphis Milano Anos 90, Pistache & Frutas Vermelhas, Costa Mediterrânea, Monocromia Slate e Esmeralda Nobre.
+   - **Coleções Temáticas Históricas:** Animação Anos 1950, Estilo Anos 1970, Pós-Apocalíptico, Inspiração Asiática e Filme "O Iluminado" (Overlook, Quarto 237, Hotel Assombrado), além das paletas originais e institucionais.
+   - Cópia instantânea dos códigos hexadecimais com 1 clique (com suporte para `navigator.clipboard` e *fallback*).
+   - Navegação integrada e fluida com a galeria de fundos.
 
-## Estrutura do projeto
+2. **🖼️ Catálogo Multicategorias de Fundos (674 Fundos em Alta Resolução: 426 PNGs, 189 SVGs e 59 JPGs):**
+   - 🎨 **Abstrato (119 fundos):** 31 imagens realistas de prismas de refração, geodos de ametista, bolhas de sabão, ferrofluidos, veios de mármore dourado, esculturas de vidro soprado, tinta em água, padrões de gelo e resina, além de malhas e 3D.
+   - 💃 **Dança (68 fundos):** 30 fotografias e ilustrações realistas de bailarinas na ponta, casais de tango argentino, b-boys de breakdance, dançarinas de flamenco, salsa latina, dança contemporânea, hip hop, valsa de salão, frevo, capoeira e danças do mundo.
+   - 🎓 **Educação (68 fundos):** 30 imagens realistas de bibliotecas históricas, estudantes universitários no campus, laboratórios de química com frascos coloridos, microscópios, lançamento de chapéus de formatura, observatórios, salas de aula modernas e robótica educacional.
+   - 🎵 **Música (79 fundos):** 30 fotografias realistas de pianos de cauda sob holofote, guitarras elétricas, violinos clássicos envernizados, baterias acústicas, saxofone no jazz, cantores com microfone vintage, mesas de som profissionais de estúdio, orquestras sinfônicas e DJs.
+   - 🌿 **Natureza (68 fundos):** 30 fotografias realistas de leões majestosos na savana, tigres de bengala, lobos cinzentos na neve, águias em voo, baleias jubarte saltando, recifes de corais com peixes tropicais, auroras boreais, cataratas e montanhas alpinas espelhadas.
+   - ⚡ **Tecnologia (68 fundos):** 30 imagens realistas de robôs humanoides, corredores de servidores com LEDs azuis, microprocessadores de silício, braços robóticos industriais, lançamentos de foguetes, drones voando na cidade, realidade virtual e computadores quânticos.
+   - 📸 **Fotografia & Técnicas Visuais (46 fundos):** Interiores modernos, paisagens abertas, bokeh noturno, retratos humanos expressivos (P&B, intimista e ousado), close-ups macro, colódio úmido vintage, olho de peixe, surf na água, pôr do sol e produtos de luxo.
+   - 🖌️ **Estilos Artísticos & Pinturas (58 fundos):** Pinturas a óleo clássicas, aquarelas botânicas e de pássaros, ilustrações infantis, gravuras ukiyo-e japonesas, pop art de Lichtenstein/Warhol, Art Nouveau, mangás, animes, personagens antropomórficos, arte barroca e azulejaria.
+   - 💻 **Digitais & Vetores (39 fundos):** Pixel art 16-bit com cenários urbanos, mascotes de equipes esportivas, papercraft geométrico, stickers kawaii com filhotes, espaços de trabalho com laptops e café, sumi-e oriental com tinta nanquim e vitrais de catedrais.
+   - 🌐 **Modelos 3D & Esculturas (29 fundos):** Quartos isométricos 3D acolhedores, esculturas clássicas em mármore, entalhes em madeira de animais selvagens, cerâmica artesanal em argila, origamis dobrados, robôs gigantes mecha, bonecos de balão e minifiguras LEGO.
+   - ✨ **Alta Performance (32 fundos):** Macro fotorrealista de olho humano, estética retro anos 80 synthwave, fotos de produto de relógios de pulso analógicos e câmeras vintage, graffiti urbano em spray, gravuras risográficas e castelos de realismo fantástico.
+
+2. **⭐ Ordenação Otimizada (Realistas e Fotos Primeiro, Vetores por Último):**
+   - Em todas as pastas físicas e na navegação da galeria, todas as imagens realistas e de alta qualidade (PNG e JPG) aparecem **no topo antes de qualquer vetor SVG** (`z_svg_`), proporcionando impacto visual imediato com fotos de pessoas, animais, objetos e materiais reais.
+
+3. **🖥️ Simulador de Interface (UI Mockup Tester):**
+   - No modal de visualização em tela cheia, ative o botão **"Simular Interface UI"** para projetar um card com títulos, textos e botões reais sobre o fundo selecionado.
+   - Permite testar na hora o contraste, a legibilidade e o equilíbrio visual antes de aplicar o asset em sua aplicação ou slide.
+
+4. **📋 Ferramentas de Cópia com 1 Clique:**
+   - **Copiar Código IA:** Copia o prompt padronizado pronto para solicitar ao assistente de IA que utilize a imagem como fundo (`Por favor, utilize a seguinte imagem como fundo (background) da interface: <URL>`).
+   - **Copiar CSS Background:** `background: url('<URL>') center / cover no-repeat;`
+   - **Copiar Link Direto:** Link direto do asset hospedado no GitHub para inclusão imediata.
+   - **Download Direto:** Baixe o arquivo com um clique.
+
+5. **🔍 Busca e Filtros Rápidos:**
+   - Busca em tempo real por nome do arquivo ou categoria.
+   - Filtros de formato: **Todos**, **JPG**, **PNG** e **SVG**.
+   - Badges com contagem dinâmica por categoria.
+
+6. **⚡ 100% Funcional Online e Offline:**
+   - Possui catálogo embutido e arquivo `catalog.json`, funcionando instantaneamente ao abrir o `index.html` no computador sem necessidade de servidor ou conexão, além de total integração com o GitHub Pages e a API pública do GitHub.
+
+---
+
+## 📁 Estrutura do Projeto
 
 ```text
 fundos/
-├── index.html
-└── musica/
+├── index.html         # Aplicação principal - Galeria de Fundos (HTML5, CSS3 Glassmorphism, JS)
+├── paletas.html       # Aplicação complementar - Gerador de Paletas de Cores (TailwindCSS, JS)
+├── catalog.json       # Manifesto de assets e metadados
+├── README.md          # Documentação do projeto
+├── abstrato/          # Fundos abstratos, 3D, mesh gradients e geométricos
+├── danca/             # Palcos, estúdios e movimentos de dança
+├── educacao/          # Ambientes de estudo, lousas e design instrucional
+├── musica/            # Estúdios musicais, instrumentos e ondas sonoras
+├── natureza/          # Paisagens, auroras e florestas
+├── tecnologia/        # Redes neurais, tech grids e circuitos
+├── fotografia/        # Fotografia realista, retratos, interiores, exteriores e macro
+├── estilos_artisticos/# Pinturas a óleo, aquarela, ukiyo-e, pop art, arte medieval
+├── estilos_digitais/  # Pixel art, stickers, mascotes, papercraft e vetores
+├── modelos_3d/        # Quartos isométricos, origami, esculturas em mármore, lego
+└── alta_performance/  # Fotorrealismo, retro 80s, fotos de produto e graffiti
 ```
 
-## Como usar
+---
 
-1. Abra a página `index.html` em um ambiente estático ou publique o repositório no GitHub Pages.
-2. Aguarde o carregamento das categorias encontradas no repositório.
-3. Clique em uma categoria para visualizar as imagens.
-4. Clique em uma imagem ou no botão de cópia para gerar um texto com a URL do asset.
+## 🚀 Como Usar
 
-## Como adicionar novos fundos
+1. **Uso Local:** Dê um duplo clique no arquivo `index.html` em seu computador para abrir no navegador.
+2. **Uso Online (GitHub Pages):** Acesse a URL pública do seu repositório publicada via GitHub Pages.
+3. Escolha uma categoria ou busque pelo estilo desejado.
+4. Clique em qualquer card para abrir o modal de alta resolução, simular a interface ou copiar os códigos de integração com um clique.
 
-1. Crie uma nova pasta na raiz do repositório com o nome da categoria.
-2. Adicione arquivos de imagem dentro dessa pasta.
-3. Os formatos aceitos atualmente são:
-   - `.jpg`
-   - `.jpeg`
-   - `.png`
-   - `.gif`
-   - `.webp`
-   - `.svg`
-4. Após publicar as alterações, a nova categoria aparecerá automaticamente na galeria.
+---
 
-## Observações
+## ➕ Como Adicionar Novos Fundos
 
-- O repositório precisa estar público para que a API do GitHub retorne os arquivos sem autenticação.
-- Pastas sem imagens aparecem como categorias, mas exibem uma mensagem de vazio ao serem abertas.
+1. Crie uma nova pasta (para uma nova categoria) ou utilize uma pasta existente.
+2. Salve a imagem dentro dela nos formatos `.jpg`, `.png`, `.svg` ou `.webp` (preferencialmente na proporção 16:9).
+3. Ao enviar as alterações para o GitHub, a nova imagem ou categoria será reconhecida pela galeria.

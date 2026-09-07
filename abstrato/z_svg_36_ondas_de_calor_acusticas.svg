@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+<defs>
+
+    <linearGradient id="heatWave" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#f43f5e" stop-opacity="0.25"/>
+        <stop offset="50%" stop-color="#fb923c" stop-opacity="0.3"/>
+        <stop offset="100%" stop-color="#f43f5e" stop-opacity="0.05"/>
+    </linearGradient>
+    
+</defs>
+
+    <rect width="1920" height="1080" fill="#0d080b"/>
+    <path d="M 0 500 Q 480 455, 960 500 T 1920 500" fill="none" stroke="url(#heatWave)" stroke-width="1.4"/><path d="M 0 535 Q 480 492, 960 535 T 1920 535" fill="none" stroke="url(#heatWave)" stroke-width="1.4"/><path d="M 0 570 Q 480 529, 960 570 T 1920 570" fill="none" stroke="url(#heatWave)" stroke-width="1.4"/><path d="M 0 605 Q 480 566, 960 605 T 1920 605" fill="none" stroke="url(#heatWave)" stroke-width="1.4"/><path d="M 0 640 Q 480 603, 960 640 T 1920 640" fill="none" stroke="url(#heatWave)" stroke-width="1.4"/><path d="M 0 675 Q 480 640, 960 675 T 1920 675" fill="none" stroke="url(#heatWave)" stroke-width="1.4"/><path d="M 0 710 Q 480 677, 960 710 T 1920 710" fill="none" stroke="url(#heatWave)" stroke-width="1.4"/><path d="M 0 745 Q 480 714, 960 745 T 1920 745" fill="none" stroke="url(#heatWave)" stroke-width="1.4"/><path d="M 0 780 Q 480 751, 960 780 T 1920 780" fill="none" stroke="url(#heatWave)" stroke-width="1.4"/><path d="M 0 815 Q 480 788, 960 815 T 1920 815" fill="none" stroke="url(#heatWave)" stroke-width="1.4"/>
+    
+</svg>

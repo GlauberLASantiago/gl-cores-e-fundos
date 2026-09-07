@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+<defs>
+
+</defs>
+<rect width="1920" height="1080" fill="#0a080d"/>
+    <line x1="300" y1="800" x2="1620" y2="800" stroke="#78350f" stroke-width="12"/>
+    <!-- Laptop -->
+    <rect x="860" y="650" width="200" height="140" rx="8" fill="#334155"/>
+    <rect x="870" y="660" width="180" height="120" rx="4" fill="#38bdf8" fill-opacity="0.3"/>
+    <polygon points="840,790 1080,790 1060,800 860,800" fill="#64748b"/>
+    <!-- Coffee mug -->
+    <rect x="1150" y="730" width="45" height="60" rx="6" fill="#f8fafc" fill-opacity="0.8"/>
+    
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+<defs>
+
+</defs>
+<rect width="1920" height="1080" fill="#140805"/>
+    <polygon points="0,400 400,600 650,850 0,1080" fill="#7c2d12"/>
+    <polygon points="1920,400 1520,600 1270,850 1920,1080" fill="#7c2d12"/>
+    <line x1="960" y1="650" x2="960" y2="1080" stroke="#0284c7" stroke-width="30"/>
+    
+</svg>

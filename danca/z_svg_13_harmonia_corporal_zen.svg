@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+<defs>
+
+    <radialGradient id="zenG" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#fbcfe8" stop-opacity="0.2"/>
+        <stop offset="60%" stop-color="#64748b" stop-opacity="0.05"/>
+        <stop offset="100%" stop-color="#08070c" stop-opacity="0"/>
+    </radialGradient>
+    
+</defs>
+<rect width="1920" height="1080" fill="#08070c"/><circle cx="960" cy="540" r="600" fill="url(#zenG)"/><circle cx="960" cy="540" r="100" fill="none" stroke="#94a3b8" stroke-width="0.8" stroke-opacity="0.25"/><circle cx="960" cy="540" r="190" fill="none" stroke="#94a3b8" stroke-width="0.8" stroke-opacity="0.23"/><circle cx="960" cy="540" r="280" fill="none" stroke="#94a3b8" stroke-width="0.8" stroke-opacity="0.21"/><circle cx="960" cy="540" r="370" fill="none" stroke="#94a3b8" stroke-width="0.8" stroke-opacity="0.19"/><circle cx="960" cy="540" r="460" fill="none" stroke="#94a3b8" stroke-width="0.8" stroke-opacity="0.17"/><circle cx="960" cy="540" r="550" fill="none" stroke="#94a3b8" stroke-width="0.8" stroke-opacity="0.15"/><circle cx="960" cy="540" r="640" fill="none" stroke="#94a3b8" stroke-width="0.8" stroke-opacity="0.13"/><circle cx="960" cy="540" r="730" fill="none" stroke="#94a3b8" stroke-width="0.8" stroke-opacity="0.11"/>
+</svg>

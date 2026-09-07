@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+<defs>
+
+</defs>
+<rect width="1920" height="1080" fill="#060b14"/>
+    <path d="M 940 400 L 980 400 L 980 460 L 1050 650 L 870 650 L 940 460 Z" fill="none" stroke="#38bdf8" stroke-width="6"/>
+    <path d="M 885 610 L 1035 610 L 1050 650 L 870 650 Z" fill="#0284c7" fill-opacity="0.6"/>
+    <!-- Bubbles -->
+    <circle cx="950" cy="580" r="8" fill="#7dd3fc"/>
+    <circle cx="975" cy="540" r="6" fill="#7dd3fc"/>
+    <circle cx="935" cy="500" r="5" fill="#7dd3fc"/>
+    
+</svg>

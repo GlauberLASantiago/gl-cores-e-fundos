@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+<defs>
+
+</defs>
+<rect width="1920" height="1080" fill="#080a12"/>
+    <!-- Snare -->
+    <ellipse cx="960" cy="620" rx="90" ry="30" fill="#e2e8f0" stroke="#475569" stroke-width="4"/>
+    <!-- Toms -->
+    <ellipse cx="860" cy="500" rx="70" ry="25" fill="#3b82f6" stroke="#1d4ed8" stroke-width="4"/>
+    <ellipse cx="1060" cy="500" rx="70" ry="25" fill="#3b82f6" stroke="#1d4ed8" stroke-width="4"/>
+    <!-- Cymbals -->
+    <ellipse cx="720" cy="420" rx="90" ry="18" fill="#fbbf24" stroke="#d97706" stroke-width="3"/>
+    <ellipse cx="1200" cy="420" rx="90" ry="18" fill="#fbbf24" stroke="#d97706" stroke-width="3"/>
+    
+</svg>

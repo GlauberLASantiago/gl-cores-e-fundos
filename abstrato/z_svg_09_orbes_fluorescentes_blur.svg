@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+<defs>
+
+    <filter id="blur09" x="-30%" y="-30%" width="160%" height="160%">
+        <feGaussianBlur stdDeviation="110"/>
+    </filter>
+    
+</defs>
+
+    <rect width="1920" height="1080" fill="#07080b"/>
+    <g filter="url(#blur09)">
+        <circle cx="250" cy="250" r="280" fill="#06b6d4" fill-opacity="0.35"/>
+        <circle cx="1650" cy="300" r="320" fill="#8b5cf6" fill-opacity="0.35"/>
+        <circle cx="1500" cy="900" r="350" fill="#3b82f6" fill-opacity="0.25"/>
+        <circle cx="350" cy="850" r="300" fill="#10b981" fill-opacity="0.2"/>
+    </g>
+    
+</svg>

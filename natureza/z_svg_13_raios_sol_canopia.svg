@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+<defs>
+
+    <linearGradient id="canopyRay" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#fef08a" stop-opacity="0.3"/>
+        <stop offset="100%" stop-color="#064e3b" stop-opacity="0"/>
+    </linearGradient>
+    
+</defs>
+<rect width="1920" height="1080" fill="#040e09"/><polygon points="0,0 300,1080 420,1080" fill="url(#canopyRay)"/><polygon points="0,0 550,1080 670,1080" fill="url(#canopyRay)"/><polygon points="0,0 800,1080 920,1080" fill="url(#canopyRay)"/><polygon points="0,0 1050,1080 1170,1080" fill="url(#canopyRay)"/><polygon points="0,0 1300,1080 1420,1080" fill="url(#canopyRay)"/><polygon points="0,0 1550,1080 1670,1080" fill="url(#canopyRay)"/><polygon points="0,0 1800,1080 1920,1080" fill="url(#canopyRay)"/>
+</svg>

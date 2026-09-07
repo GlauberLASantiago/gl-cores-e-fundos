@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+<defs>
+
+</defs>
+<rect width="1920" height="1080" fill="#07080d"/>
+    <polygon points="750,550 1150,550 1200,680 750,680" fill="#0f172a"/>
+    <path d="M 750 550 C 850 420, 1100 450, 1150 550 Z" fill="#1e293b"/>
+    <!-- Keys -->
+    <rect x="750" y="680" width="450" height="30" fill="#f8fafc"/>
+    <line x1="770" y1="710" x2="770" y2="850" stroke="#0f172a" stroke-width="12"/>
+    <line x1="1180" y1="710" x2="1180" y2="850" stroke="#0f172a" stroke-width="12"/>
+    <line x1="950" y1="550" x2="950" y2="850" stroke="#0f172a" stroke-width="12"/>
+    
+</svg>

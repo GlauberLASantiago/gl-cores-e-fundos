@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+<defs>
+
+</defs>
+<rect width="1920" height="1080" fill="#080e0c"/><path d="M 0 850 Q 500 750, 1100 880 T 1920 820 L 1920 1080 L 0 1080 Z" fill="#3f6212"/><polygon points="300,820 285,920 315,920" fill="#14532d"/><polygon points="480,820 465,920 495,920" fill="#14532d"/><polygon points="660,820 645,920 675,920" fill="#14532d"/><polygon points="840,820 825,920 855,920" fill="#14532d"/><polygon points="1020,820 1005,920 1035,920" fill="#14532d"/><polygon points="1200,820 1185,920 1215,920" fill="#14532d"/><polygon points="1380,820 1365,920 1395,920" fill="#14532d"/><polygon points="1560,820 1545,920 1575,920" fill="#14532d"/>
+</svg>

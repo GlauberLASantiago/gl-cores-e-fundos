@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+<defs>
+
+    <linearGradient id="tangoG" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#991b1b" stop-opacity="0.35"/>
+        <stop offset="100%" stop-color="#0a0507" stop-opacity="0.95"/>
+    </linearGradient>
+    
+</defs>
+<rect width="1920" height="1080" fill="#090507"/><rect width="1920" height="1080" fill="url(#tangoG)"/>
+    <circle cx="950" cy="380" r="22" fill="#fff" fill-opacity="0.9"/>
+    <circle cx="985" cy="395" r="20" fill="#fecdd3" fill-opacity="0.85"/>
+    <!-- Bodies in dramatic lean -->
+    <path d="M 930 410 L 970 410 L 980 580 L 920 580 Z" fill="#1c1917"/>
+    <!-- Dress flair -->
+    <path d="M 975 425 Q 1040 480, 1090 620 L 960 620 Z" fill="#dc2626" fill-opacity="0.8"/>
+    <!-- Tilted leg -->
+    <path d="M 970 580 L 1050 720" stroke="#fca5a5" stroke-width="10" stroke-linecap="round"/>
+    <path d="M 940 580 L 930 750" stroke="#1c1917" stroke-width="14" stroke-linecap="round"/>
+    <path d="M 960 580 L 980 750" stroke="#1c1917" stroke-width="14" stroke-linecap="round"/>
+    
+</svg>

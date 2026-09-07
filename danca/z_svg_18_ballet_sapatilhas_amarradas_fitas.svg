@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+<defs>
+
+</defs>
+<rect width="1920" height="1080" fill="#120811"/>
+    <path d="M 800 200 C 850 350, 920 500, 920 650" fill="none" stroke="#fbcfe8" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 880 200 C 840 350, 940 500, 950 650" fill="none" stroke="#fbcfe8" stroke-width="5" stroke-linecap="round"/>
+    <!-- Shoes -->
+    <path d="M 900 650 C 890 680, 895 780, 915 820 L 945 820 C 960 780, 960 680, 950 650 Z" fill="#f472b6" fill-opacity="0.85"/>
+    <path d="M 980 640 C 970 670, 975 770, 995 810 L 1025 810 C 1040 770, 1040 670, 1030 640 Z" fill="#f472b6" fill-opacity="0.85"/>
+    <rect x="915" y="815" width="30" height="8" rx="2" fill="#fda4af"/>
+    <rect x="995" y="805" width="30" height="8" rx="2" fill="#fda4af"/>
+    
+</svg>

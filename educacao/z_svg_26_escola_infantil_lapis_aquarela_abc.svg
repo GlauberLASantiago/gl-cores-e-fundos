@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+<defs>
+
+</defs>
+<rect width="1920" height="1080" fill="#0c0d14"/>
+        <rect x="750" y="450" width="50" height="260" rx="4" fill="#ef4444"/>
+        <polygon points="750,450 775,380 800,450" fill="#fed7aa"/>
+        <polygon points="768,400 775,380 782,400" fill="#ef4444"/>
+        
+        <rect x="840" y="450" width="50" height="260" rx="4" fill="#f59e0b"/>
+        <polygon points="840,450 865,380 890,450" fill="#fed7aa"/>
+        <polygon points="858,400 865,380 872,400" fill="#f59e0b"/>
+        
+        <rect x="930" y="450" width="50" height="260" rx="4" fill="#10b981"/>
+        <polygon points="930,450 955,380 980,450" fill="#fed7aa"/>
+        <polygon points="948,400 955,380 962,400" fill="#10b981"/>
+        
+        <rect x="1020" y="450" width="50" height="260" rx="4" fill="#3b82f6"/>
+        <polygon points="1020,450 1045,380 1070,450" fill="#fed7aa"/>
+        <polygon points="1038,400 1045,380 1052,400" fill="#3b82f6"/>
+        
+        <rect x="1110" y="450" width="50" height="260" rx="4" fill="#8b5cf6"/>
+        <polygon points="1110,450 1135,380 1160,450" fill="#fed7aa"/>
+        <polygon points="1128,400 1135,380 1142,400" fill="#8b5cf6"/>
+        
+</svg>

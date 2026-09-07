@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+<defs>
+
+</defs>
+<rect width="1920" height="1080" fill="#08090e"/>
+    <rect x="910" y="420" width="100" height="150" rx="35" fill="#94a3b8" stroke="#cbd5e1" stroke-width="4"/>
+    <line x1="910" y1="470" x2="1010" y2="470" stroke="#475569" stroke-width="4"/>
+    <line x1="910" y1="520" x2="1010" y2="520" stroke="#475569" stroke-width="4"/>
+    <!-- Stand -->
+    <line x1="960" y1="570" x2="960" y2="850" stroke="#64748b" stroke-width="12"/>
+    
+</svg>

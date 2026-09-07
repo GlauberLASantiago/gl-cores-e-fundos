@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+<defs>
+
+    <linearGradient id="neonSign" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#06b6d4"/>
+        <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+    
+</defs>
+<rect width="1920" height="1080" fill="#05050a"/><polygon points="0,750 200,600 350,680 500,550 700,720 1200,720 1400,580 1600,650 1750,540 1920,680 1920,1080 0,1080" fill="#090a12"/>
+    <circle cx="850" cy="620" r="16" fill="#06b6d4"/><path d="M 850 640 L 850 740 L 820 830" stroke="#06b6d4" stroke-width="8"/>
+    <circle cx="960" cy="590" r="18" fill="#fff"/><path d="M 960 610 L 960 720 L 990 820" stroke="#fff" stroke-width="10"/>
+    <circle cx="1070" cy="630" r="16" fill="#ec4899"/><path d="M 1070 650 L 1070 750 L 1100 830" stroke="#ec4899" stroke-width="8"/>
+    
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+<defs>
+
+</defs>
+<rect width="1920" height="1080" fill="#0a0a0f"/>
+        <rect x="550" y="500" width="120" height="180" rx="8" fill="#ef4444" stroke="#1e293b" stroke-width="4"/>
+        <circle cx="610" cy="540" r="8" fill="#fef08a"/>
+        <circle cx="610" cy="630" r="16" fill="#cbd5e1" stroke="#475569" stroke-width="3"/>
+        
+        <rect x="720" y="500" width="120" height="180" rx="8" fill="#f59e0b" stroke="#1e293b" stroke-width="4"/>
+        <circle cx="780" cy="540" r="8" fill="#fef08a"/>
+        <circle cx="780" cy="630" r="16" fill="#cbd5e1" stroke="#475569" stroke-width="3"/>
+        
+        <rect x="890" y="500" width="120" height="180" rx="8" fill="#10b981" stroke="#1e293b" stroke-width="4"/>
+        <circle cx="950" cy="540" r="8" fill="#fef08a"/>
+        <circle cx="950" cy="630" r="16" fill="#cbd5e1" stroke="#475569" stroke-width="3"/>
+        
+        <rect x="1060" y="500" width="120" height="180" rx="8" fill="#3b82f6" stroke="#1e293b" stroke-width="4"/>
+        <circle cx="1120" cy="540" r="8" fill="#fef08a"/>
+        <circle cx="1120" cy="630" r="16" fill="#cbd5e1" stroke="#475569" stroke-width="3"/>
+        
+        <rect x="1230" y="500" width="120" height="180" rx="8" fill="#8b5cf6" stroke="#1e293b" stroke-width="4"/>
+        <circle cx="1290" cy="540" r="8" fill="#fef08a"/>
+        <circle cx="1290" cy="630" r="16" fill="#cbd5e1" stroke="#475569" stroke-width="3"/>
+        
+</svg>

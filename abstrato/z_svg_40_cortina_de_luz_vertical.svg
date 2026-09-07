@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+<defs>
+
+    <linearGradient id="curtainG" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.4"/>
+        <stop offset="40%" stop-color="#818cf8" stop-opacity="0.2"/>
+        <stop offset="100%" stop-color="#090b14" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="blur40">
+        <feGaussianBlur stdDeviation="35"/>
+    </filter>
+    
+</defs>
+
+    <rect width="1920" height="1080" fill="#070912"/>
+    <rect x="120" y="0" width="40" height="800" fill="url(#curtainG)" filter="url(#blur40)"/><rect x="270" y="0" width="65" height="800" fill="url(#curtainG)" filter="url(#blur40)"/><rect x="420" y="0" width="90" height="800" fill="url(#curtainG)" filter="url(#blur40)"/><rect x="570" y="0" width="40" height="800" fill="url(#curtainG)" filter="url(#blur40)"/><rect x="720" y="0" width="65" height="800" fill="url(#curtainG)" filter="url(#blur40)"/><rect x="870" y="0" width="90" height="800" fill="url(#curtainG)" filter="url(#blur40)"/><rect x="1020" y="0" width="40" height="800" fill="url(#curtainG)" filter="url(#blur40)"/><rect x="1170" y="0" width="65" height="800" fill="url(#curtainG)" filter="url(#blur40)"/><rect x="1320" y="0" width="90" height="800" fill="url(#curtainG)" filter="url(#blur40)"/><rect x="1470" y="0" width="40" height="800" fill="url(#curtainG)" filter="url(#blur40)"/><rect x="1620" y="0" width="65" height="800" fill="url(#curtainG)" filter="url(#blur40)"/><rect x="1770" y="0" width="90" height="800" fill="url(#curtainG)" filter="url(#blur40)"/>
+    
+</svg>

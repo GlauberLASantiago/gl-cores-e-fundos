@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+<defs>
+
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.25"/>
+        <stop offset="50%" stop-color="#d97706" stop-opacity="0.15"/>
+        <stop offset="100%" stop-color="#b45309" stop-opacity="0.05"/>
+    </linearGradient>
+    
+</defs>
+
+    <rect width="1920" height="1080" fill="#0c0d0e"/>
+    <path d="M 0 150 C 400 110, 800 190, 1200 122.0 S 1600 170.0, 1920 150" fill="none" stroke="url(#gold)" stroke-width="1.2" stroke-linecap="round"/><path d="M 0 225 C 400 180, 800 270, 1200 193.5 S 1600 247.5, 1920 225" fill="none" stroke="url(#gold)" stroke-width="1.2" stroke-linecap="round"/><path d="M 0 300 C 400 250, 800 350, 1200 265.0 S 1600 325.0, 1920 300" fill="none" stroke="url(#gold)" stroke-width="1.2" stroke-linecap="round"/><path d="M 0 375 C 400 320, 800 430, 1200 336.5 S 1600 402.5, 1920 375" fill="none" stroke="url(#gold)" stroke-width="1.2" stroke-linecap="round"/><path d="M 0 450 C 400 390, 800 510, 1200 408.0 S 1600 480.0, 1920 450" fill="none" stroke="url(#gold)" stroke-width="1.2" stroke-linecap="round"/><path d="M 0 525 C 400 460, 800 590, 1200 479.5 S 1600 557.5, 1920 525" fill="none" stroke="url(#gold)" stroke-width="1.2" stroke-linecap="round"/><path d="M 0 600 C 400 530, 800 670, 1200 551.0 S 1600 635.0, 1920 600" fill="none" stroke="url(#gold)" stroke-width="1.2" stroke-linecap="round"/><path d="M 0 675 C 400 600, 800 750, 1200 622.5 S 1600 712.5, 1920 675" fill="none" stroke="url(#gold)" stroke-width="1.2" stroke-linecap="round"/><path d="M 0 750 C 400 670, 800 830, 1200 694.0 S 1600 790.0, 1920 750" fill="none" stroke="url(#gold)" stroke-width="1.2" stroke-linecap="round"/><path d="M 0 825 C 400 740, 800 910, 1200 765.5 S 1600 867.5, 1920 825" fill="none" stroke="url(#gold)" stroke-width="1.2" stroke-linecap="round"/><path d="M 0 900 C 400 810, 800 990, 1200 837.0 S 1600 945.0, 1920 900" fill="none" stroke="url(#gold)" stroke-width="1.2" stroke-linecap="round"/><path d="M 0 975 C 400 880, 800 1070, 1200 908.5 S 1600 1022.5, 1920 975" fill="none" stroke="url(#gold)" stroke-width="1.2" stroke-linecap="round"/>
+    
+</svg>

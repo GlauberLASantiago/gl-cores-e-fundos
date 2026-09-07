@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+  <defs>
+    <linearGradient id="paperBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="100%" stop-color="#f1f5f9" />
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#cbd5e1" stroke-width="0.8" />
+    </pattern>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#paperBg)" />
+  <rect width="1920" height="1080" fill="url(#grid)" />
+  <circle cx="1700" cy="200" r="300" fill="#38bdf8" opacity="0.12" />
+  <circle cx="200" cy="850" r="350" fill="#fbbf24" opacity="0.12" />
+  <line x1="120" y1="0" x2="120" y2="1080" stroke="#fca5a5" stroke-width="2" opacity="0.6" />
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+<defs>
+
+    <linearGradient id="duneG" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.25"/>
+        <stop offset="100%" stop-color="#78350f" stop-opacity="0.05"/>
+    </linearGradient>
+    
+</defs>
+<rect width="1920" height="1080" fill="#0d0a07"/><path d="M 0 650 Q 500 580, 1100 690 T 1920 630" fill="none" stroke="url(#duneG)" stroke-width="1.6"/><path d="M 0 710 Q 500 640, 1100 750 T 1920 690" fill="none" stroke="url(#duneG)" stroke-width="1.6"/><path d="M 0 770 Q 500 700, 1100 810 T 1920 750" fill="none" stroke="url(#duneG)" stroke-width="1.6"/><path d="M 0 830 Q 500 760, 1100 870 T 1920 810" fill="none" stroke="url(#duneG)" stroke-width="1.6"/><path d="M 0 890 Q 500 820, 1100 930 T 1920 870" fill="none" stroke="url(#duneG)" stroke-width="1.6"/><path d="M 0 950 Q 500 880, 1100 990 T 1920 930" fill="none" stroke="url(#duneG)" stroke-width="1.6"/><path d="M 0 1010 Q 500 940, 1100 1050 T 1920 990" fill="none" stroke="url(#duneG)" stroke-width="1.6"/>
+</svg>

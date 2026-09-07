@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+<defs>
+
+    <linearGradient id="ribbonG" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#c084fc" stop-opacity="0.35"/>
+        <stop offset="50%" stop-color="#f472b6" stop-opacity="0.3"/>
+        <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.05"/>
+    </linearGradient>
+    
+</defs>
+<rect width="1920" height="1080" fill="#0b0812"/><path d="M -50 500 Q 400 350, 960 500 T 1970 420" fill="none" stroke="url(#ribbonG)" stroke-width="2.2" stroke-linecap="round"/><path d="M -50 540 Q 400 390, 960 540 T 1970 460" fill="none" stroke="url(#ribbonG)" stroke-width="2.2" stroke-linecap="round"/><path d="M -50 580 Q 400 430, 960 580 T 1970 500" fill="none" stroke="url(#ribbonG)" stroke-width="2.2" stroke-linecap="round"/><path d="M -50 620 Q 400 470, 960 620 T 1970 540" fill="none" stroke="url(#ribbonG)" stroke-width="2.2" stroke-linecap="round"/><path d="M -50 660 Q 400 510, 960 660 T 1970 580" fill="none" stroke="url(#ribbonG)" stroke-width="2.2" stroke-linecap="round"/><path d="M -50 700 Q 400 550, 960 700 T 1970 620" fill="none" stroke="url(#ribbonG)" stroke-width="2.2" stroke-linecap="round"/><path d="M -50 740 Q 400 590, 960 740 T 1970 660" fill="none" stroke="url(#ribbonG)" stroke-width="2.2" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+<defs>
+
+</defs>
+<rect width="1920" height="1080" fill="#0c0906"/>
+    <path d="M 0 650 Q 500 520, 1100 680 T 1920 620 L 1920 1080 L 0 1080 Z" fill="#d97706"/>
+    <path d="M 0 780 Q 650 680, 1300 820 T 1920 750 L 1920 1080 L 0 1080 Z" fill="#92400e"/>
+    <circle cx="1600" cy="350" r="50" fill="#fde047"/>
+    
+</svg>

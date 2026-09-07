@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+<defs>
+
+    <linearGradient id="duo16" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#0f172a"/>
+        <stop offset="40%" stop-color="#1e1b4b"/>
+        <stop offset="80%" stop-color="#4a044e"/>
+        <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    
+</defs>
+
+    <rect width="1920" height="1080" fill="url(#duo16)"/>
+    <ellipse cx="1600" cy="900" rx="500" ry="300" fill="#db2777" fill-opacity="0.18" filter="blur(80px)"/>
+    <ellipse cx="300" cy="200" rx="400" ry="250" fill="#4338ca" fill-opacity="0.2" filter="blur(70px)"/>
+    
+</svg>

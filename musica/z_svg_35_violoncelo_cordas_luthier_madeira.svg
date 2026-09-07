@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+<defs>
+
+</defs>
+<rect width="1920" height="1080" fill="#0e0804"/>
+    <ellipse cx="960" cy="600" rx="140" ry="220" fill="#78350f" stroke="#b45309" stroke-width="6"/>
+    <line x1="960" y1="200" x2="960" y2="850" stroke="#cbd5e1" stroke-width="3"/>
+    <line x1="945" y1="200" x2="945" y2="850" stroke="#cbd5e1" stroke-width="2.5"/>
+    <line x1="975" y1="200" x2="975" y2="850" stroke="#cbd5e1" stroke-width="3.5"/>
+    
+</svg>

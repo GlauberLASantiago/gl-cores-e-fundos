@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+<defs>
+
+</defs>
+<rect width="1920" height="1080" fill="#0a0505"/>
+    <path d="M 850 500 C 800 600, 850 750, 950 780 C 1050 750, 1100 600, 1050 500 C 1000 460, 900 460, 850 500 Z" fill="#dc2626"/>
+    <rect x="940" y="200" width="20" height="300" fill="#fed7aa"/>
+    <line x1="950" y1="200" x2="950" y2="700" stroke="#cbd5e1" stroke-width="4"/>
+    <!-- Volume knobs -->
+    <circle cx="1020" cy="650" r="10" fill="#f8fafc"/>
+    <circle cx="1030" cy="680" r="10" fill="#f8fafc"/>
+    
+</svg>

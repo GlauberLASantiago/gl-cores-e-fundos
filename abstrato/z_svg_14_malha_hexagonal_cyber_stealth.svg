@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+<defs>
+
+    <pattern id="hex" width="56" height="97" patternUnits="userSpaceOnUse">
+        <path d="M28 0 L56 16.2 L56 48.5 L28 64.7 L0 48.5 L0 16.2 Z M28 48.5 L56 64.7 L56 97 L28 80.8 L0 97 L0 64.7 Z" fill="none" stroke="#334155" stroke-width="0.75" stroke-opacity="0.3"/>
+    </pattern>
+    <radialGradient id="mask14" cx="50%" cy="50%" r="60%">
+        <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8"/>
+        <stop offset="100%" stop-color="#ffffff" stop-opacity="0.05"/>
+    </radialGradient>
+    <mask id="hexMask">
+        <rect width="1920" height="1080" fill="url(#mask14)"/>
+    </mask>
+    
+</defs>
+
+    <rect width="1920" height="1080" fill="#090d14"/>
+    <rect width="1920" height="1080" fill="url(#hex)" mask="url(#hexMask)"/>
+    
+</svg>

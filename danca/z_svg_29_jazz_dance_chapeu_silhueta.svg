@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+<defs>
+
+</defs>
+<rect width="1920" height="1080" fill="#090a10"/><line x1="960" y1="500" x2="960" y2="850" stroke="#cbd5e1" stroke-width="6"/><line x1="910" y1="650" x2="1010" y2="650" stroke="#cbd5e1" stroke-width="6"/><ellipse cx="960" cy="420" rx="35" ry="10" fill="#1e293b"/><path d="M 940 420 C 940 390, 980 390, 980 420 Z" fill="#1e293b"/>
+</svg>

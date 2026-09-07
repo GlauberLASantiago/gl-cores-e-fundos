@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+<defs>
+
+    <radialGradient id="spot14" cx="50%" cy="40%" r="50%">
+        <stop offset="0%" stop-color="#fda4af" stop-opacity="0.3"/>
+        <stop offset="100%" stop-color="#0a0a12" stop-opacity="0"/>
+    </radialGradient>
+    
+</defs>
+<rect width="1920" height="1080" fill="#08070d"/><rect width="1920" height="1080" fill="url(#spot14)"/>
+    <path d="M 960 320 C 970 300, 980 300, 980 320 C 980 340, 965 350, 960 360 C 955 350, 940 340, 940 320 Z" fill="#fff" fill-opacity="0.9"/>
+    <!-- Torso and tutu -->
+    <path d="M 955 360 L 965 360 L 970 420 L 950 420 Z" fill="#fff" fill-opacity="0.85"/>
+    <ellipse cx="960" cy="425" rx="75" ry="18" fill="#fda4af" fill-opacity="0.75"/>
+    <!-- Grand jeté legs -->
+    <path d="M 955 425 Q 850 435, 760 450 Q 850 440, 955 435" stroke="#fff" stroke-width="12" stroke-linecap="round" fill="none"/>
+    <path d="M 965 425 Q 1080 435, 1180 445 Q 1080 440, 965 435" stroke="#fff" stroke-width="12" stroke-linecap="round" fill="none"/>
+    <!-- Graceful arms -->
+    <path d="M 950 375 Q 880 340, 830 360" stroke="#fff" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <path d="M 970 375 Q 1040 340, 1100 330" stroke="#fff" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <circle cx="850" cy="380" r="1.5" fill="#fecdd3" fill-opacity="0.5"/><circle cx="887" cy="423" r="2.5" fill="#fecdd3" fill-opacity="0.5"/><circle cx="924" cy="466" r="3.5" fill="#fecdd3" fill-opacity="0.5"/><circle cx="961" cy="509" r="1.5" fill="#fecdd3" fill-opacity="0.5"/><circle cx="998" cy="402" r="2.5" fill="#fecdd3" fill-opacity="0.5"/><circle cx="1035" cy="445" r="3.5" fill="#fecdd3" fill-opacity="0.5"/><circle cx="1072" cy="488" r="1.5" fill="#fecdd3" fill-opacity="0.5"/><circle cx="1109" cy="381" r="2.5" fill="#fecdd3" fill-opacity="0.5"/><circle cx="1146" cy="424" r="3.5" fill="#fecdd3" fill-opacity="0.5"/><circle cx="883" cy="467" r="1.5" fill="#fecdd3" fill-opacity="0.5"/><circle cx="920" cy="510" r="2.5" fill="#fecdd3" fill-opacity="0.5"/><circle cx="957" cy="403" r="3.5" fill="#fecdd3" fill-opacity="0.5"/><circle cx="994" cy="446" r="1.5" fill="#fecdd3" fill-opacity="0.5"/><circle cx="1031" cy="489" r="2.5" fill="#fecdd3" fill-opacity="0.5"/><circle cx="1068" cy="382" r="3.5" fill="#fecdd3" fill-opacity="0.5"/><circle cx="1105" cy="425" r="1.5" fill="#fecdd3" fill-opacity="0.5"/><circle cx="1142" cy="468" r="2.5" fill="#fecdd3" fill-opacity="0.5"/><circle cx="879" cy="511" r="3.5" fill="#fecdd3" fill-opacity="0.5"/><circle cx="916" cy="404" r="1.5" fill="#fecdd3" fill-opacity="0.5"/><circle cx="953" cy="447" r="2.5" fill="#fecdd3" fill-opacity="0.5"/><circle cx="990" cy="490" r="3.5" fill="#fecdd3" fill-opacity="0.5"/><circle cx="1027" cy="383" r="1.5" fill="#fecdd3" fill-opacity="0.5"/><circle cx="1064" cy="426" r="2.5" fill="#fecdd3" fill-opacity="0.5"/><circle cx="1101" cy="469" r="3.5" fill="#fecdd3" fill-opacity="0.5"/><circle cx="1138" cy="512" r="1.5" fill="#fecdd3" fill-opacity="0.5"/>
+</svg>

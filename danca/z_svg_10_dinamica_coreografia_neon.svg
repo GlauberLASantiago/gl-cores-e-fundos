@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+<defs>
+
+    <linearGradient id="coreoNeon" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.3"/>
+        <stop offset="50%" stop-color="#8b5cf6" stop-opacity="0.25"/>
+        <stop offset="100%" stop-color="#f43f5e" stop-opacity="0.1"/>
+    </linearGradient>
+    
+</defs>
+<rect width="1920" height="1080" fill="#08070f"/><path d="M 0 650 C 600 730, 1200 530, 1920 650" fill="none" stroke="url(#coreoNeon)" stroke-width="1.5"/><path d="M 0 685 C 600 765, 1200 565, 1920 685" fill="none" stroke="url(#coreoNeon)" stroke-width="1.5"/><path d="M 0 720 C 600 800, 1200 600, 1920 720" fill="none" stroke="url(#coreoNeon)" stroke-width="1.5"/><path d="M 0 755 C 600 835, 1200 635, 1920 755" fill="none" stroke="url(#coreoNeon)" stroke-width="1.5"/><path d="M 0 790 C 600 870, 1200 670, 1920 790" fill="none" stroke="url(#coreoNeon)" stroke-width="1.5"/><path d="M 0 825 C 600 905, 1200 705, 1920 825" fill="none" stroke="url(#coreoNeon)" stroke-width="1.5"/><path d="M 0 860 C 600 940, 1200 740, 1920 860" fill="none" stroke="url(#coreoNeon)" stroke-width="1.5"/><path d="M 0 895 C 600 975, 1200 775, 1920 895" fill="none" stroke="url(#coreoNeon)" stroke-width="1.5"/>
+</svg>

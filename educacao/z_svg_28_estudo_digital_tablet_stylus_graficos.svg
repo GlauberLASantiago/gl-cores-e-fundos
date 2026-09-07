@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+<defs>
+
+</defs>
+<rect width="1920" height="1080" fill="#090b12"/>
+    <rect x="760" y="380" width="400" height="280" rx="16" fill="#1e293b" stroke="#475569" stroke-width="4"/>
+    <rect x="780" y="400" width="360" height="240" rx="8" fill="#0f172a"/>
+    <!-- Bar charts on screen -->
+    <rect x="820" y="540" width="40" height="80" rx="4" fill="#38bdf8"/>
+    <rect x="880" y="480" width="40" height="140" rx="4" fill="#818cf8"/>
+    <rect x="940" y="510" width="40" height="110" rx="4" fill="#ec4899"/>
+    <rect x="1000" y="450" width="40" height="170" rx="4" fill="#34d399"/>
+    <!-- Stylus pen -->
+    <line x1="1120" y1="360" x2="1020" y2="480" stroke="#f8fafc" stroke-width="8" stroke-linecap="round"/>
+    
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+<defs>
+
+    <linearGradient id="sapphire33" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#1e1b4b"/>
+        <stop offset="50%" stop-color="#0f172a"/>
+        <stop offset="100%" stop-color="#311042"/>
+    </linearGradient>
+    <radialGradient id="glowAmethyst" cx="80%" cy="20%" r="50%">
+        <stop offset="0%" stop-color="#a855f7" stop-opacity="0.3"/>
+        <stop offset="100%" stop-color="#1e1b4b" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowSapphire" cx="15%" cy="85%" r="50%">
+        <stop offset="0%" stop-color="#2563eb" stop-opacity="0.3"/>
+        <stop offset="100%" stop-color="#0f172a" stop-opacity="0"/>
+    </radialGradient>
+    
+</defs>
+
+    <rect width="1920" height="1080" fill="url(#sapphire33)"/>
+    <rect width="1920" height="1080" fill="url(#glowAmethyst)"/>
+    <rect width="1920" height="1080" fill="url(#glowSapphire)"/>
+    
+</svg>

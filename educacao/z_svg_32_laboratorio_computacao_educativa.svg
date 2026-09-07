@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+<defs>
+
+</defs>
+<rect width="1920" height="1080" fill="#060912"/>
+        <rect x="420" y="520" width="180" height="120" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+        <line x1="510" y1="640" x2="510" y2="690" stroke="#64748b" stroke-width="8"/>
+        <line x1="470" y1="690" x2="550" y2="690" stroke="#64748b" stroke-width="8"/>
+        
+        <rect x="700" y="520" width="180" height="120" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+        <line x1="790" y1="640" x2="790" y2="690" stroke="#64748b" stroke-width="8"/>
+        <line x1="750" y1="690" x2="830" y2="690" stroke="#64748b" stroke-width="8"/>
+        
+        <rect x="980" y="520" width="180" height="120" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+        <line x1="1070" y1="640" x2="1070" y2="690" stroke="#64748b" stroke-width="8"/>
+        <line x1="1030" y1="690" x2="1110" y2="690" stroke="#64748b" stroke-width="8"/>
+        
+        <rect x="1260" y="520" width="180" height="120" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+        <line x1="1350" y1="640" x2="1350" y2="690" stroke="#64748b" stroke-width="8"/>
+        <line x1="1310" y1="690" x2="1390" y2="690" stroke="#64748b" stroke-width="8"/>
+        
+</svg>

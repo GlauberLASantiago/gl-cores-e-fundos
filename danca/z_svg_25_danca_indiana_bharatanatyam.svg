@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+<defs>
+
+</defs>
+<rect width="1920" height="1080" fill="#120606"/>
+    <circle cx="960" cy="380" r="22" fill="#f59e0b"/>
+    <!-- Crown -->
+    <polygon points="940,360 960,310 980,360" fill="#fbbf24"/>
+    <!-- Mudra pose -->
+    <path d="M 940 430 Q 860 450, 830 520" stroke="#f59e0b" stroke-width="10" stroke-linecap="round"/>
+    <path d="M 980 430 Q 1060 450, 1090 520" stroke="#f59e0b" stroke-width="10" stroke-linecap="round"/>
+    <path d="M 960 430 L 960 620 L 900 780" stroke="#dc2626" stroke-width="14" stroke-linecap="round"/>
+    <path d="M 960 620 L 1020 780" stroke="#dc2626" stroke-width="14" stroke-linecap="round"/>
+    
+</svg>

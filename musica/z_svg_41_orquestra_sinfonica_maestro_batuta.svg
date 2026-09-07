@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+<defs>
+
+</defs>
+<rect width="1920" height="1080" fill="#08070d"/><polygon points="400,700 450,700 425,650" fill="#475569"/><polygon points="510,700 560,700 535,650" fill="#475569"/><polygon points="620,700 670,700 645,650" fill="#475569"/><polygon points="730,700 780,700 755,650" fill="#475569"/><polygon points="840,700 890,700 865,650" fill="#475569"/><polygon points="950,700 1000,700 975,650" fill="#475569"/><polygon points="1060,700 1110,700 1085,650" fill="#475569"/><polygon points="1170,700 1220,700 1195,650" fill="#475569"/><polygon points="1280,700 1330,700 1305,650" fill="#475569"/><polygon points="1390,700 1440,700 1415,650" fill="#475569"/><polygon points="1500,700 1550,700 1525,650" fill="#475569"/><line x1="960" y1="550" x2="1080" y2="420" stroke="#fef08a" stroke-width="3" stroke-linecap="round"/>
+</svg>

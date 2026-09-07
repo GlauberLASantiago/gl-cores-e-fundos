@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+<defs>
+
+</defs>
+<rect width="1920" height="1080" fill="#0d0905"/>
+    <ellipse cx="960" cy="550" rx="90" ry="140" fill="#78350f" stroke="#b45309" stroke-width="4"/>
+    <ellipse cx="960" cy="450" rx="70" ry="80" fill="#78350f" stroke="#b45309" stroke-width="4"/>
+    <!-- F-holes -->
+    <path d="M 920 520 Q 940 550, 920 580" stroke="#1c1917" stroke-width="4" fill="none"/>
+    <path d="M 1000 520 Q 980 550, 1000 580" stroke="#1c1917" stroke-width="4" fill="none"/>
+    <!-- Neck -->
+    <rect x="950" y="240" width="20" height="180" fill="#1c1917"/>
+    <!-- Bow -->
+    <line x1="750" y1="350" x2="1200" y2="700" stroke="#fef08a" stroke-width="3"/>
+    
+</svg>

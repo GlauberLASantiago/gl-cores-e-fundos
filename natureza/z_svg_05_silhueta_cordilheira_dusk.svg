@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+<defs>
+
+    <linearGradient id="skyDusk" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#0f172a"/>
+        <stop offset="60%" stop-color="#312e81"/>
+        <stop offset="90%" stop-color="#831843"/>
+        <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    
+</defs>
+<rect width="1920" height="1080" fill="url(#skyDusk)"/>
+    <polygon points="0,1080 0,720 300,550 650,750 1000,520 1400,780 1750,600 1920,700 1920,1080" fill="#090a10" fill-opacity="0.75"/>
+    <polygon points="0,1080 0,820 450,680 850,880 1250,700 1650,900 1920,780 1920,1080" fill="#040508"/>
+    
+</svg>

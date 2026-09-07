@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+<defs>
+
+    <linearGradient id="velvet" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#450a0a"/>
+        <stop offset="30%" stop-color="#991b1b"/>
+        <stop offset="70%" stop-color="#ef4444"/>
+        <stop offset="100%" stop-color="#7f1d1d"/>
+    </linearGradient>
+    
+</defs>
+<rect width="1920" height="1080" fill="#0a0505"/>
+    <path d="M 0 0 C 200 100, 300 400, 200 1080 L 0 1080 Z" fill="url(#velvet)"/>
+    <path d="M 1920 0 C 1720 100, 1620 400, 1720 1080 L 1920 1080 Z" fill="url(#velvet)"/>
+    <path d="M 0 0 Q 960 200, 1920 0 L 1920 120 Q 960 300, 0 120 Z" fill="url(#velvet)"/>
+    <!-- Stage footlights -->
+    <circle cx="300" cy="1040" r="12" fill="#fef08a" fill-opacity="0.8"/><circle cx="410" cy="1040" r="12" fill="#fef08a" fill-opacity="0.8"/><circle cx="520" cy="1040" r="12" fill="#fef08a" fill-opacity="0.8"/><circle cx="630" cy="1040" r="12" fill="#fef08a" fill-opacity="0.8"/><circle cx="740" cy="1040" r="12" fill="#fef08a" fill-opacity="0.8"/><circle cx="850" cy="1040" r="12" fill="#fef08a" fill-opacity="0.8"/><circle cx="960" cy="1040" r="12" fill="#fef08a" fill-opacity="0.8"/><circle cx="1070" cy="1040" r="12" fill="#fef08a" fill-opacity="0.8"/><circle cx="1180" cy="1040" r="12" fill="#fef08a" fill-opacity="0.8"/><circle cx="1290" cy="1040" r="12" fill="#fef08a" fill-opacity="0.8"/><circle cx="1400" cy="1040" r="12" fill="#fef08a" fill-opacity="0.8"/><circle cx="1510" cy="1040" r="12" fill="#fef08a" fill-opacity="0.8"/><circle cx="1620" cy="1040" r="12" fill="#fef08a" fill-opacity="0.8"/>
+</svg>

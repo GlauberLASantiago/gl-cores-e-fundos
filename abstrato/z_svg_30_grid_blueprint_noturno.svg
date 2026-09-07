@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+<defs>
+
+    <pattern id="bpGrid" width="60" height="60" patternUnits="userSpaceOnUse">
+        <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#0284c7" stroke-width="0.6" stroke-opacity="0.2"/>
+    </pattern>
+    <pattern id="bpGridSub" width="12" height="12" patternUnits="userSpaceOnUse">
+        <path d="M 12 0 L 0 0 0 12" fill="none" stroke="#0284c7" stroke-width="0.3" stroke-opacity="0.1"/>
+    </pattern>
+    
+</defs>
+
+    <rect width="1920" height="1080" fill="#040b17"/>
+    <rect width="1920" height="1080" fill="url(#bpGridSub)"/>
+    <rect width="1920" height="1080" fill="url(#bpGrid)"/>
+    
+</svg>

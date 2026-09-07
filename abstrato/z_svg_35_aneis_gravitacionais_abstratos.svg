@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+<defs>
+
+    <linearGradient id="ringG" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.4"/>
+        <stop offset="100%" stop-color="#64748b" stop-opacity="0.05"/>
+    </linearGradient>
+    
+</defs>
+
+    <rect width="1920" height="1080" fill="#080a10"/>
+    <ellipse cx="960" cy="540" rx="200" ry="70" fill="none" stroke="url(#ringG)" stroke-width="1.2" transform="rotate(-20 960 540)"/><ellipse cx="960" cy="540" rx="310" ry="110" fill="none" stroke="url(#ringG)" stroke-width="1.2" transform="rotate(-16 960 540)"/><ellipse cx="960" cy="540" rx="420" ry="150" fill="none" stroke="url(#ringG)" stroke-width="1.2" transform="rotate(-12 960 540)"/><ellipse cx="960" cy="540" rx="530" ry="190" fill="none" stroke="url(#ringG)" stroke-width="1.2" transform="rotate(-8 960 540)"/><ellipse cx="960" cy="540" rx="640" ry="230" fill="none" stroke="url(#ringG)" stroke-width="1.2" transform="rotate(-4 960 540)"/><ellipse cx="960" cy="540" rx="750" ry="270" fill="none" stroke="url(#ringG)" stroke-width="1.2" transform="rotate(0 960 540)"/><ellipse cx="960" cy="540" rx="860" ry="310" fill="none" stroke="url(#ringG)" stroke-width="1.2" transform="rotate(4 960 540)"/><ellipse cx="960" cy="540" rx="970" ry="350" fill="none" stroke="url(#ringG)" stroke-width="1.2" transform="rotate(8 960 540)"/>
+    
+</svg>

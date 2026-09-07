@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+<defs>
+
+    <radialGradient id="magOrb" cx="40%" cy="40%" r="60%">
+        <stop offset="0%" stop-color="#60a5fa" stop-opacity="0.3"/>
+        <stop offset="100%" stop-color="#1e1b4b" stop-opacity="0.02"/>
+    </radialGradient>
+    
+</defs>
+<rect width="1920" height="1080" fill="#080911"/><circle cx="300" cy="300" r="180" fill="url(#magOrb)"/><circle cx="1600" cy="750" r="220" fill="url(#magOrb)"/><circle cx="960" cy="850" r="140" fill="url(#magOrb)"/>
+</svg>

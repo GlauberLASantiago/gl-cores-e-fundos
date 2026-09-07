@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+<defs>
+
+    <linearGradient id="balletG" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#fda4af" stop-opacity="0.3"/>
+        <stop offset="100%" stop-color="#e0e7ff" stop-opacity="0.05"/>
+    </linearGradient>
+    
+</defs>
+<rect width="1920" height="1080" fill="#0d0910"/><ellipse cx="960" cy="1150" rx="480.0" ry="210.0" fill="none" stroke="url(#balletG)" stroke-width="1.2"/><ellipse cx="960" cy="1150" rx="608.0" ry="266.0" fill="none" stroke="url(#balletG)" stroke-width="1.2"/><ellipse cx="960" cy="1150" rx="736.0" ry="322.0" fill="none" stroke="url(#balletG)" stroke-width="1.2"/><ellipse cx="960" cy="1150" rx="864.0" ry="378.0" fill="none" stroke="url(#balletG)" stroke-width="1.2"/><ellipse cx="960" cy="1150" rx="992.0" ry="434.0" fill="none" stroke="url(#balletG)" stroke-width="1.2"/><ellipse cx="960" cy="1150" rx="1120.0" ry="489.99999999999994" fill="none" stroke="url(#balletG)" stroke-width="1.2"/><ellipse cx="960" cy="1150" rx="1248.0" ry="546.0" fill="none" stroke="url(#balletG)" stroke-width="1.2"/><ellipse cx="960" cy="1150" rx="1376.0" ry="602.0" fill="none" stroke="url(#balletG)" stroke-width="1.2"/><ellipse cx="960" cy="1150" rx="1504.0" ry="658.0" fill="none" stroke="url(#balletG)" stroke-width="1.2"/><ellipse cx="960" cy="1150" rx="1632.0" ry="714.0" fill="none" stroke="url(#balletG)" stroke-width="1.2"/><ellipse cx="960" cy="1150" rx="1760.0" ry="770.0" fill="none" stroke="url(#balletG)" stroke-width="1.2"/><ellipse cx="960" cy="1150" rx="1888.0" ry="826.0" fill="none" stroke="url(#balletG)" stroke-width="1.2"/>
+</svg>

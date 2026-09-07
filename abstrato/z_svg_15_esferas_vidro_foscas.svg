@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+<defs>
+
+    <filter id="glassBlur">
+        <feGaussianBlur stdDeviation="30"/>
+    </filter>
+    <linearGradient id="orbG1" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#ffffff" stop-opacity="0.15"/>
+        <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.03"/>
+    </linearGradient>
+    <linearGradient id="orbG2" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#c084fc" stop-opacity="0.2"/>
+        <stop offset="100%" stop-color="#6366f1" stop-opacity="0.02"/>
+    </linearGradient>
+    
+</defs>
+
+    <rect width="1920" height="1080" fill="#0b0c10"/>
+    <circle cx="450" cy="350" r="220" fill="url(#orbG1)" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+    <circle cx="1450" cy="650" r="260" fill="url(#orbG2)" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+    <circle cx="960" cy="850" r="180" fill="url(#orbG1)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    
+</svg>

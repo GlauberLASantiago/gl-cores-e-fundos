@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+<defs>
+
+    <linearGradient id="sacredG" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#94a3b8" stop-opacity="0.3"/>
+        <stop offset="100%" stop-color="#475569" stop-opacity="0.08"/>
+    </linearGradient>
+    
+</defs>
+
+    <rect width="1920" height="1080" fill="#0a0c10"/>
+    <circle cx="960" cy="540" r="160" fill="none" stroke="url(#sacredG)" stroke-width="1.2"/><circle cx="1120.0" cy="540.0" r="160" fill="none" stroke="url(#sacredG)" stroke-width="1"/><circle cx="1040.0" cy="678.6" r="160" fill="none" stroke="url(#sacredG)" stroke-width="1"/><circle cx="880.0" cy="678.6" r="160" fill="none" stroke="url(#sacredG)" stroke-width="1"/><circle cx="800.0" cy="540.0" r="160" fill="none" stroke="url(#sacredG)" stroke-width="1"/><circle cx="880.0" cy="401.4" r="160" fill="none" stroke="url(#sacredG)" stroke-width="1"/><circle cx="1040.0" cy="401.4" r="160" fill="none" stroke="url(#sacredG)" stroke-width="1"/>
+    
+</svg>

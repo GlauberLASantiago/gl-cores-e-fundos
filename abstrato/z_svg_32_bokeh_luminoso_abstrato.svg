@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+<defs>
+
+    <radialGradient id="bokehG" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#ffffff" stop-opacity="0.25"/>
+        <stop offset="80%" stop-color="#60a5fa" stop-opacity="0.08"/>
+        <stop offset="100%" stop-color="#60a5fa" stop-opacity="0"/>
+    </radialGradient>
+    
+</defs>
+
+    <rect width="1920" height="1080" fill="#070a10"/>
+    <circle cx="864" cy="244" r="82" fill="url(#bokehG)"/><circle cx="428" cy="690" r="41" fill="url(#bokehG)"/><circle cx="1128" cy="836" r="129" fill="url(#bokehG)"/><circle cx="66" cy="922" r="83" fill="url(#bokehG)"/><circle cx="1454" cy="525" r="57" fill="url(#bokehG)"/><circle cx="508" cy="1024" r="55" fill="url(#bokehG)"/><circle cx="1459" cy="193" r="117" fill="url(#bokehG)"/><circle cx="404" cy="502" r="92" fill="url(#bokehG)"/><circle cx="712" cy="735" r="95" fill="url(#bokehG)"/><circle cx="335" cy="362" r="60" fill="url(#bokehG)"/><circle cx="295" cy="525" r="83" fill="url(#bokehG)"/><circle cx="173" cy="206" r="71" fill="url(#bokehG)"/><circle cx="957" cy="950" r="65" fill="url(#bokehG)"/><circle cx="499" cy="230" r="41" fill="url(#bokehG)"/><circle cx="531" cy="1021" r="122" fill="url(#bokehG)"/><circle cx="1123" cy="1024" r="98" fill="url(#bokehG)"/><circle cx="1655" cy="590" r="43" fill="url(#bokehG)"/><circle cx="1719" cy="559" r="130" fill="url(#bokehG)"/><circle cx="824" cy="574" r="89" fill="url(#bokehG)"/><circle cx="1016" cy="563" r="48" fill="url(#bokehG)"/><circle cx="1055" cy="200" r="88" fill="url(#bokehG)"/><circle cx="77" cy="191" r="56" fill="url(#bokehG)"/><circle cx="927" cy="947" r="79" fill="url(#bokehG)"/><circle cx="1520" cy="922" r="122" fill="url(#bokehG)"/><circle cx="92" cy="956" r="57" fill="url(#bokehG)"/><circle cx="262" cy="617" r="106" fill="url(#bokehG)"/><circle cx="224" cy="444" r="76" fill="url(#bokehG)"/><circle cx="741" cy="774" r="67" fill="url(#bokehG)"/><circle cx="940" cy="424" r="105" fill="url(#bokehG)"/><circle cx="100" cy="927" r="99" fill="url(#bokehG)"/><circle cx="1495" cy="417" r="113" fill="url(#bokehG)"/><circle cx="720" cy="667" r="119" fill="url(#bokehG)"/><circle cx="1292" cy="448" r="60" fill="url(#bokehG)"/><circle cx="760" cy="369" r="127" fill="url(#bokehG)"/><circle cx="929" cy="581" r="136" fill="url(#bokehG)"/>
+    
+</svg>

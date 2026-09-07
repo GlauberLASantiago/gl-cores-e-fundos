@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+<defs>
+
+    <linearGradient id="horizonGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#0284c7" stop-opacity="0"/>
+        <stop offset="30%" stop-color="#38bdf8" stop-opacity="0.5"/>
+        <stop offset="50%" stop-color="#e0f2fe" stop-opacity="0.9"/>
+        <stop offset="70%" stop-color="#38bdf8" stop-opacity="0.5"/>
+        <stop offset="100%" stop-color="#0284c7" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow12">
+        <feGaussianBlur stdDeviation="25" result="coloredBlur"/>
+        <feMerge>
+            <feMergeNode in="coloredBlur"/>
+            <feMergeNode in="SourceGraphic"/>
+        </feMerge>
+    </filter>
+    
+</defs>
+
+    <rect width="1920" height="1080" fill="#05070a"/>
+    <line x1="100" y1="540" x2="1820" y2="540" stroke="url(#horizonGlow)" stroke-width="2.5" filter="url(#glow12)"/>
+    <circle cx="960" cy="540" r="380" fill="#0284c7" fill-opacity="0.12" filter="url(#glow12)"/>
+    
+</svg>

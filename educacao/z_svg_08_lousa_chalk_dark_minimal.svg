@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+<defs>
+
+    <pattern id="chalkGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#22c55e" stroke-width="0.5" stroke-opacity="0.12"/>
+    </pattern>
+    
+</defs>
+<rect width="1920" height="1080" fill="#06120b"/><rect width="1920" height="1080" fill="url(#chalkGrid)"/>
+</svg>

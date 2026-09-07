@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+<defs>
+
+</defs>
+<rect width="1920" height="1080" fill="#080d14"/>
+    <circle cx="960" cy="500" r="160" fill="#0c4a6e" fill-opacity="0.4" stroke="#f59e0b" stroke-width="4"/>
+    <!-- Latitude/longitude lines -->
+    <ellipse cx="960" cy="500" rx="160" ry="60" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-opacity="0.5"/>
+    <ellipse cx="960" cy="500" rx="60" ry="160" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-opacity="0.5"/>
+    <!-- Stand -->
+    <path d="M 960 300 A 200 200 0 0 0 960 700" fill="none" stroke="#d97706" stroke-width="8"/>
+    <line x1="960" y1="700" x2="960" y2="780" stroke="#d97706" stroke-width="12"/>
+    <ellipse cx="960" cy="790" rx="90" ry="25" fill="#78350f"/>
+    
+</svg>

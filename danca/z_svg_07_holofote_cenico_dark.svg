@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+<defs>
+
+    <linearGradient id="beamL" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.25"/>
+        <stop offset="100%" stop-color="#090d16" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="beamR" x1="100%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#ec4899" stop-opacity="0.2"/>
+        <stop offset="100%" stop-color="#090d16" stop-opacity="0"/>
+    </linearGradient>
+    
+</defs>
+
+    <rect width="1920" height="1080" fill="#090d16"/>
+    <polygon points="200,0 700,1080 900,1080" fill="url(#beamL)"/>
+    <polygon points="1720,0 1220,1080 1020,1080" fill="url(#beamR)"/>
+    
+</svg>
